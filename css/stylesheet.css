@@ -1,3 +1,17 @@
+iframe {
+  border: 3px blue solid;
+  width: 90%;
+}
+
+/*testdiv-klassen skal fjernes før merge*/
+.testdiv {
+  width:90%;
+  border: 3px  red solid;
+  width: 90%;
+  overflow-wrap: break-word;
+  
+}
+
 .active{
   background: #009900;
 }
