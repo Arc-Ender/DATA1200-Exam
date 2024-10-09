@@ -2,6 +2,23 @@
   background: #009900;
 }
 
+
+footer {
+  background-color: rgba(255, 255, 0, 0.2); 
+  padding: 2%;
+  margin-left: 0px;
+
+}
+
+li > a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style-type:none ;
+}
+
 footer > ul {
   list-style-type: none;
   padding: 0;
