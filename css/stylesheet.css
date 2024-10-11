@@ -1,6 +1,7 @@
 iframe {
   border: 3px blue solid;
   width: 90%;
+  height: auto !important;
 }
 
 /*testdiv-klassen skal fjernes før merge*/
