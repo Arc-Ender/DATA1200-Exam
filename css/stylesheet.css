@@ -68,7 +68,7 @@ nav img {
 
 
 /* Hamburger button */
-.menu-toggle {
+#menu-toggle {
   display: none; /* Hidden on larger screens */
   background: none; /* Remove background */
   border: none; /* Remove border */
@@ -87,7 +87,7 @@ nav img {
 }
 
 /* Hover effect for hamburger button */
-.menu-toggle:hover {
+#menu-toggle:hover {
   text-decoration: underline;
 }
 
@@ -98,7 +98,7 @@ nav img {
     align-items: flex-start; /* Align items to the left */
   }
 
-  .menu-toggle {
+  #menu-toggle {
     display: block; /* Show button */
   }
 
