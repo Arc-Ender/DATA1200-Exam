@@ -1,3 +1,4 @@
+// Adapted from https://www.w3schools.com/howto/howto_js_navbar_hide_scroll.asp
 // Initialize previous scroll position
 var prevScrollpos = window.scrollY;
 
@@ -10,7 +11,7 @@ window.onscroll = function() {
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("navbar").style.top = "0"; // Show navbar
   } else {
-    document.getElementById("navbar").style.top = "-6rem"; // Hide navbar (adjust -50px based on your navbar height)
+    document.getElementById("navbar").style.top = "-20rem"; // Hide navbar (adjust - 20rem based on your navbar height)
   }
   
   // Update the previous scroll position to the current position
