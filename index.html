@@ -3,14 +3,22 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
     <title>Matematisk modellering og vitenskap - ingeniør - OsloMet</title>
     <link href="../css/stylesheet.css" rel="stylesheet">
+
   </head>
   <body>
     <header>
-      <nav>
+      <nav id="navbar">
+        <img src="images/logo-oslomet.png" alt="Logo">
+        <button class="menu-toggle" aria-label="Toggle Menu">Meny ☰</button> <!-- Hamburger menu -->
         <ul>
-          <li><a class="active">index</a></li>
+
+          <li><a href="index.html">Index</a></li>
+
           <li><a href="pages/accessibility.html">Tilgjengelighet</a></li>
           <li><a href="pages/github.html">Github</a></li>
           <li><a href="pages/activity.html">Aktivitet</a></li>
@@ -19,9 +27,12 @@
     </header>
     <main>
       <video src="images/video_hd.mp4" class="video" controls></video>
+      <div style="height: 700px;" alt="For testing purposes"></div>
     </main>
     <footer>
       
     </footer>
+    <script src="scripts/navbarScroll.js"></script>
+    <script src="scripts/hamburgerMeny.js"></script>
   </body>
 </html>
