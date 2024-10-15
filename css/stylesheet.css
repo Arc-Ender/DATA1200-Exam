@@ -7,6 +7,8 @@ footer {
   background-color: rgba(255, 255, 0, 0.2); 
   padding: 2%;
   margin-left: 0px;
+  line-height: 1.9;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 }
 
@@ -24,3 +26,14 @@ footer > ul {
   padding: 0;
   margin: 0;
 }
+
+.footer-grid{
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+  grid-template-rows: 1;
+}
+
+.footerPic{
+  width: 100px;
+}
+
