@@ -155,6 +155,7 @@ h1 {
   text-align: center;
 }
 
+
 .container {
   position: relative;
   max-width: 800pt; /* Maximum width */
@@ -170,6 +171,7 @@ h1 {
   color: #f1f1f1; /* Grey text */
   width: 100%; /* Full width */
   padding: 20px; /* Some padding */
+  box-sizing:border-box;
 }
   
 
