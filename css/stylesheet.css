@@ -155,7 +155,6 @@ h1 {
   text-align: center;
 }
 
-
 .container {
   position: relative;
   max-width: 800pt; /* Maximum width */
@@ -173,5 +172,9 @@ h1 {
   padding: 20px; /* Some padding */
   box-sizing:border-box;
 }
-  
+
+.photo-source {
+  font-size: 8pt;
+  color:gray;
+}
 
