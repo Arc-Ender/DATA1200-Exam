@@ -1,7 +1,16 @@
-.active{
-  background: #009900;
+article {
+  border: 1px solid #FF0000;
+  display: flex;
+  flex-wrap: wrap;
 }
-.video{
-  width: 720px;
-  height: 480px;
+section {
+  border: 1px  solid #00FF00;
+  width: 30vw;
+}
+section div {
+  border: 1px solid #0000FF;
+}
+.articleHeader {
+  width: 100vw;
+  border: 1px solid #FFFF00;
 }
