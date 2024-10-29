@@ -2,13 +2,6 @@
   background: #009900;
 }
 
-
-
-
-
-
-
-
 footer {
   /*background-color: rgba(255, 0, 234, 0.2); */
   padding: 2%;
@@ -23,13 +16,15 @@ li > a {
   color: black;
 }
 
-li {
+footer li {
   list-style-type:none ;
 }
 
+/*Display logos next to each other*/
 .logo-footer{
   display: inline;
 }
+
 
 footer > ul {
   list-style-type: none;
@@ -37,18 +32,27 @@ footer > ul {
   margin: 0;
 }
 
+
+/*grid for footer with two columns and one row */
 .footer-grid{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1;
+  grid-template-rows: 1fr;
+}
+
+
+/*Sets dynamic size of logo*/
+.oslomet-logo{
+  width: 18em;
+  height: auto;
+  padding: 0px;
 }
 
 .footerPic{
-  width: 50px;
-  height: 50px;
-  padding: 10px;
+  width: 3em;
+  height: 3em;
+  padding: 1em;
 }
-
 
 .footer-item1{
   grid-column: 1/2;
