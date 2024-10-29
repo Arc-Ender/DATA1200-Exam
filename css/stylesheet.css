@@ -1,25 +1,54 @@
 /* Main attribute styling */
 main {
   margin-top: 6.2rem;
+  margin-left: 15%;
+  margin-right: 15%;
 }
+
 /* Styling for the body */
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.pageTitle {
+  margin-bottom: 20px;
+}
+
+.pageTitle h1 {
+  text-align: start;
+  font-weight: 700;
+  margin-bottom: 0px;
+  font-size: 3rem;
+}
+
+.pageTitle p {
+  display: block; 
+  text-align: start;
+  width: 100%; 
+  margin-top: 5px; 
+  align-content: baseline;
+}
+
+.video-container {
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
 /* Video styling */
 .video {
-  width: 720px;
-  height: 480px;
+  width: 100%; 
+  height: auto; 
+  display: block;
 }
 
 /* Navbar styling */
 nav {
-  position: fixed; /* Make navbar fixed */
-  top: 0; /* Start at the top of the page */
-  left: 0; /* Align to the left */
-  right: 0; /* Align to the right */
-  background-color: #ffd500; /* Background color */
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  background-color: #FFDC00; 
   padding: 10px 20px;
   box-sizing: border-box;
   display: flex;
@@ -34,13 +63,13 @@ nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  display: flex; /* Display items inline using flex */
-  gap: 15px; /* Space between links */
+  display: flex; 
+  gap: 15px; 
 }
 
 /* List items in the navbar */
 nav li {
-  display: inline; /* Inline display for list items */
+  display: inline; 
 }
 
 /* Links inside the navbar */
@@ -65,67 +94,64 @@ nav img {
   height: 4.45rem;
 }
 
+/* Hamburger checkbox and label styling */
+#menu-toggle-checkbox {
+  display: none; /* Hide the checkbox */
+}
 
-
-/* Hamburger button */
-#menu-toggle {
-  display: none; /* Hidden on larger screens */
-  background: none; /* Remove background */
-  border: none; /* Remove border */
-  font-size: 2rem; /* Size of the hamburger icon */
+#menu-toggle-label {
+  display: none; /* Initially hide the label */
+  font-size: 1.75rem;
   cursor: pointer;
   color: #222;
   padding: 0;
   margin: 0;
-  outline: none;
-  position: absolute; /* Position the button absolutely */
-  right: 20px; /* Align to the right with some padding */
-  top: 10px; /* Align to the top */
-  font-size: 1.75rem;
-  font-family: Arial, Helvetica, sans-serif;
   font-weight: 700;
 }
 
-/* Hover effect for hamburger button */
-#menu-toggle:hover {
+#menu-toggle-label:hover {
   text-decoration: underline;
 }
 
 /* Tablet and mobile view */
 @media (max-width: 768px) {
   nav {
-    flex-direction: column; /* Stack logo and button vertically */
-    align-items: flex-start; /* Align items to the left */
+    flex-direction: column; 
+    align-items: flex-start; 
   }
 
-  #menu-toggle {
-    display: block; /* Show button */
+  #menu-toggle-label {
+      display: block; 
+      position: absolute;
+      right: 20px; 
+      top: 10px;
   }
 
   nav ul {
-    display: none; /* Hide the menu by default */
-    flex-direction: column; /* Stack items vertically */
-    width: 100%; /* Ensure the menu takes full width */
+    display: none; 
+    flex-direction: column; 
+    width: 100%; 
     padding: 0;
-    margin: 10px 0 0 0; /* Add space between button and menu */
+    margin: 10px 0 0 0; 
     list-style-type: none;
     align-items: flex-start;
   }
 
-  nav.active ul {
+  /* Show the menu when checkbox is checked */
+  #menu-toggle-checkbox:checked + #menu-toggle-label + ul {
     display: flex; /* Show the menu */
   }
 
   nav ul li {
-    width: 100%; /* Make each list item take full width */
+    width: 100%; 
   }
 
   nav ul li a {
     display: block;
     width: 100%;
     padding: 10px;
-    text-align: left; /* Align text to the left */
-    border-bottom: 1px solid #222; /* Optional: add border between links */
+    text-align: left; 
+    border-bottom: 1px solid #222; 
   }
 
   nav img {
@@ -137,16 +163,16 @@ nav img {
 /* Mobile view */
 @media (max-width: 480px) {
   nav ul {
-    width: 100%; /* Full width for mobile */
-    gap: 0; /* No gap between items */
+    width: 100%; 
+    gap: 0; 
   }
 
   nav ul li a {
-    padding: 10px 12px; /* Adjust padding */
+    padding: 10px 12px; 
   }
 
   nav img {
-    width: 2.5rem; /* Smaller logo */
+    width: 2.5rem; 
     height: 1.75rem;
   }
 }
