@@ -5,12 +5,31 @@ article {
 }
 section {
   border: 1px  solid #00FF00;
-  width: 30vw;
+  width: 32vw;
 }
 section div {
   border: 1px solid #0000FF;
 }
-.articleHeader {
+
+div {
+  margin: 1em;
+}
+
+article > div {
   width: 100vw;
   border: 1px solid #FFFF00;
+}
+
+@media only screen and (max-width: 800px) {
+  article {
+    flex-direction: column;
+  }
+
+  section{
+    width: 100vw;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  
 }
