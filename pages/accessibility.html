@@ -10,7 +10,10 @@
     <header>
       <nav id="navbar">
         <img src="../images/logo-oslomet.png" alt="Logo">
-        <button id="menu-toggle" aria-label="Toggle Menu">Meny ☰</button> <!-- Hamburger menu -->
+         <!-- Hidden checkbox for toggle menu -->
+         <!-- Isnpired by https://dev.to/shubhamtiwari909/responsive-navbar-without-javascript-3p7o -->
+         <input type="checkbox" id="menu-toggle-checkbox" aria-label="Toggle Menu">
+         <label for="menu-toggle-checkbox" id="menu-toggle-label">Meny ☰</label>
         <ul>
           <li><a href="../index.html">Index</a></li>
           <li><a href="../pages/accessibility.html">Tilgjengelighet</a></li>
