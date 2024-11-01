@@ -29,18 +29,6 @@ body {
   align-content: baseline;
 }
 
-.video-container {
-  width: 100%;
-  margin: 0 auto;
-  box-sizing: border-box;
-}
-
-/* Video styling */
-.video {
-  width: 100%; 
-  height: auto; 
-  display: block;
-}
 
 /* Navbar styling */
 nav {
@@ -172,7 +160,7 @@ nav img {
   }
 
   nav img {
-    width: 2.5rem; 
-    height: 1.75rem;
+    width: 3rem;
+    height: 2rem;
   }
 }
