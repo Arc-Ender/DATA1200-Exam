@@ -33,3 +33,7 @@ article > div {
 @media only screen and (max-width: 670px) {
   
 }
+
+.ifMatematikkOgFysikkShown, .ifStatistiskeMetoderShown, .ifVitenskapligeBeregningerShown {
+  display: none;
+}

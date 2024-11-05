@@ -22,21 +22,24 @@
       <article>
         <div class="articleHeader"> 
           <h2>Studiets oppbygging</h2>
-          <input type="button" value="Vis alt" name="buttonShowAll" onclick="showCommon">
-          <input type="button" value="Mattematikk og fysikk" name="buttonMattematikkOgFysikk" onclick="hideCommon">
-          <input type="button" value="Statistiske og datadrevne metoder" name="buttonStatistiskeDatadrevneModeller" onclick="">
-          <input type="button" value="Vitenskapelige beregninger" name="buttonVitenskapligeBeregninger" onclick="">
+          <input type="button" value="Vis alt" name="buttonShowAll" onclick="showCommon()">
+          <input type="button" value="Matematikk og fysikk" name="buttonMatematikkOgFysikk" onclick="showMatematikkOgFysikk()">
+          <input type="button" value="Statistiske og datadrevne metoder" name="buttonStatistiskeDatadrevneModeller" onclick="showStatistiskeMetoder()">
+          <input type="button" value="Vitenskapelige beregninger" name="buttonVitenskapligeBeregninger" onclick="showVitenskapligeBeregninger()">
         </div>
         <section>
           <h3>1. studieår</h3>
-          <h4 class="all">Alle</h4>
-          <h4 class="mattematikkOgFysikk" hidden>Emnegruppe: Matematikk og fysikk</h4>
-          <h4 class="StatistiskeMetoder" hidden>Emnegruppe: Statistiske og datadrevne metoder</h4>
-          <h4 class="vitenskapligeBeregninger" hidden>Emnegruppe: Vitenskapelige beregninger</h4>
+          <h4 class="ifAllShown">Alle</h4>
+          <h4 class="ifMatematikkOgFysikkShown">Emnegruppe: Matematikk og fysikk</h4>
+          <h4 class="ifStatistiskeMetoderShown">Emnegruppe: Statistiske og datadrevne metoder</h4>
+          <h4 class="ifVitenskapligeBeregningerShown">Emnegruppe: Vitenskapelige beregninger</h4>
           <div>
             <h5>1. semester</h5>
             <div>
-              <h6>Diskret mattematikk</h6>
+              <h6>Diskret matematikk</h6>
+            </div>
+            <div>
+              <h6>Programmering</h6>
             </div>
             <div>
               <h6>Teknologi og samfunn for programerere</h6>
@@ -48,7 +51,7 @@
           <div>
             <h5>2. semester</h5>
             <div>
-              <h6>Mattematikk 1000</h6>
+              <h6>Matematikk 1000</h6>
             </div>
             <div>
               <h6>Fysikk og kjemi</h6>
@@ -60,33 +63,60 @@
         </section>
         <section>
           <h3>2. studieår</h3>
-          <h4 class="all">Alle</h4>
-          <h4 class="mattematikkOgFysikk" hidden>Emnegruppe: Matematikk og fysikk</h4>
-          <h4 class="StatistiskeMetoder" hidden>Emnegruppe: Statistiske og datadrevne metoder</h4>
-          <h4 class="vitenskapligeBeregninger" hidden>Emnegruppe: Vitenskapelige beregninger</h4>
+          <h4 class="ifAllShown">Alle</h4>
+          <h4 class="ifMatematikkOgFysikkShown">Emnegruppe: Matematikk og fysikk</h4>
+          <h4 class="ifStatistiskeMetoderShown">Emnegruppe: Statistiske og datadrevne metoder</h4>
+          <h4 class="ifVitenskapligeBeregningerShown">Emnegruppe: Vitenskapelige beregninger</h4>
           <div>
             <h5>3. semester</h5>
             <div>
-              <h6>Mattematikk 2000 med statistikk</h6>
+              <h6>Matematikk 2000 med statistikk</h6>
             </div>
             <div>
               <h6>Moderne fysikk</h6>
+            </div>
+            <div class="ifMatematikkOgFysikkShown">
+              <h6>Lineær algebra og introduksjon til gruppeteori</h6>
+            </div>
+            <div class="ifStatistiskeMetoderShown ifVitenskapligeBeregningerShown">
+              <h6>Algoritmer og datastrukturer</h6>   
             </div>
           </div>
           <div>
             <h5>4. semester</h5>
             <div>
-              <h6>Mattematikk 4000</h6>
+              <h6>Matematikk 4000</h6>
+            </div>
+            <div class="ifMatematikkOgFysikkShown">
+              <h6 class="ifMatematikkOgFysikkShown">Termodynamikk og statistisk fysikk</h6>
+            </div>
+            <div class="ifMatematikkOgFysikkShown">
+              <h6>Symmetrier og algebraiske strukturer</h6>
+            </div>
+            <div class="ifStatistiskeMetoderShown">
+              <h6>Statistisk analyse</h6>
+            </div>
+            <div class="ifStatistiskeMetoderShown">
+              <h6>Visualisering</h6>
+            </div>
+            <div class="ifVitenskapligeBeregningerShown">
+              <h6>Resurseffektive programmer</h6>
+            </div>
+            <div class="ifStatistiskeMetoderShown">
+              <h6>Avansert modellering og beregninger</h6>
+            </div>
+            <div class="ifVitenskapligeBeregningerShown">
+              <h6>Avansert modellering og beregninger</h6>
             </div>
           </div>
-          <h4 class="all">Emnegruppe: Matematikk og fysikk</h4>
-          <div class="all">
+          <h4 class="ifAllShown">Emnegruppe: Matematikk og fysikk</h4>
+          <div class="ifAllShown">
             <h5>3. semester</h5>
-            <div>
+            <div>  
               <h6>Lineær algebra og introduksjon til gruppeteori</h6>
             </div>
           </div>
-          <div class="all">
+          <div class="ifAllShown">
             <h5>4. semester</h5>
             <div>
               <h6>Termodynamikk og statistisk fysikk</h6>
@@ -95,33 +125,33 @@
               <h6>Symmetrier og algebraiske strukturer</h6>
             </div>
           </div>
-          <h4 class="all">Emnegruppe: Statistiske og datadrevne metoder</h4>
-          <div class="all">
+          <h4 class="ifAllShown">Emnegruppe: Statistiske og datadrevne metoder</h4>
+          <div class="ifAllShown">
             <h5>3. semester</h5>
             <div>
               <h6>Algoritmer og datastrukturer</h6>   
             </div>
           </div>
-          <div class="all">
+          <div class="ifAllShown">
             <h5>4. semester</h5>
             <div>
               <h6>Statistisk analyse</h6>
             </div>
-            <div class="all">
+            <div>
               <h6>Visualisering</h6>
             </div>
-            <div class="all">
+            <div>
               <h6>Avansert modellering og beregninger</h6>
             </div>
           </div>
-          <h4 class="all">Emnegruppe: Vitenskapelige beregninger</h4>
-          <div class="all">
+          <h4 class="ifAllShown">Emnegruppe: Vitenskapelige beregninger</h4>
+          <div class="ifAllShown">
             <h5>3. semester</h5>
             <div>
               <h6>Algoritmer og datastrukturer</h6>
             </div>
           </div>
-          <div class="all">
+          <div class="ifAllShown">
             <h5>4. semester</h5>
             <div>
               <h6>Resurseffektive programmer</h6>
@@ -133,14 +163,44 @@
         </section>
         <section>
           <h3>3. studieår</h3>
-          <h4 class="all">Alle</h4>
-          <h4 class="mattematikkOgFysikk" hidden>Emnegruppe: Matematikk og fysikk</h4>
-          <h4 class="StatistiskeMetoder" hidden>Emnegruppe: Statistiske og datadrevne metoder</h4>
-          <h4 class="vitenskapligeBeregninger" hidden>Emnegruppe: Vitenskapelige beregninger</h4>
+          <h4 class="ifAllShown">Alle</h4>
+          <h4 class="ifMatematikkOgFysikkShown">Emnegruppe: Matematikk og fysikk</h4>
+          <h4 class="ifStatistiskeMetoderShown">Emnegruppe: Statistiske og datadrevne metoder</h4>
+          <h4 class="ifVitenskapligeBeregningerShown">Emnegruppe: Vitenskapelige beregninger</h4>
           <div>
             <h5>5. semester</h5>
             <div>
               <h6>Matematikk 3000</h6>
+            </div>
+            <div class="ifMatematikkOgFysikkShown">
+              <h6>Reell analyse</h6>
+            </div>
+            <div class="ifStatistiskeMetoderShown">
+              <h6>Introduksjon til Kunstig Intelligens</h6>
+            </div>
+            <div class="ifVitenskapligeBeregningerShown">
+              <h6>Simulering og visualisering</h6>
+            </div>
+            <div class="ifMatematikkOgFysikkShown ifStatistiskeMetoderShown ifVitenskapligeBeregningerShown">
+              <h6>Introduksjon til IT-forskning</h6>
+            </div>
+            <div class="ifStatistiskeMetoderShown ifVitenskapligeBeregningerShown">
+              <h6>Anvendt kunstig intelligens og data science prosjekt</h6>
+            </div>
+            <div class="ifMatematikkOgFysikkShown">
+              <h6>Introduction to Data Science with Scripting</h6>
+            </div>
+            <div class="ifMatematikkOgFysikkShown ifStatistiskeMetoderShown ifVitenskapligeBeregningerShown">
+              <h6>Datasikkerhet</h6>
+            </div>
+            <div class="ifMatematikkOgFysikkShown ifStatistiskeMetoderShown">
+              <h6>Simulering og visualisering</h6>
+            </div>
+            <div class="ifVitenskapligeBeregningerShown">
+              <h6>Lineær algebra og introduksjon til gruppeteori</h6>
+            </div>
+            <div class="ifVitenskapligeBeregningerShown">
+              <h6>Reell analyse</h6>
             </div>
           </div>
           <div>
@@ -148,9 +208,72 @@
             <div>
               <h6>Bacheloroppgave</h6>
             </div>
+            <div class="ifVitenskapligeBeregningerShown">
+              <h6>Visualisering</h6>
+            </div>
+            <div class="ifMatematikkOgFysikkShown ifStatistiskeMetoderShown ifVitenskapligeBeregningerShown">
+              <h6>Testing av programvare</h6>
+            </div>
+            <div class="ifMatematikkOgFysikkShown ifStatistiskeMetoderShown ifVitenskapligeBeregningerShown">
+              <h6>Datanettverk og skytjenester</h6>
+            </div>
+            <div class="ifMatematikkOgFysikkShown ifStatistiskeMetoderShown">
+              <h6>Ressurseffektive programmer</h6>
+            </div>
+            <div class="ifMatematikkOgFysikkShown">
+              <h6>Avansert modellering og beregninger</h6>
+            </div>
+            <div class="ifVitenskapligeBeregningerShown">
+              <h6>Symmetrier og algebraiske strukturer</h6>
+            </div>
           </div>
-          <h4 class="all">Emnegruppe: Matematikk og fysikk</h4>
-          <div class="all">
+
+
+
+            <div class="ifAllShown">
+            <h5>5. semester</h5>
+            <div>
+              <h6>Simulering og visualisering</h6>
+            </div>
+            <div>
+              <h6>Introduksjon til IT-forskning</h6>
+            </div>
+            <div>
+              <h6>Datasikkerhet</h6>
+            </div>
+            <div>
+              <h6>Lineær algebra og introduksjon til gruppeteori</h6>
+            </div>
+            <div>
+              <h6>Reell analyse</h6>
+            </div>
+          </div>
+          <div class="ifAllShown">
+            <h5>6. semester</h5>
+            <div>
+              <h6>Visualisering</h6>
+            </div>
+            <div>
+              <h6>Testing av programvare</h6>
+            </div>
+            <div>
+              <h6>Datanettverk og skytjenester</h6>
+            </div>
+            <div>
+              <h6>Symmetrier og algebraiske strukturer</h6>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+          <h4 class="ifAllShown">Emnegruppe: Matematikk og fysikk</h4>
+          <div class="ifAllShown">
             <h5>5. semester</h5>
             <div>
               <h6>Reell analyse</h6>
@@ -168,7 +291,7 @@
               <h6>Simulering og visualisering</h6>
             </div>
           </div>
-          <div class="all">
+          <div class="ifAllShown">
             <h5>6. semester</h5>
             <div>
               <h6>Testing av programvare</h6>
@@ -183,8 +306,8 @@
               <h6>Avansert modellering og beregninger</h6>
             </div>
           </div>
-          <h4 class="all">Emnegruppe: Statistiske og datadrevne metoder</h4>
-          <div class="all">
+          <h4 class="ifAllShown">Emnegruppe: Statistiske og datadrevne metoder</h4>
+          <div class="ifAllShown">
             <h5>5. semester</h5>
             <div>
               <h6>Introduksjon til Kunstig Intelligens</h6>
@@ -202,7 +325,7 @@
               <h6>Simulering og visualisering</h6>
             </div>
           </div>
-          <div class="all">
+          <div class="ifAllShown">
             <h5>6. semester</h5>
             <div>
               <h6>Testing av programvare</h6>
@@ -214,8 +337,8 @@
               <h6>Ressurseffektive programmer</h6>
             </div>
           </div>
-          <h4 class="all">Emnegruppe: Vitenskapelige beregninger</h4>
-          <div class="all">
+          <h4 class="ifAllShown">Emnegruppe: Vitenskapelige beregninger</h4>
+          <div class="ifAllShown">
             <h5>5. semester</h5>
             <div>
               <h6>Simulering og visualisering</h6>
@@ -233,7 +356,7 @@
               <h6>Reell analyse</h6>
             </div>
           </div>
-          <div class="all">
+          <div class="ifAllShown">
             <h5>6. semester</h5>
             <div>
               <h6>Visualisering</h6>
@@ -251,8 +374,5 @@
         </section>
       </article>
     </main>
-    <footer>
-      
-    </footer>
   </body>
 </html>
