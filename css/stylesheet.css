@@ -1,39 +1,35 @@
-article {
-  border: 1px solid #FF0000;
-  display: flex;
-  flex-wrap: wrap;
+article{
+  border:1px solid #FF0000;
+  display:flex;
+  flex-wrap:wrap;
 }
-section {
-  border: 1px  solid #00FF00;
-  width: 32vw;
+section{
+  border:1px  solid #00FF00;
+  width:32vw;
 }
-section div {
-  border: 1px solid #0000FF;
-}
-
-div {
-  margin: 1em;
+section div{
+  border:1px solid #0000FF;
 }
 
-article > div {
-  width: 100vw;
-  border: 1px solid #FFFF00;
+div{
+  margin:1em;
 }
 
-@media only screen and (max-width: 800px) {
-  article {
-    flex-direction: column;
+article>div{
+  width:100vw;
+  border:1px solid #FFFF00;
+}
+
+@media(max-width:800px){
+  article{
+    flex-direction:column;
   }
 
   section{
-    width: 100vw;
+    width:100vw;
   }
 }
 
-@media only screen and (max-width: 670px) {
-  
-}
-
-.ifMatematikkOgFysikkShown, .ifStatistiskeMetoderShown, .ifVitenskapligeBeregningerShown {
-  display: none;
+.ifMatematikkOgFysikkShown,.ifStatistiskeMetoderShown,.ifVitenskapligeBeregningerShown{
+  display:none;
 }
