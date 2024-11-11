@@ -237,7 +237,7 @@ h1 {
 
 table {
   border-collapse: collapse;
-  border: black 2px;
+  border-color: solid black 2px;
   align-items: center;
   width: 80%;
   margin: auto;
@@ -249,7 +249,7 @@ caption {
 }
 
 th, td {
-  border: 1px solid rgb(132, 18, 18);
+  border: 1px solid black;
   padding: 8px 10px;
 }
 
