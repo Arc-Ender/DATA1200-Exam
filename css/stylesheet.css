@@ -5,6 +5,9 @@ main {
   margin-right: 15%;
 }
 
+article {
+  justify-content: center;
+}
 
 footer {
   /*background-color: rgba(255, 0, 234, 0.2); */
@@ -174,6 +177,14 @@ nav img {
   text-decoration: underline;
 }
 
+/* Mobile view */
+@media (max-width: 480px) {
+  nav ul {
+    width: 100%; 
+    gap: 0; 
+  }
+}
+
 /* Tablet and mobile view */
 @media (max-width: 768px) {
   nav {
@@ -221,16 +232,9 @@ nav img {
   }
 }
 
-/* Mobile view */
-@media (max-width: 480px) {
-  nav ul {
-    width: 100%; 
-    gap: 0; 
-  }
-  
-  @media(min-width: 801px){
+@media(min-width: 801px){
   .study-year{
-    width:32vw;
+    width:20vw;
   }
 }
 
@@ -241,7 +245,6 @@ nav img {
   .study-year {
     width: 100vw;
   }
-}
 
   nav ul li a {
     padding: 10px 12px; 
