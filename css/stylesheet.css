@@ -234,12 +234,12 @@ nav img {
   }
 }
 
-@media(max-width:800px){
+@media (max-width:800px){
   article{
-    flex-direction:column;
+    flex-direction: column;
   }
-  .study-year{
-    100vw
+  .study-year {
+    width: 100vw;
   }
 }
 
