@@ -1,35 +1,41 @@
-article{
-  border:1px solid #FF0000;
+.article-header{
+  width: 97vw;
+}
+/*Flexbox, 100vw on mobile*/
+
+@media(min-width: 801px){
+  .study-year{
+    width:32vw;
+  }
+}
+
+.choice-subject, .required-subject{
+  padding:0.01em;
+  margin: 0.1em; /*default 0.1*/
+}
+
+.required-subject{
+  background-color:Coral;
+}
+
+.choice-subject{
+  background-color:CornflowerBlue;
+}
+
+.flex-container, article{
   display:flex;
   flex-wrap:wrap;
-}
-section{
-  border:1px  solid #00FF00;
-  width:32vw;
-}
-section div{
-  border:1px solid #0000FF;
-}
-
-div{
-  margin:1em;
-}
-
-article>div{
-  width:100vw;
-  border:1px solid #FFFF00;
 }
 
 @media(max-width:800px){
   article{
     flex-direction:column;
   }
-
-  section{
-    width:100vw;
+  .study-year{
+    100vw
   }
 }
 
-.ifMatematikkOgFysikkShown,.ifStatistiskeMetoderShown,.ifVitenskapligeBeregningerShown{
+.if-matematikk-og-fysikk-shown,.if-statistiske-metoder-shown,.if-vitenskaplige-beregninger-shown{
   display:none;
 }
