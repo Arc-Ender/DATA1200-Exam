@@ -1,8 +1,8 @@
 /* Main attribute styling */
 main {
   margin-top: 6.2rem;
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-left: 15vw;
+  margin-right: 15vw;
 }
 
 /* Styling for the body */
@@ -10,18 +10,18 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.pageTitle {
+.page-title {
   margin-bottom: 20px;
 }
 
-.pageTitle h1 {
+.page-title h1 {
   text-align: start;
   font-weight: 700;
   margin-bottom: 0px;
   font-size: 3rem;
 }
 
-.pageTitle p {
+.page-title p {
   display: block; 
   text-align: start;
   width: 100%; 
@@ -166,7 +166,7 @@ nav img {
     flex-direction:column;
   }
   .study-year{
-    100vw
+    width: 100vw
   }
 }
 
@@ -204,3 +204,4 @@ nav img {
 
 .if-matematikk-og-fysikk-shown,.if-statistiske-metoder-shown,.if-vitenskaplige-beregninger-shown{
   display:none;
+}
