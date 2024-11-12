@@ -5,15 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
     <link href="../css/stylesheet.css" rel="stylesheet">
+    <link rel="icon" href="https://www.oslomet.no/build/images/favicon-32x32.png">
   </head>
   <body>
     <header>
-      <nav>
+      <nav id="navbar">
+        <img src="../images/logo-oslomet.png" alt="Logo">
+         <!-- Hidden checkbox for toggle menu -->
+         <!-- Isnpired by https://dev.to/shubhamtiwari909/responsive-navbar-without-javascript-3p7o -->
+         <input type="checkbox" id="menu-toggle-checkbox" aria-label="Toggle Menu">
+         <label for="menu-toggle-checkbox" id="menu-toggle-label">Meny ☰</label>
         <ul>
-          <li><a href="../index.html">index</a></li>
-          <li><a href="accessibility.html">Tilgjengelighet</a></li>
-          <li><a href="github.html">Github</a></li>
-          <li class="active">Aktivitet</li>
+          <li><a href="../index.html">Index</a></li>
+          <li><a href="../pages/accessibility.html">Tilgjengelighet</a></li>
+          <li><a href="../pages/github.html">Github</a></li>
+          <li><a href="../pages/activity.html">Aktivitet</a></li>
         </ul> 
       </nav>
     </header>
@@ -23,5 +29,7 @@
     <footer>
       
     </footer>
+    <script src="../scripts/navbarScroll.js"></script>
+    <script src="../scripts/hamburgerMeny.js"></script>
   </body>
 </html>
