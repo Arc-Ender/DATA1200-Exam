@@ -1,0 +1,279 @@
+/* Main attribute styling */
+main {
+  margin-top: 6.2rem;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+
+footer {
+  /*background-color: rgba(255, 0, 234, 0.2); */
+  padding: 2%;
+  margin-left: 0px;
+  line-height: 1.9;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+footer li {
+  list-style-type:none ;
+}
+
+/*Display logos next to each other*/
+.logo-footer{
+  display: inline;
+}
+
+
+footer > ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+/*grid for footer with two columns and one row */
+.footer-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+
+/*Sets dynamic size of logo*/
+.oslomet-logo{
+  width: 18em;
+  height: auto;
+  padding: 0px;
+}
+
+.footerPic{
+  width: 3em;
+  height: 3em;
+  padding: 1em;
+}
+
+.footer-item1{
+  grid-column: 1/2;
+  margin: auto;
+}
+
+.footer-item2{
+  grid-column: 2/3;
+  grid-row: 1/3;
+  margin: auto;
+}
+
+footer a:hover {
+  color:#f3c808; /*adds color when hovering over links*/
+}
+
+.footer-item3{
+  grid-column: 1/2;
+  margin: auto;
+}
+
+/* Styling for the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.pageTitle {
+  margin-bottom: 20px;
+}
+
+.pageTitle h1 {
+  text-align: start;
+  font-weight: 700;
+  margin-bottom: 0px;
+  font-size: 3rem;
+}
+
+.pageTitle p {
+  display: block; 
+  text-align: start;
+  width: 100%; 
+  margin-top: 5px; 
+  align-content: baseline;
+}
+
+
+/* Navbar styling */
+nav {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  background-color: #FFDC00; 
+  padding: 10px 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000; /* Ensure it's on top of other content */
+  transition: all 0.6s ease-in-out; /* Smooth transition for sliding */
+}
+
+/* Unordered list (ul) inside the navbar */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex; 
+  gap: 15px; 
+}
+
+/* List items in the navbar */
+nav li {
+  display: inline; 
+}
+
+/* Links inside the navbar */
+nav a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  color: #000000;
+  font-size: 1.75rem;
+  font-weight: 700;
+  text-decoration: none;
+  font-family: inherit;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Logo image styling */
+nav img {
+  width: 6.25rem;
+  height: 4.45rem;
+}
+
+/* Hamburger checkbox and label styling */
+#menu-toggle-checkbox {
+  display: none; /* Hide the checkbox */
+}
+
+#menu-toggle-label {
+  display: none; /* Initially hide the label */
+  font-size: 1.75rem;
+  cursor: pointer;
+  color: #000000;
+  padding: 0;
+  margin: 0;
+  font-weight: 700;
+}
+
+#menu-toggle-label:hover {
+  text-decoration: underline;
+}
+
+/* Tablet and mobile view */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column; 
+    align-items: flex-start; 
+  }
+
+  #menu-toggle-label {
+      display: block; 
+      position: absolute;
+      right: 20px; 
+      top: 10px;
+  }
+
+  nav ul {
+    display: none; 
+    flex-direction: column; 
+    width: 100%; 
+    padding: 0;
+    margin: 10px 0 0 0; 
+    list-style-type: none;
+    align-items: flex-start;
+  }
+
+  /* Show the menu when checkbox is checked */
+  #menu-toggle-checkbox:checked + #menu-toggle-label + ul {
+    display: flex; /* Show the menu */
+  }
+
+  nav ul li {
+    width: 100%; 
+  }
+
+  nav ul li a {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: left; 
+    border-bottom: 1px solid #000000; 
+  }
+
+  nav img {
+    width: 3rem;
+    height: 2rem;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 480px) {
+  nav ul {
+    width: 100%; 
+    gap: 0; 
+  }
+  
+  @media(min-width: 801px){
+  .study-year{
+    width:32vw;
+  }
+}
+
+@media(max-width:800px){
+  article{
+    flex-direction:column;
+  }
+  .study-year{
+    100vw
+  }
+}
+
+  nav ul li a {
+    padding: 10px 12px; 
+  }
+
+  nav img {
+    width: 3rem;
+    height: 2rem;
+  }
+}
+
+.article-header{
+  width: 97vw;
+}
+
+.choice-subject, .required-subject{
+  padding:0.01em;
+  margin: 0.1em; /*default 0.1*/
+}
+
+.required-subject{
+  background-color:Coral;
+}
+
+.choice-subject{
+  background-color:CornflowerBlue;
+}
+
+.flex-container, article{
+  display:flex;
+  flex-wrap:wrap;
+}
+
+.if-matematikk-og-fysikk-shown,.if-statistiske-metoder-shown,.if-vitenskaplige-beregninger-shown{ 
+  display:none;
