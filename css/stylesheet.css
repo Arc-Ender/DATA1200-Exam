@@ -154,6 +154,21 @@ nav img {
     width: 100%; 
     gap: 0; 
   }
+  
+  @media(min-width: 801px){
+  .study-year{
+    width:32vw;
+  }
+}
+
+@media(max-width:800px){
+  article{
+    flex-direction:column;
+  }
+  .study-year{
+    100vw
+  }
+}
 
   nav ul li a {
     padding: 10px 12px; 
@@ -164,3 +179,28 @@ nav img {
     height: 2rem;
   }
 }
+
+.article-header{
+  width: 97vw;
+}
+
+.choice-subject, .required-subject{
+  padding:0.01em;
+  margin: 0.1em; /*default 0.1*/
+}
+
+.required-subject{
+  background-color:Coral;
+}
+
+.choice-subject{
+  background-color:CornflowerBlue;
+}
+
+.flex-container, article{
+  display:flex;
+  flex-wrap:wrap;
+}
+
+.if-matematikk-og-fysikk-shown,.if-statistiske-metoder-shown,.if-vitenskaplige-beregninger-shown{
+  display:none;
