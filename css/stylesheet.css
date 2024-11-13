@@ -173,7 +173,7 @@ h1 {
 .container .content {
   position: absolute; /* Position the background text */
   bottom: 0; /* At the bottom. Use top:0 to append it to the top */
-  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0); /* Fallback color */
   background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
   color: #f1f1f1; /* Grey text */
   width: 100%; /* Full width */
@@ -185,7 +185,9 @@ h1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  gap: 10pt;
+  gap: 10px;
+  width: 100%;
+
   /*padding: 20px;*/
 }
 
@@ -235,12 +237,17 @@ h1 {
   color:gray;
 }
 
+.activity-table {
+  overflow-x: auto; /*Legger til en horisontal scrollbar*/
+}
+
 table {
   border-collapse: collapse;
   border-color: solid black 2px;
   align-items: center;
   width: 80%;
-  margin: auto;
+  /*margin: auto;*/
+  table-layout: auto; 
 }
 
 caption {
@@ -259,14 +266,34 @@ tbody tr:nth-child(odd) {
 
 
 
-
 /* Responsivt design */
 @media (max-width: 768px) {
+  .main-activitypage {
+    padding: 6px;
+  }
+
   .activity-section, .activity-section-mirror {
     grid-template-columns: 1fr; /* Endre til én kolonne på små skjermer */
     text-align: center;
   }
 
+  .activity-section .activity-text {
+    order: 2;
+  }
+  
+  .activity-section .activity-photo {
+    order: 1;
+  }
+
+  th, td {
+    font-size: 12px;
+    padding: 5px; /* Reduce padding for smaller screens */
+    /*word-wrap: break-word;*/
+  }
+  
+  caption {
+    font-size: 14px;
+  }
   .activity-photo img {
     max-width: 100%;
   }
