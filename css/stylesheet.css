@@ -109,13 +109,36 @@ body {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 .study-information-container th {
   text-decoration: underline;
+  padding: 10px;
   text-align: left;
 }
 
+.study-information-container td {
+  text-align: left;
+  padding: 10px;
+}
+
+.study-information-container table {
+  border-spacing: 10px;
+  border-collapse: separate;
+}
+
+.study-information-container tr {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 16px;
+  border-bottom: 1px solid #eee;
+}
+
+.study-information-container tr:hover {
+  background-color: #f9f9f9;
+}
 
 /* Container for the profile card */
 .profile-card {
@@ -124,7 +147,8 @@ body {
   border: 1px solid #ddd; 
   padding: 15px;
   max-width: 600px;
-  margin: 20px auto;
+  margin: 20px 0px auto;
+  margin-left: auto;
   gap: 15px;
 }
 
@@ -164,10 +188,25 @@ body {
   margin-right: 8px;
 }
 
-/* Arrow icon styling */
-.arrow-icon {
-  font-size: 1.5em;
-  color: #000000;
+.logo-transparent-background {
+  max-width: 600px; 
+  width: 100%; 
+  margin-left: auto; 
+}
+
+.logo-transparent-background img{
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.container-layer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  flex: 1;
+  margin-left: auto;
 }
 
 /* Navbar styling */
@@ -183,7 +222,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   z-index: 1000; 
-  transition: all 0.6s ease-in-out; 
+  transition: all 0.45s ease-in-out; 
 }
 
 /* Unordered list inside the navbar */
