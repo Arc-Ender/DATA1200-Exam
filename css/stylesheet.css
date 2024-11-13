@@ -105,10 +105,17 @@ body {
   align-content: baseline;
 }
 
-.table-container {
+.study-information-container {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
+
+.study-information-container th {
+  text-decoration: underline;
+  text-align: left;
+}
+
 
 /* Container for the profile card */
 .profile-card {
