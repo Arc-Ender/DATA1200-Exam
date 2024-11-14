@@ -151,26 +151,26 @@ nav img {
   }
 }
 /* Heading styling*/
-h1 {
+.activity-header h1 {
   text-align: center;
 }
 
 .main-activitypage {
   display: grid;
   flex-direction: column;
-  padding: 40px;
+  padding: 60px;
 }
 
-.container {
+.activity-header {
   position: relative;
   max-width: 800pt; /* Maximum width */
   margin: 0 auto; /* Center it */
 }
-.container img {
+.activity-header img {
   vertical-align: middle;
 }
 
-.container .content {
+.activity-header .activity-front-photo {
   position: absolute; /* Position the background text */
   bottom: 0; /* At the bottom. Use top:0 to append it to the top */
   background: rgba(0, 0, 0, 0); /* Fallback color */
@@ -185,14 +185,14 @@ h1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  gap: 10px;
+  gap: 30px;
   width: 100%;
 
   /*padding: 20px;*/
 }
 
 .main-activitypage a {
-  color:rgb(63, 108, 205);
+  color:rgba(63, 108, 205,1);
 }
 
 .main-activitypage a:hover {
@@ -205,10 +205,7 @@ h1 {
   justify-content: center;
 }
 
-.activity-text h3 {
-  align-self: start; /* Plasserer h3 øverst i ruten sin */
-  margin-top: 0; /* Sikrer at det ikke er noen unødvendig marg på toppen */
-}
+
 
 .activity-text p {
   text-align: left;
@@ -241,7 +238,7 @@ h1 {
   overflow-x: auto; /*Legger til en horisontal scrollbar*/
 }
 
-table {
+.activity-table table {
   border-collapse: collapse;
   border-color: solid black 2px;
   align-items: center;
@@ -250,17 +247,17 @@ table {
   table-layout: auto; 
 }
 
-caption {
+.activity-table caption {
   caption-side: top;
   padding: 10px;
 }
 
-th, td {
+.activity-table th, td {
   border: 1px solid black;
   padding: 8px 10px;
 }
 
-tbody tr:nth-child(odd) {
+.activity-table tbody tr:nth-child(odd) {
   background-color: rgba(255, 217, 0, 1);
 } 
 
@@ -269,7 +266,10 @@ tbody tr:nth-child(odd) {
 /* Responsivt design */
 @media (max-width: 768px) {
   .main-activitypage {
-    padding: 6px;
+    padding: 2px;
+  }
+  .activity-header p {
+    font-size: 8px;
   }
 
   .activity-section, .activity-section-mirror {
@@ -285,13 +285,13 @@ tbody tr:nth-child(odd) {
     order: 1;
   }
 
-  th, td {
+  .activity-table th, td {
     font-size: 12px;
     padding: 5px; /* Reduce padding for smaller screens */
     /*word-wrap: break-word;*/
   }
   
-  caption {
+  .activity-table caption {
     font-size: 14px;
   }
   .activity-photo img {
