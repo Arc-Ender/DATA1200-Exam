@@ -238,8 +238,9 @@ nav img {
   article{
     flex-direction:column;
   }
-  .study-year{
-    100vw
+
+  .study-year{  
+    width:100vw
   }
 }
 
@@ -277,3 +278,4 @@ nav img {
 
 .if-matematikk-og-fysikk-shown,.if-statistiske-metoder-shown,.if-vitenskaplige-beregninger-shown{ 
   display:none;
+}
