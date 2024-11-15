@@ -46,7 +46,7 @@ footer > ul {
 }
 
 footer a:hover {
-  color:#f3c808; /*adds color when hovering over links*/
+  color: rgba(234, 73, 42, 1); /*adds color when hovering over links*/
 }
 
 /*Display logos next to each other*/
@@ -400,3 +400,4 @@ nav img {
 
 .if-matematikk-og-fysikk-shown,.if-statistiske-metoder-shown,.if-vitenskaplige-beregninger-shown{
   display:none;
+}
