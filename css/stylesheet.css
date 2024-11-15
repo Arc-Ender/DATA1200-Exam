@@ -1,3 +1,15 @@
+:root {
+  --main-background-color: rgba(255, 220, 0, 1); /*rgba(255, 220, 0, 1);*/
+  --main-text-color: black;
+  --higlight-color-1: Coral; 
+  --higlight-color-2: CornflowerBlue;
+}
+
+/* Styling for the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 /* Main attribute styling */
 main {
   margin-top: 6.2rem;
@@ -10,7 +22,7 @@ article {
 }
 
 footer {
-  /*background-color: rgba(255, 0, 234, 0.2); */
+  background-color: var(--main-background-color);
   padding: 2%;
   margin-left: 0px;
   line-height: 1.9;
@@ -27,18 +39,20 @@ footer li {
   list-style-type:none ;
 }
 
-/*Display logos next to each other*/
-.logo-footer{
-  display: inline;
-}
-
-
 footer > ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
+footer a:hover {
+  color:#f3c808; /*adds color when hovering over links*/
+}
+
+/*Display logos next to each other*/
+.logo-footer{
+  display: inline;
+}
 
 /*grid for footer with two columns and one row */
 .footer-grid{
@@ -72,18 +86,9 @@ footer > ul {
   margin: auto;
 }
 
-footer a:hover {
-  color:#f3c808; /*adds color when hovering over links*/
-}
-
 .footer-item3{
   grid-column: 1/2;
   margin: auto;
-}
-
-/* Styling for the body */
-body {
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .pageTitle {
@@ -105,14 +110,13 @@ body {
   align-content: baseline;
 }
 
-
 /* Navbar styling */
 nav {
   position: fixed; 
   top: 0; 
   left: 0; 
   right: 0; 
-  background-color: #FFDC00; 
+  background-color: var(--main-background-color); 
   padding: 10px 20px;
   box-sizing: border-box;
   display: flex;
@@ -141,7 +145,7 @@ nav a {
   display: block;
   text-align: center;
   padding: 14px 16px;
-  color: #000000;
+  color: var(--main-text-color);
   font-size: 1.75rem;
   font-weight: 700;
   text-decoration: none;
@@ -167,7 +171,7 @@ nav img {
   display: none; /* Initially hide the label */
   font-size: 1.75rem;
   cursor: pointer;
-  color: #000000;
+  color: var(--main-text-color);
   padding: 0;
   margin: 0;
   font-weight: 700;
@@ -186,7 +190,7 @@ nav img {
 }
 
 /* Tablet and mobile view */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   nav {
     flex-direction: column; 
     align-items: flex-start; 
@@ -223,23 +227,15 @@ nav img {
     width: 100%;
     padding: 10px;
     text-align: left; 
-    border-bottom: 1px solid #000000; 
+    border-bottom: 1px solid var(--main-text-color); 
   }
 
   nav img {
     width: 3rem;
     height: 2rem;
   }
-}
 
-@media(min-width: 801px){
-  .study-year{
-    width:20vw;
-  }
-}
-
-@media (max-width:800px){
-  article{
+  article {
     flex-direction: column;
   }
   .study-year {
@@ -248,11 +244,28 @@ nav img {
 
   nav ul li a {
     padding: 10px 12px; 
-  }
+ }
 
   nav img {
     width: 3rem;
     height: 2rem;
+  }
+}
+
+.choise-subject {
+  display: flex;
+  flex-direction: row;
+}
+
+.choice-subject > p:last-child, .required-subject > p:last-child {
+  text-align: right;
+}
+
+@media(min-width: 801px){
+  .study-year{
+    width:20vw;
+    max-width:500px;
+
   }
 }
 
@@ -266,11 +279,11 @@ nav img {
 }
 
 .required-subject{
-  background-color:Coral;
+  background-color: var(--higlight-color-1);
 }
 
 .choice-subject{
-  background-color:CornflowerBlue;
+  background-color: var(--higlight-color-2);
 }
 
 .flex-container, article{
@@ -280,4 +293,4 @@ nav img {
 
 .if-matematikk-og-fysikk-shown,.if-statistiske-metoder-shown,.if-vitenskaplige-beregninger-shown{
   display:none;
-}
+};
