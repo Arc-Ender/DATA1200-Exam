@@ -111,6 +111,8 @@ body {
   flex-wrap: wrap;
   font-size: 1rem;
   line-height: 1.5;
+  border-bottom: 1px solid #000000;
+  padding-bottom: 20px;
 }
 
 .study-information-container th {
