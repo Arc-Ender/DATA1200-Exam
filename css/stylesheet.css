@@ -13,8 +13,8 @@ body {
 /* Main attribute styling */
 main {
   margin-top: 6.2rem;
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-left: 15vw;
+  margin-right: 15vw;
 }
 
 article {
@@ -95,19 +95,125 @@ footer a:hover {
   margin-bottom: 20px;
 }
 
-.pageTitle h1 {
+.page-title h1 {
   text-align: start;
   font-weight: 700;
   margin-bottom: 0px;
   font-size: 3rem;
 }
 
-.pageTitle p {
+.page-title p {
   display: block; 
   text-align: start;
   width: 100%; 
   margin-top: 5px; 
   align-content: baseline;
+}
+
+.study-information-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-bottom: 1px solid #000000;
+  padding-bottom: 20px;
+}
+
+.study-information-container th {
+  text-decoration: underline;
+  padding: 10px;
+  text-align: left;
+}
+
+.study-information-container td {
+  text-align: left;
+  padding: 10px;
+}
+
+.study-information-container table {
+  border-spacing: 10px;
+  border-collapse: separate;
+}
+
+.study-information-container tr {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 16px;
+  border-bottom: 1px solid #eee;
+}
+
+.study-information-container tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* Container for the profile card */
+.profile-card {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd; 
+  padding: 15px;
+  max-width: 600px;
+  margin: 20px 0px auto;
+  margin-left: auto;
+  gap: 15px;
+}
+
+/* Profile info section */
+.profile-info {
+  flex: 1; 
+}
+/* Profile image styling */
+.profile-image {
+  width: 5.625rem;
+  border-radius: 8px; 
+  object-fit: cover; 
+}
+
+/* Name styling */
+.profile-info h3 {
+  font-size: 1.2em;
+  margin: 0;
+  font-weight: bold;
+  color: #000000;
+}
+
+/* Title styling */
+.profile-info .title {
+  font-size: 1em;
+  color: #222;
+  margin: 5px 0;
+}
+
+/* Contact info styling */
+.profile-info .contact-info {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.contact-info span {
+  margin-right: 8px;
+}
+
+.logo-transparent-background {
+  max-width: 600px; 
+  width: 100%; 
+  margin-left: auto; 
+}
+
+.logo-transparent-background img{
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.container-layer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  flex: 1;
+  margin-left: auto;
 }
 
 /* Navbar styling */
@@ -122,11 +228,11 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 1000; /* Ensure it's on top of other content */
-  transition: all 0.6s ease-in-out; /* Smooth transition for sliding */
+  z-index: 1000; 
+  transition: all 0.45s ease-in-out; 
 }
 
-/* Unordered list (ul) inside the navbar */
+/* Unordered list inside the navbar */
 nav ul {
   list-style-type: none;
   padding: 0;
@@ -164,11 +270,11 @@ nav img {
 
 /* Hamburger checkbox and label styling */
 #menu-toggle-checkbox {
-  display: none; /* Hide the checkbox */
+  display: none; 
 }
 
 #menu-toggle-label {
-  display: none; /* Initially hide the label */
+  display: none; 
   font-size: 1.75rem;
   cursor: pointer;
   color: var(--main-text-color);
@@ -215,7 +321,7 @@ nav img {
 
   /* Show the menu when checkbox is checked */
   #menu-toggle-checkbox:checked + #menu-toggle-label + ul {
-    display: flex; /* Show the menu */
+    display: flex; 
   }
 
   nav ul li {
@@ -238,8 +344,9 @@ nav img {
   article {
     flex-direction: column;
   }
-  .study-year {
-    width: 100vw;
+
+  .study-year{
+    width: 100vw
   }
 
   nav ul li a {
@@ -293,4 +400,3 @@ nav img {
 
 .if-matematikk-og-fysikk-shown,.if-statistiske-metoder-shown,.if-vitenskaplige-beregninger-shown{
   display:none;
-};
