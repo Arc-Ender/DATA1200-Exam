@@ -102,12 +102,13 @@ footer a:hover {
   font-size: 3rem;
 }
 
-.page-title p {
+.page-title h2 {
   display: block; 
   text-align: start;
   width: 100%; 
   margin-top: 5px; 
   align-content: baseline;
+  color: #222;
 }
 
 .study-information-container {
@@ -128,7 +129,7 @@ footer a:hover {
 }
 
 .study-information-container td {
-  text-align: left;
+  text-align: right;
   padding: 10px;
 }
 
