@@ -1,13 +1,20 @@
 :root {
-  --main-background-color: rgba(255, 220, 0, 1); /*rgba(255, 220, 0, 1);*/
+  --main-background-color: rgba(255,255,255,1); /*rgba(255, 220, 0, 1);*/
+  --alt-background-color: rgba(255,220,0,1);
   --main-text-color: black;
   --higlight-color-1: Coral; 
   --higlight-color-2: CornflowerBlue;
 }
 
+html {
+  background-color: var(--alt-background-color);
+}
+
 /* Styling for the body */
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--main-background-color);
+  margin: 0;
 }
 
 /* Main attribute styling */
@@ -22,12 +29,11 @@ article {
 }
 
 footer {
-  background-color: var(--main-background-color);
   padding: 2%;
   margin-left: 0px;
   line-height: 1.9;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
+  background-color: var(--alt-background-color);
 }
 
 footer a {
@@ -224,7 +230,6 @@ nav {
   top: 0; 
   left: 0; 
   right: 0; 
-  background-color: var(--main-background-color); 
   padding: 10px 20px;
   box-sizing: border-box;
   display: flex;
@@ -232,6 +237,7 @@ nav {
   align-items: center;
   z-index: 1000; 
   transition: all 0.45s ease-in-out; 
+  background-color: var(--alt-background-color);
 }
 
 /* Unordered list inside the navbar */
@@ -301,7 +307,7 @@ nav img {
 @media (max-width: 800px) {
   nav {
     flex-direction: column; 
-    align-items: flex-start; 
+    align-items: flex-start;
   }
 
   #menu-toggle-label {
@@ -348,7 +354,7 @@ nav img {
   }
 
   .study-year{
-    width: 100vw
+    width: inherit;
   }
 
   nav ul li a {
@@ -379,7 +385,7 @@ nav img {
 }
 
 .article-header{
-  width: 97vw;
+  width: 70vw;
 }
 
 .choice-subject, .required-subject{
