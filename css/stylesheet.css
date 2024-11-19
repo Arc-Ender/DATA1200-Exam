@@ -447,9 +447,10 @@ nav img {
   flex-direction: row;
 }
 
-.choice-subject > p:last-child, .required-subject > p:last-child {
-  text-align: right;
+.hover-right{
+  float: right;
 }
+
 
 @media(min-width: 801px){
   .study-year{
