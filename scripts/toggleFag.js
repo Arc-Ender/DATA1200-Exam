@@ -1,33 +1,43 @@
+/* https://europeanprojectsemester.eu/providers
+ * 
+ * Henter inn alle elementer med klassen fra "className"
+ * endrer "display" for elementene til verdi fra "display"
+ * */
+
 const toggleDisplay = (className, display) => {
-    [...document.getElementsByClassName(className)].forEach(element=> { 
-      element.style.display=display; 
-    });
-  };
-  
-  const showCommon = () => {
-    toggleDisplay('ifMatematikkOgFysikkShown', 'none');
-    toggleDisplay('ifStatistiskeMetoderShown', 'none');
-    toggleDisplay('ifVitenskapligeBeregningerShown', 'none');
-    toggleDisplay('ifAllShown', 'block');
-  }
-  
-  const showMatematikkOgFysikk = () => {
-    toggleDisplay('ifAllShown', 'none');
-    toggleDisplay('ifStatistiskeMetoderShown', 'none');
-    toggleDisplay('ifVitenskapligeBeregningerShown', 'none');
-    toggleDisplay('ifMatematikkOgFysikkShown', 'block');
-  }
-  
-  const showStatistiskeMetoder = () => {
-    toggleDisplay('ifMatematikkOgFysikkShown', 'none');
-    toggleDisplay('ifAllShown', 'none');
-    toggleDisplay('ifVitenskapligeBeregningerShown', 'none');
-    toggleDisplay('ifStatistiskeMetoderShown', 'block');
-  }
-  
-  const showVitenskapligeBeregninger = () => {
-    toggleDisplay('ifMatematikkOgFysikkShown', 'none');
-    toggleDisplay('ifAllShown', 'none');
-    toggleDisplay('ifStatistiskeMetoderShown', 'none');
-    toggleDisplay('ifVitenskapligeBeregningerShown', 'block');
-  }
+  [...document.getElementsByClassName(className)].forEach(element=> { 
+    element.style.display=display; 
+  });
+};
+
+
+// fjerner først alle fag fra andre emnegrupper
+// Legger så til fag fra valgt emnegruppe
+const showCommon = () => {
+  toggleDisplay('if-matematikk-og-fysikk-shown', 'none');
+  toggleDisplay('if-statistiske-metoder-shown', 'none');
+  toggleDisplay('if-vitenskaplige-beregninger-shown', 'none');
+  toggleDisplay('if-all-shown', 'block');
+}
+
+const showMatematikkOgFysikk = () => {
+  toggleDisplay('if-all-shown', 'none');
+  toggleDisplay('if-statistiske-metoder-shown', 'none');
+  toggleDisplay('if-vitenskaplige-beregninger-shown', 'none');
+  toggleDisplay('if-matematikk-og-fysikk-shown', 'block');
+}
+
+const showStatistiskeMetoder = () => {
+  toggleDisplay('if-matematikk-og-fysikk-shown', 'none');
+  toggleDisplay('if-all-shown', 'none');
+  toggleDisplay('if-vitenskaplige-beregninger-shown', 'none');
+  toggleDisplay('if-statistiske-metoder-shown', 'block');
+}
+
+const showVitenskapligeBeregninger = () => {
+  toggleDisplay('if-matematikk-og-fysikk-shown', 'none');
+  toggleDisplay('if-all-shown', 'none');
+  toggleDisplay('if-statistiske-metoder-shown', 'none');
+  toggleDisplay('if-vitenskaplige-beregninger-shown', 'block');
+}
+
