@@ -237,7 +237,7 @@ footer a:hover {
 }
 
 /* Navbar styling */
-nav {
+#navbar {
   position: fixed; 
   top: 0; 
   left: 0; 
@@ -253,7 +253,7 @@ nav {
 }
 
 /* Unordered list inside the navbar */
-nav ul {
+#navbar ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -262,12 +262,12 @@ nav ul {
 }
 
 /* List items in the navbar */
-nav li {
+#navbar li {
   display: inline; 
 }
 
 /* Links inside the navbar */
-nav a {
+#navbar a {
   display: block;
   text-align: center;
   padding: 14px 16px;
@@ -278,12 +278,12 @@ nav a {
   font-family: inherit;
 }
 
-nav a:hover {
+#navbar a:hover {
   text-decoration: underline;
 }
 
 /* Logo image styling */
-nav img {
+#navbar img {
   width: 6.25rem;
   height: 4.45rem;
 }
