@@ -40,3 +40,4 @@ const showVitenskapligeBeregninger = () => {
   toggleDisplay('if-statistiske-metoder-shown', 'none');
   toggleDisplay('if-vitenskaplige-beregninger-shown', 'block');
 }
+
