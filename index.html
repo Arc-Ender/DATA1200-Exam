@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE <!DOCTYPE html>
 <html lang="no">
   <head>
     <meta charset="UTF-8">
@@ -11,27 +11,34 @@
   </head>
   <body>
     <header>
-      <nav id="navbar">
-        <img src="images/logo-oslomet.png" alt="Logo">
+      <nav id="navbar" aria-label="Main navigation">
+        <img src="images/logo-oslomet.png" alt="OsloMet-logo">
          <!-- Hidden checkbox for toggle menu -->
+          <input
+          type="checkbox"
+          id="menu-toggle-checkbox"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          >
          <!-- Isnpired by https://dev.to/shubhamtiwari909/responsive-navbar-without-javascript-3p7o -->
-        <input type="checkbox" id="menu-toggle-checkbox" aria-label="Toggle Menu">
-        <label for="menu-toggle-checkbox" id="menu-toggle-label">Meny ☰</label>
-        <ul aria-label="navigation list">
-          <li><a href="index.html">Index</a></li>
-          <li><a href="pages/accessibility.html">Tilgjengelighet</a></li>
-          <li><a href="pages/github.html">Github</a></li>
-          <li><a href="pages/activity.html">Aktivitet</a></li>
+        <label for="menu-toggle-checkbox" id="menu-toggle-label">
+          <span class="visually-hidden">Open menu</span> Meny ☰
+        </label>        
+        <ul role="menu" aria-label="navigation list">
+          <li role="menuitem"><a href="index.html">Index</a></li>
+          <li role="menuitem"><a href="pages/accessibility.html">Tilgjengelighet</a></li>
+          <li role="menuitem"><a href="pages/github.html">Github</a></li>
+          <li role="menuitem"><a href="pages/activity.html">Aktivitet</a></li>
         </ul> 
       </nav>
     </header>
     <main>
-      <article class="page-title">
-        <h1>Matematisk modellering og datavitenskap - ingeniør</h1>
-        <p>Bachelorprogram</p>
+      <article class="page-title" aria-labelledby="program-title program-subtitle">
+        <h1 id="program-title">Matematisk modellering og datavitenskap - ingeniør</h1>
+        <h2 id="program-subtitle">Bachelorprogram</h2>
       </article>
       <div class="study-information-container">
-        <table>
+        <table aria-label="Study information details">
           <tr>
             <th>Studiested</th>
             <td>Pilestredet i Oslo</td>
@@ -63,23 +70,67 @@
             <td>180</td>
           </tr>
         </table>
-        <div class="container-layer">
-          <div class="logo-transparent-background">
+        <section class="container-layer" aria-label="Faculty-contact-information">
+          <figure class="logo-transparent-background">
             <img src="images/Logomedsignatur_gul_OsloMet-01.png" alt="Logo til OsloMet med signatur i gul farge">
-          </div>
-          <div class="profile-card">
+          </figure>
+          <div class="profile-card" aria-labelledby="profile-name profile-role">
             <img src="images/fagligleder.jpg" alt="Profilfoto av Kristoffer Herland Hellton" class="profile-image">
             <div class="profile-info">
-              <h3>Kristoffer Herland Hellton</h3>
-              <p class="title">Førsteamanuensis</p>
+              <h3 id="profile-name">Kristoffer Herland Hellton</h3>
+              <p id="profile-role" class="title">Førsteamanuensis</p>
               <div class="contact-info">
-                <span>+47 672 37 240</span>
-                <span>Kristoffer.hellton@oslomet.no</span>
+                <span aria-label="Phone number">+47 672 37 240</span>
+                <span aria-label="Email address">Kristoffer.hellton@oslomet.no</span>
               </div>
             </div>
-        </div>
+          </div>
+        </section>
       </div>
-      </div>
+      <article>
+        <section>
+          <h2>Hvordan foregår undervisningen?</h2>
+          <p>Undervisningen er en kombinasjon av
+            <ul>
+              <li>prosjektarbeid</li>
+              <li>workshop</li>
+              <li>presentasjoner</li>
+              <li>veiledninger</li>
+              <li>diskusjoner og refleksjoner</li>
+              <li>forelesninger</li>
+              <li>selvstudier</li>
+              <li>gruppearbeid</li>
+              <li>arbeidslivsrelevant bacheloroppgave</li>
+            </ul>
+            For å gjennomføre studiet på normert tid, må du regne med å bruke om lag 40 timer per uke på studierelatert arbeid gjennom hele semesteret.</p>
+        </section>
+        <section>
+          <h2>Hva koster det?</h2> 
+          <a href="https://student.oslomet.no/semesteravgift">Du betaler en semesteravgift hvert semester (student.oslomet.no).</a>
+          <p><a href="https://student.oslomet.no/studieavgift-for-internasjonale-studenter-utenfor-eu-eos">Er du internasjonal student fra utenfor EU og EØS, må du betale studieavgift (student.oslomet.no).</a>
+          Det er mulig å søke om unntak for betaling av denne studieavgiften.</p>
+        </section>
+        <section>
+        <h2>Hva kan du jobbe som?</h2>
+        <p>Med dette studiet får du IT-kompetanse som er etterspurt i arbeidslivet, 
+           særlig om du velger spesialiseringene vitenskapelige beregninger eller statistiske og datadrevne 
+           metoder.</p>
+        <p>Spesialiseringen i matematikk og fysikk retter seg mer mot videre studier, men også her
+           får du etterspurt kompetanse i arbeidslivet etter bachelorstudiet.</p>
+        <p>Matematisk modellering og datavitenskap blir stadig viktigere som basisgrunnlag, i for
+           eksempel beregninger knyttet til klima, forsikring og finans, og datadrevne metoder for
+           verdiskaping.</p>  
+        <p>Datadrevne metoder og maskinlæring er i dag svært mye brukt i arbeidslivet.</p>      
+        </section>
+        <section>
+        <h2>Utveksling</h2>
+        <p>Du kan dra på utveksling i femte semester.</p> 
+        </section>
+        <section>  
+        <h2>Videre studiemuligheter ved OsloMet</h2>
+        <a href="https://www.oslomet.no/studier/tkd/anvendt-data-informasjonsteknologi">Anvendt data- og informasjonsteknologi (ACIT) Masterprogram| 2 år | Pilestredet i Oslo | Heltid</a>
+        </section>
+
 
       <article>
         <section class="article-header"> 
@@ -449,8 +500,7 @@
             <h5>5. semester</h5>
             <div class="required-subject">
               <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/DAVE3625/2024/H%C3%98ST">Introduksjon til Kunstig Intelligens</a></h6>
-              <p>DAVE3625</p>
-              <p>10 stp.</p>
+              <p>DAVE3625<span class="hover-right">10 stp.</span></p>
             </div>
             <div class="choice-subject">
               <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA3730/2024/H%C3%98ST">Introduksjon til IT-forskning</a></h6>
@@ -599,4 +649,5 @@
     </footer>
     <script src="scripts/navbarScroll.js"></script>
   </body>
+</html>
 </html>

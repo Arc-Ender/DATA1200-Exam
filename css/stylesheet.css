@@ -1,13 +1,20 @@
 :root {
-  --main-background-color: rgba(255, 220, 0, 1); /*rgba(255, 220, 0, 1);*/
+  --main-background-color: rgba(255,255,255,1); /*rgba(255, 220, 0, 1);*/
+  --alt-background-color: rgba(255,220,0,1);
   --main-text-color: black;
   --higlight-color-1: Coral; 
   --higlight-color-2: CornflowerBlue;
 }
 
+html {
+  background-color: var(--alt-background-color);
+}
+
 /* Styling for the body */
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--main-background-color);
+  margin: 0;
 }
 
 /* Main attribute styling */
@@ -22,13 +29,12 @@ article {
 }
 
 footer {
-  background-color: var(--main-background-color);
   padding: 2%;
   margin-left: 0px;
   line-height: 1.9;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-weight: bold;
-
+  background-color: var(--alt-background-color);
 }
 
 footer a {
@@ -52,6 +58,7 @@ footer address {
 
 footer a:hover {
   color: var(--higlight-color-1); /*adds color when hovering over links*/
+
 }
 
 /*Display logos next to each other*/
@@ -73,6 +80,7 @@ footer a:hover {
   height: auto;
   padding: 0px;
 }
+
 
 .footer-pic{
   width: 3em;
@@ -149,12 +157,14 @@ footer a:hover {
   font-size: 3rem;
 }
 
-.page-title p {
+
+.page-title h2 {
   display: block; 
   text-align: start;
   width: 100%; 
   margin-top: 5px; 
   align-content: baseline;
+  color: #222;
 }
 
 .study-information-container {
@@ -164,7 +174,7 @@ footer a:hover {
   font-size: 1rem;
   line-height: 1.5;
   border-bottom: 1px solid #000000;
-  padding-bottom: 80px;
+  padding-bottom: 40px;
   margin-bottom: 20px;
 }
 
@@ -175,7 +185,7 @@ footer a:hover {
 }
 
 .study-information-container td {
-  text-align: left;
+  text-align: right;
   padding: 10px;
 }
 
@@ -264,13 +274,24 @@ footer a:hover {
   margin-left: auto;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 /* Navbar styling */
-nav {
+#navbar {
   position: fixed; 
   top: 0; 
   left: 0; 
   right: 0; 
-  background-color: var(--main-background-color); 
   padding: 10px 20px;
   box-sizing: border-box;
   display: flex;
@@ -278,10 +299,11 @@ nav {
   align-items: center;
   z-index: 1000; 
   transition: all 0.45s ease-in-out; 
+  background-color: var(--alt-background-color);
 }
 
 /* Unordered list inside the navbar */
-nav ul {
+#navbar ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -290,12 +312,12 @@ nav ul {
 }
 
 /* List items in the navbar */
-nav li {
+#navbar li {
   display: inline; 
 }
 
 /* Links inside the navbar */
-nav a {
+#navbar a {
   display: block;
   text-align: center;
   padding: 14px 16px;
@@ -306,20 +328,22 @@ nav a {
   font-family: inherit;
 }
 
-nav a:hover {
+#navbar a:hover {
   text-decoration: underline;
 }
 
 /* Logo image styling */
-nav img {
+#navbar img {
   width: 6.25rem;
   height: 4.45rem;
 }
 
 /* Hamburger checkbox and label styling */
 #menu-toggle-checkbox {
-  display: none; 
+  display: none; /* Hide the checkbox */
 }
+
+
 
 #menu-toggle-label {
   display: none; 
@@ -335,6 +359,8 @@ nav img {
   text-decoration: underline;
 }
 
+
+
 /* Mobile view */
 @media (max-width: 480px) {
   nav ul {
@@ -347,7 +373,7 @@ nav img {
 @media (max-width: 800px) {
   nav {
     flex-direction: column; 
-    align-items: flex-start; 
+    align-items: flex-start;
   }
 
   #menu-toggle-label {
@@ -389,17 +415,38 @@ nav img {
     height: 2rem;
   }
 
+}
+
+/* Mobile view */
+@media (max-width: 480px) {
+  nav ul {
+    width: 100%; 
+    gap: 0; 
+  }
+}
+  @media(min-width: 801px){
+  .study-year{
+    width:32vw;
+  }
+}
+
+@media(max-width:800px){
+  article{
+    flex-direction:column;
+  }
+
   article {
     flex-direction: column;
   }
 
   .study-year{
-    width: 100vw
+    width: inherit;
   }
 
   nav ul li a {
     padding: 10px 12px; 
  }
+
 
   nav img {
     width: 3rem;
@@ -425,7 +472,7 @@ nav img {
 }
 
 .article-header{
-  width: 97vw;
+  width: 70vw;
 }
 
 .choice-subject, .required-subject{
