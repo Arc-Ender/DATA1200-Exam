@@ -326,6 +326,12 @@ nav img {
   height: 4.45rem;
 }
 
+input[type=button] {
+  background-color: var(--alt-background-color);
+  padding: 0.6rem;
+  margin: 0.4rem;
+}
+
 /* Hamburger checkbox and label styling */
 #menu-toggle-checkbox {
   display: none; /* Hide the checkbox */
@@ -442,11 +448,6 @@ nav img {
   }
 }
 
-.choice-subject {
-  display: flex;
-  flex-direction: row;
-}
-
 .hover-right{
   float: right;
 }
@@ -477,7 +478,7 @@ nav img {
   background-color: var(--higlight-color-2);
 }
 
-.flex-container, article{
+.flex-container {
   display:flex;
   flex-wrap:wrap;
 }
