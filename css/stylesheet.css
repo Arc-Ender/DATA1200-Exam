@@ -264,10 +264,8 @@ nav img {
 
 .blog-wrapper {
   display: grid;
- /* justify-content: space-evenly;*/
   grid-template-columns: repeat(3, 1fr);
-  /*width: 100%;*/
-  grid-auto-rows: minmax(100px, auto);
+  grid-auto-rows: minmax(10px, auto);
   gap: 30px;
 }
 
@@ -275,6 +273,7 @@ nav img {
   border: 2px solid rgba(133, 88, 222,1);
   border-radius: 6pt;
   background-color: rgb(188, 158, 254);
+  transition: transform .2s;
 }
 .blog-box img {
   width: 100%; /* Make the image responsive */
@@ -285,17 +284,11 @@ nav img {
 .blog a{
   color:rgba(0, 0, 0, 1)
 }
-.kiryu {
-  width: 100px;
-  height: 100px;
-  background: red;
-  transition: width 2s, height 4s;
+
+.blog-box:hover {
+  transform: scale(1.05)
 }
 
-.kiryu:hover {
-  width: 300px;
-  height: 300px;
-}
 /* Responsivt design */
 @media (max-width: 768px) {
   .main-activitypage {
