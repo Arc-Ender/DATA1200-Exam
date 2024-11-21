@@ -14,21 +14,16 @@
     <header>
       <nav id="navbar" aria-label="Main navigation">
         <a href="https://www.oslomet.no/"><img src="images/logo-oslomet.png" alt="OsloMet-logo"></a>
+
          <!-- Hidden checkbox for toggle menu -->
-          <input
-          type="checkbox"
-          id="menu-toggle-checkbox"
-          aria-label="Toggle navigation menu"
-          aria-expanded="false"
-          >
          <!-- Isnpired by https://dev.to/shubhamtiwari909/responsive-navbar-without-javascript-3p7o -->
-         <input type="checkbox" id="menu-toggle-checkbox" aria-label="Menu toggle button" role="button">
+         <input type="checkbox" id="menu-toggle-checkbox" aria-label="Toggle Menu">
          <label for="menu-toggle-checkbox" id="menu-toggle-label">Meny ☰</label>      
-        <ul role="menu" aria-label="navigation list">
-          <li role="menuitem"><a href="index.html">Index</a></li>
-          <li role="menuitem"><a href="pages/accessibility.html">Tilgjengelighet</a></li>
-          <li role="menuitem"><a href="pages/github.html">Github</a></li>
-          <li role="menuitem"><a href="pages/activity.html">Aktivitet</a></li>
+        <ul aria-label="navigation list">
+          <li><a href="index.html">Index</a></li>
+          <li><a href="pages/accessibility.html">Tilgjengelighet</a></li>
+          <li><a href="pages/github.html">Github</a></li>
+          <li><a href="pages/activity.html">Aktivitet</a></li>
         </ul> 
       </nav>
     </header>
@@ -70,7 +65,7 @@
             <td>180</td>
           </tr>
         </table>
-        <section class="container-layer" aria-label="Faculty-contact-information">
+        <section class="container-layer flex-container" aria-label="Faculty-contact-information">
           <figure class="logo-transparent-background">
             <img src="images/Logomedsignatur_gul_OsloMet-01.png" alt="Logo til OsloMet med signatur i gul farge">
           </figure>
@@ -564,9 +559,11 @@
       <section class="abonnere-text">
         <p>Hold deg oppdatert på hva som skjer</p>
       </section>
-      <div class="abonnere-knapp">
-        <a href="https://www.oslomet.no/nyhetsbrev">Abonner på vårt nyhetsbrev</a>
-      </div>
+      <a href="https://www.oslomet.no/nyhetsbrev" class="abonnere-knapp">
+        <div>
+          <p>Abonner på vårt nyhetsbrev</p>
+        </div>
+      </a>
       <hr>
       <section class="kontakt-info">
         <img class="oslomet-logo"  src="images/logo-footer.svg" alt="OsloMet Logo">

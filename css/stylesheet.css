@@ -2,6 +2,7 @@
   --main-background-color: rgba(255,255,255,1); /*rgba(255, 220, 0, 1);*/
   --alt-background-color: rgba(255,220,0,1);
   --main-text-color: black;
+  --alt-text-color: white;
   --higlight-color-1: Coral; 
   --higlight-color-2: CornflowerBlue;
   --link-hover-color: Coral;
@@ -24,7 +25,6 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 article {
@@ -32,27 +32,54 @@ article {
   max-width: 1500px;
 }
 
-footer {
-  padding: 2%;
-  margin-left: 0px;
-  line-height: 1.9;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+section {
+  margin-bottom: 2em;
+}
+
+h1 {
+  text-align: start;
+  font-weight: 700;
+  margin-bottom: 0px;
+  font-size: 3rem;
+}
+
+h2 {
+  display: block; 
+  text-align: start;
+  width: 100%; 
+  margin-top: 5px; 
+  align-content: baseline;
+  color: var(--main-text-color);
+}
+
+/* Name styling */
+h3 {
+  font-size: 1.2em;
+  margin: 0;
   font-weight: bold;
-  background-color: var(--alt-background-color);
 }
 
 a {
   color: var(--main-text-color);
 }
 
-body a:hover, footer a:hover {
-  color: var(--link-hover-color) !important; /*adds color when hovering over links*/
-  text-decoration: none !important;
+/*Hover over links not in header*/
+main a:hover, footer a:hover {
+  color: var(--link-hover-color); /*adds color when hovering over links*/
+  text-decoration: none;
 }
 
+footer {
+  padding: 2%;
+  margin-left: 0px;
+  line-height: 1.9;
+  font-weight: bold;
+  background-color: var(--alt-background-color);
 
-footer li {
-  list-style-type:none ;
+  /*grid for footer with two columns and four rows */
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 8rem 8rem 13rem 10rem;
 }
 
 footer > ul {
@@ -61,22 +88,26 @@ footer > ul {
   margin: 0;
 }
 
+footer li {
+  list-style-type:none ;
+}
+
 footer address {
   font-style: normal;
+}
+
+/*Horizontal line*/
+footer hr{
+  width: 90vw;
+  height: 1px;
+  border-width:0;
+  background-color: black;
 }
 
 /*Display logos next to each other*/
 .logo-footer{
   display: inline;
 }
-
-/*grid for footer with two columns and four rows */
-footer {
-  display: grid;
-  grid-template-columns: 2fr 2fr;
-  grid-template-rows: 8rem 8rem 13rem 10rem;
-}
-
 
 /*Sets dynamic size of logo*/
 .oslomet-logo{
@@ -106,21 +137,13 @@ footer {
   text-align: center;
   margin: auto;
   padding: 1%;
-  background-color: #000000;
+  background-color: black;
 }
 
 .abonnere-knapp a {
   color: white;
   text-align: center;
   padding: 1%;
-}
-
-/*Horizontal line*/
-footer hr{
-  width: 90vw;
-  height: 1px;
-  border-width:0;
-  background-color: black;
 }
 
 .kontakt-info{
@@ -143,30 +166,13 @@ footer hr{
   margin-bottom: 20px;
 }
 
-.page-title h1 {
-  text-align: start;
-  font-weight: 700;
-  margin-bottom: 0px;
-  font-size: 3rem;
-}
-
-
-.page-title h2 {
-  display: block; 
-  text-align: start;
-  width: 100%; 
-  margin-top: 5px; 
-  align-content: baseline;
-  color: #222;
-}
-
 .study-information-container {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   font-size: 1rem;
   line-height: 1.5;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid var(--alt-text-color);
   padding-bottom: 40px;
   margin-bottom: 20px;
 }
@@ -191,18 +197,18 @@ footer hr{
   display: flex;
   justify-content: space-between;
   padding: 12px 16px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid rgba(238,238,238, 1);
 }
 
 .study-information-container tr:hover {
-  background-color: #f9f9f9;
+  background-color: rgba(249,249,249, 1);
 }
 
 /* Container for the profile card */
 .profile-card {
   display: flex;
   align-items: center;
-  border: 1px solid #ddd; 
+  border: 1px solid rgba(221,221,221, 1); 
   padding: 15px;
   max-width: 600px;
   margin: 20px 0px auto;
@@ -221,25 +227,17 @@ footer hr{
   object-fit: cover; 
 }
 
-/* Name styling */
-.profile-info h3 {
-  font-size: 1.2em;
-  margin: 0;
-  font-weight: bold;
-  color: #000000;
-}
-
 /* Title styling */
 .profile-info .title {
   font-size: 1em;
-  color: #222;
+  color: #rgba(34,34,34,1);
   margin: 5px 0;
 }
 
 /* Contact info styling */
 .profile-info .contact-info {
   font-size: 0.9em;
-  color: #666;
+  color: rgba(102,102,102);
 }
 
 .contact-info span {
@@ -259,10 +257,8 @@ footer hr{
 }
 
 .container-layer {
-  display: flex;
   flex-direction: column;
   align-items: flex-end;
-  flex-wrap: wrap;
   flex: 1;
   margin-left: auto;
 }
@@ -302,7 +298,6 @@ nav a {
   display: block;
   text-align: center;
   padding: 14px 16px;
-  color: var(--main-text-color);
   font-size: 1.75rem;
   font-weight: 700;
   text-decoration: none;
@@ -311,6 +306,7 @@ nav a {
 
 nav a:hover, input[type="button"]:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 /* Logo image styling */
@@ -335,13 +331,12 @@ input[type=button] {
   display: none; 
   font-size: 1.75rem;
   cursor: pointer;
-  color: var(--main-text-color);
   padding: 0;
   margin: 0;
   font-weight: 700;
 }
 
-#menu-toggle-label:hover {
+header a:hover {
   text-decoration: underline;
 }
 
@@ -409,11 +404,6 @@ input[type=button] {
     align-items: flex-start;
   }
 
-  /* Show the menu when checkbox is checked */
-  /*#menu-toggle-checkbox:checked + #menu-toggle-label + ul {
-    display: flex; 
-  }*/
-
   nav ul li {
     width: 100%; 
   }
@@ -461,6 +451,14 @@ input[type=button] {
     grid-row: 6/7;
   }
 
+  nav ul li a {
+    padding: 10px 12px; 
+  }
+
+  nav img {
+    width: 3rem;
+    height: 2rem;
+  }
 }
 
 /* Mobile view */
@@ -471,24 +469,8 @@ input[type=button] {
   }
 }
 
-@media(max-width:800px){
-  article {
-    flex-direction: column;
-  }
-
- nav ul li a {
-    padding: 10px 12px; 
- }
-
-  nav img {
-    width: 3rem;
-    height: 2rem;
-  }
-}
-
 .hover-right{
   float: right;
-
 }
 
 .flex-header{
@@ -514,6 +496,8 @@ input[type=button] {
   flex-wrap:wrap;
 }
 
+/*Required for JS. Changed to display:block when coresponding button is pressed
+ * default: display:none */
 .if-matematikk-og-fysikk-shown,.if-statistiske-metoder-shown,.if-vitenskaplige-beregninger-shown{
   display:none
 }
