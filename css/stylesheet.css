@@ -487,8 +487,9 @@ input[type=button] {
   margin-top: 20px; 
   margin-bottom: 10px; 
   font-weight: 600; 
-  border-bottom: 2px solid rgb(0, 0, 0); 
   padding-bottom: 5px;
+  text-align: center;
+  text-decoration: underline;
 }
 
 .github-information p {
@@ -515,4 +516,12 @@ input[type=button] {
   border: 1px solid #ddd;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.github-heading {
+  text-align: center;
+  color: var(--main-text-color);
+  font-size: 3rem;
+  font-weight: 700;
+  text-decoration: underline;
 }
