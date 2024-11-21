@@ -512,3 +512,21 @@ nav img {
   color: #222; 
   text-align: justify; 
 }
+
+.image-grid {
+  display: flex; 
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.image-grid img {
+  flex: 1 1 calc(45% - 20px);
+  max-width: 100%; 
+  max-height: 500px;
+  object-fit: contain;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
