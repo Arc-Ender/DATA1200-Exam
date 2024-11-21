@@ -324,7 +324,7 @@ nav a:hover, input[type="button"]:hover {
 }
 
 /* Logo image styling */
-nav img {
+.navbar-image {
   width: 6.25rem;
   height: 4.45rem;
 }
