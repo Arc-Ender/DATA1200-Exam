@@ -465,7 +465,6 @@ input[type=button] {
 .flex-container {
   display:flex;
   flex-wrap:wrap;
-  justify-content: center;
 }
 
 .if-matematikk-og-fysikk-shown,.if-statistiske-metoder-shown,.if-vitenskaplige-beregninger-shown{
