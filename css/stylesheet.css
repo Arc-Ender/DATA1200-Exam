@@ -15,17 +15,20 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: var(--main-background-color);
   margin: 0;
-}
+ }
 
 /* Main attribute styling */
 main {
   margin-top: 6.2rem;
-  margin-left: 15vw;
-  margin-right: 15vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 }
 
 article {
-  justify-content: center;
+  width: 80vw;
+  max-width: 1500px;
 }
 
 footer {
@@ -67,7 +70,7 @@ footer a:hover {
 }
 
 /*grid for footer with two columns and four rows */
-.footer-grid{
+footer {
   display: grid;
   grid-template-columns: 2fr 2fr;
   grid-template-rows: 8rem 8rem 13rem 10rem;
@@ -316,7 +319,7 @@ nav a {
   font-family: inherit;
 }
 
-nav a:hover {
+nav a:hover, input[type="button"]:hover {
   text-decoration: underline;
 }
 
@@ -324,6 +327,13 @@ nav a:hover {
 nav img {
   width: 6.25rem;
   height: 4.45rem;
+}
+
+input[type=button] {
+  background-color: var(--alt-background-color);
+  padding: 0.6rem;
+  margin: 0.4rem;
+  font-weight: bold;
 }
 
 /* Hamburger checkbox and label styling */
@@ -412,17 +422,8 @@ nav img {
     gap: 0; 
   }
 }
-  @media(min-width: 801px){
-  .study-year{
-    width:32vw;
-  }
-}
 
 @media(max-width:800px){
-  article{
-    flex-direction:column;
-  }
-
   article {
     flex-direction: column;
   }
@@ -442,31 +443,18 @@ nav img {
   }
 }
 
-.choice-subject {
-  display: flex;
-  flex-direction: row;
-}
-
 .hover-right{
   float: right;
 }
 
-
-@media(min-width: 801px){
-  .study-year{
-    width:20vw;
-    max-width:500px;
-
-  }
-}
-
-.article-header{
+.flex-header{
   width: 70vw;
 }
 
 .choice-subject, .required-subject{
   padding:0.01em;
   margin: 0.1em; /*default 0.1*/
+  width: 300px;
 }
 
 .required-subject{
@@ -477,7 +465,7 @@ nav img {
   background-color: var(--higlight-color-2);
 }
 
-.flex-container, article{
+.flex-container {
   display:flex;
   flex-wrap:wrap;
 }
