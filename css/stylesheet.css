@@ -154,24 +154,22 @@ nav img {
 .activity-header h1 {
   text-align: center;
 }
-
 .activity-header {
   position: relative;
-  max-width: 100%; /* Maximum width */
-  margin: 0 auto; /* Center it */
+  max-width: 100%; /* Maksimum bredde */
+  margin: 0 auto; /* sentrerer */
 }
 .activity-header img {
-  vertical-align: middle;
+  vertical-align: middle; /*Gjør at bildet passer med fallback*/
 }
-
 .activity-header .activity-front-photo {
-  position: absolute; /* Position the background text */
-  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
-  background: rgba(0, 0, 0, 0.5); /* Fallback color */
+  position: absolute; /* Posisjonerer tekst */
+  bottom: 0; /* Gjør at fallback overlapper bildet. */
+  background: rgba(0, 0, 0, 0.5); /* Fallback farge */
   color: rgba(255,255,255,1); /* Hvit tekst */
-  width: 100%; /* Full width */
-  padding: 20px; /* Some padding */
-  box-sizing: border-box;
+  width: 100%; /* Full bredde */
+  padding: 20px; /* litt padding */
+  box-sizing: border-box; /*Gjør at fallback matcher størrelse med bilde*/
 }
 .main-activitypage {
   /*display: grid;
@@ -180,90 +178,72 @@ nav img {
   padding-right: 60px;
 }
 .activity-section, .activity-section-mirror {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  gap: 30px;
+  display: grid; /*Legger til grid*/
+  grid-template-columns: 1fr 1fr; /*Legger til to bokser for hver rad*/
+  gap: 30px; /*Avstand mellom grid-boksene*/
   padding-top: 30px; 
   padding-bottom: 30px;
   width: 100%;
 }
-
 .main-activitypage a {
-  color:rgba(63, 108, 205,1);
+  color:rgba(63, 108, 205,1); /*Fargen på lenken*/
 }
-
 .main-activitypage a:hover {
-  color: rgba(211, 87, 25, 1);
+  color: rgba(211, 87, 25, 1); /*Fargen på lenken når man har musen over*/
 }
-
 .activity-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: flex; /*Tilsetter flexbokser for at teksten skal være på lik linje med bildet*/
+  flex-direction: column; /*Justerer posisjon etter vertikalen*/
+  justify-content: center; /*Sentrerer tekst til passende høyde med bildet*/
 }
-
 .activity-text p {
-  text-align: left;
+  text-align: left; /*Gjør at teksten flyttes til venstresiden*/
 }
-
 .activity-photo img {
-  width: 100%;
-  height: auto;
-  border-radius: 6pt;
+  width: 100%; 
+  height: auto; /*Høyden justeres dynamisk*/
+  border-radius: 6pt; /*Bildene får runde kanter*/
 }
-
 .activity-section-mirror {
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr; 
 }
-
-.activity-section-mirror .activity-text {
+.activity-section-mirror .activity-text { /*Boksene bytter plass der vi får bildet til venstre*/
   order: 2;
 }
-
-.activity-section-mirror .activity-photo {
+.activity-section-mirror .activity-photo { /*Og tekst på høyresiden*/
   order: 1;
 }
-
 .photo-source {
-  font-size: 8pt;
-  color:rgba(128,128,128,1);
+  font-size: 10px; /*Størrelsen på teksten til hvor bildet er hentet fra*/
+  color:rgba(128,128,128,1); /*Fargen på teksten*/
 }
-
 .activity-table {
-  overflow-x: auto; /*Legger til en horisontal scrollbar*/
+  overflow-x: auto; /*Legger til en horisontal scrollbar til tabellen*/
 }
-
 .activity-table table {
   border-collapse: collapse;
   border-color: solid black 2px;
-  align-items: center;
   width: 80%;
-  /*margin: auto;*/
-  table-layout: auto; 
+  margin: auto; /*Sentreren tabellen i forhold til skjermen*/
+  table-layout: auto; /*Tabellens størrelse justeres dynamisk etter innholdet*/
 }
-
 .activity-table caption {
-  caption-side: top;
-  padding: 10px;
+  caption-side: top; /*Plasserer tabbellens caption på toppen*/
+  padding: 20px;
 }
-
 .activity-table th, .activity-table td {
-  border: 1px solid black;
-  padding: 8px 10px;
+  border: 1.3px solid rgba(0, 0, 0,1);
+  padding: 8px 10px; /*padding vertikalt og horisontalt*/
 }
-
 .activity-table tbody tr:nth-child(odd) { /*Styling på hver "odd" rad*/
   background-image: linear-gradient(to right,rgba(90, 168, 247, 1) ,rgba(145, 98, 240,1)); /*Gradientfarge*/
 } 
-
 .blog-wrapper {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: minmax(10px, auto);
-  gap: 30px;
+  grid-template-columns: repeat(3, 1fr); /*tre bokser for hver rad*/
+  grid-auto-rows: minmax(10px, auto); /*Minst og maks høyden boksene kan ha*/
+  gap: 30px; /*Avstand mellom boksene*/
 }
-
 .blog-box {
   border: 2px solid rgba(133, 88, 222,1);
   border-radius: 6pt;
@@ -273,30 +253,26 @@ nav img {
 .blog-box img {
   width: 100%; /* Make the image responsive */
   height: auto; /* Maintain aspect ratio */
-  border-radius: 6pt; /* Optional rounded corners */
-  margin-bottom: 10px; /* Add spacing below the image */
+  border-top-left-radius: 4pt; /* Rundere venstrehjørne */
+  border-top-right-radius: 4pt; /*Rundere høyrehjørne*/
+  margin-bottom: 5px; /* Avstand under bildet*/
 }
 .blog a{
-  color:rgba(0, 0, 0, 1)
+  color:rgba(0, 0, 0, 1) /*Fargen på tekst i boksen blir sort istedenfor blå*/
 }
-
 .blog a:link {
-  text-decoration: none;
+  text-decoration: none; /*Fjerner understrek*/
 }
-
 .blog a:hover {
-  color:rgba(255, 255, 255, 1);
+  color:rgba(255, 255, 255, 1); /*Gjør at teksten blir hvit når man har musen over */
 }
-
 .blog-box:hover {
-  transform: scale(1.03);
+  transform: scale(0.95); /*Gjør at boksen blir litt mindre når musen er over*/
 }
-
 .blog-box h3, .blog-box p{
-  text-align: center;
+  text-align: center; /*Sentrerer h3 og p i forhold til boksen*/
 }
-
-/* Responsivt design */
+/* Mobildesign */
 @media (max-width: 768px) {
   .main-activitypage {
     padding: 1px;
@@ -304,25 +280,21 @@ nav img {
   .activity-header p {
     font-size: 8px;
   }
-
   .activity-section, .activity-section-mirror {
-    grid-template-columns: 1fr; /* Endre til én kolonne på små skjermer */
-    text-align: center;
+    grid-template-columns: 1fr; /* Endrer til én boks på hver kolonne på små skjermer */
+    text-align: center; /*Sentrerer h3 i forhold til skjerm*/
   }
-
+  /*Gjør at alle bilder vises før tekst*/
   .activity-section .activity-text {
     order: 2;
   }
-  
   .activity-section .activity-photo {
     order: 1;
   }
-
   .activity-table th, td {
     font-size: 12px;
-    padding: 5px; /* Reduce padding for smaller screens */
+    padding: 5px; /* Mindre padding for smale skjermer */
   }
-  
   .activity-table caption {
     font-size: 14px;
   }
@@ -333,6 +305,6 @@ nav img {
     grid-template-columns: 1fr; /* 1 kolonne */
   }
   .blog-box h3, .blog-box p{
-    text-align: center;
+    text-align: center; 
   }
 }
