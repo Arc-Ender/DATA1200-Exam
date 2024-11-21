@@ -70,7 +70,7 @@ footer a:hover {
 }
 
 /*grid for footer with two columns and four rows */
-.footer-grid{
+footer {
   display: grid;
   grid-template-columns: 2fr 2fr;
   grid-template-rows: 8rem 8rem 13rem 10rem;
@@ -319,7 +319,7 @@ nav a {
   font-family: inherit;
 }
 
-nav a:hover {
+nav a:hover, input[type="button"]:hover {
   text-decoration: underline;
 }
 
@@ -336,16 +336,10 @@ input[type=button] {
   font-weight: bold;
 }
 
-input[type=button]:hover {
-  text-decoration: underline;
-}
-
 /* Hamburger checkbox and label styling */
 #menu-toggle-checkbox {
   display: none; /* Hide the checkbox */
 }
-
-
 
 #menu-toggle-label {
   display: none; 
@@ -360,8 +354,6 @@ input[type=button]:hover {
 #menu-toggle-label:hover {
   text-decoration: underline;
 }
-
-
 
 /* Mobile view */
 @media (max-width: 480px) {
@@ -426,17 +418,8 @@ input[type=button]:hover {
     gap: 0; 
   }
 }
-  @media(min-width: 801px){
-  .study-year{
-    width:32vw;
-  }
-}
 
 @media(max-width:800px){
-  article{
-    flex-direction:column;
-  }
-
   article {
     flex-direction: column;
   }
@@ -458,24 +441,17 @@ input[type=button]:hover {
 
 .hover-right{
   float: right;
+
 }
 
-
-@media(min-width: 801px){
-  .study-year{
-    width:20vw;
-    max-width:500px;
-
-  }
-}
-
-.article-header{
+.flex-header{
   width: 70vw;
 }
 
 .choice-subject, .required-subject{
   padding:0.01em;
   margin: 0.1em; /*default 0.1*/
+  width: 300px;
 }
 
 .required-subject{
@@ -493,5 +469,5 @@ input[type=button]:hover {
 }
 
 .if-matematikk-og-fysikk-shown,.if-statistiske-metoder-shown,.if-vitenskaplige-beregninger-shown{
-  display:none;
+  display:none
 }

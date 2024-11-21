@@ -12,7 +12,7 @@
   <body>
     <header>
       <nav id="navbar" aria-label="Main navigation">
-        <img src="images/logo-oslomet.png" alt="OsloMet-logo">
+        <a href="https://www.oslomet.no/"><img src="images/logo-oslomet.png" alt="OsloMet-logo"></a>
          <!-- Hidden checkbox for toggle menu -->
           <input
           type="checkbox"
@@ -21,9 +21,8 @@
           aria-expanded="false"
           >
          <!-- Isnpired by https://dev.to/shubhamtiwari909/responsive-navbar-without-javascript-3p7o -->
-        <label for="menu-toggle-checkbox" id="menu-toggle-label">
-          <span class="visually-hidden">Open menu</span> Meny ☰
-        </label>        
+         <input type="checkbox" id="menu-toggle-checkbox" aria-label="Menu toggle button" role="button">
+         <label for="menu-toggle-checkbox" id="menu-toggle-label">Meny ☰</label>      
         <ul role="menu" aria-label="navigation list">
           <li role="menuitem"><a href="index.html">Index</a></li>
           <li role="menuitem"><a href="pages/accessibility.html">Tilgjengelighet</a></li>
@@ -37,7 +36,7 @@
         <h1 id="program-title">Matematisk modellering og datavitenskap - ingeniør</h1>
         <h2 id="program-subtitle">Bachelorprogram</h2>
       </article>
-      <div class="study-information-container">
+      <article class="study-information-container">
         <table aria-label="Study information details">
           <tr>
             <th>Studiested</th>
@@ -86,7 +85,7 @@
             </div>
           </div>
         </section>
-      </div>
+      </article>
       <article>
         <section>
           <h2>Hvordan foregår undervisningen?</h2>
@@ -111,29 +110,29 @@
           Det er mulig å søke om unntak for betaling av denne studieavgiften.</p>
         </section>
         <section>
-        <h2>Hva kan du jobbe som?</h2>
-        <p>Med dette studiet får du IT-kompetanse som er etterspurt i arbeidslivet, 
-           særlig om du velger spesialiseringene vitenskapelige beregninger eller statistiske og datadrevne 
-           metoder.</p>
-        <p>Spesialiseringen i matematikk og fysikk retter seg mer mot videre studier, men også her
-           får du etterspurt kompetanse i arbeidslivet etter bachelorstudiet.</p>
-        <p>Matematisk modellering og datavitenskap blir stadig viktigere som basisgrunnlag, i for
-           eksempel beregninger knyttet til klima, forsikring og finans, og datadrevne metoder for
-           verdiskaping.</p>  
-        <p>Datadrevne metoder og maskinlæring er i dag svært mye brukt i arbeidslivet.</p>      
+          <h2>Hva kan du jobbe som?</h2>
+          <p>Med dette studiet får du IT-kompetanse som er etterspurt i arbeidslivet, 
+            særlig om du velger spesialiseringene vitenskapelige beregninger eller statistiske og datadrevne 
+            metoder.</p>
+          <p>Spesialiseringen i matematikk og fysikk retter seg mer mot videre studier, men også her
+            får du etterspurt kompetanse i arbeidslivet etter bachelorstudiet.</p>
+          <p>Matematisk modellering og datavitenskap blir stadig viktigere som basisgrunnlag, i for
+            eksempel beregninger knyttet til klima, forsikring og finans, og datadrevne metoder for
+            verdiskaping.</p>  
+          <p>Datadrevne metoder og maskinlæring er i dag svært mye brukt i arbeidslivet.</p>      
         </section>
         <section>
-        <h2>Utveksling</h2>
-        <p>Du kan dra på utveksling i femte semester.</p> 
+          <h2>Utveksling</h2>
+          <p>Du kan dra på utveksling i femte semester.</p> 
         </section>
         <section>  
-        <h2>Videre studiemuligheter ved OsloMet</h2>
-        <a href="https://www.oslomet.no/studier/tkd/anvendt-data-informasjonsteknologi">Anvendt data- og informasjonsteknologi (ACIT) Masterprogram| 2 år | Pilestredet i Oslo | Heltid</a>
+          <h2>Videre studiemuligheter ved OsloMet</h2>
+          <a href="https://www.oslomet.no/studier/tkd/anvendt-data-informasjonsteknologi">Anvendt data- og informasjonsteknologi (ACIT) Masterprogram| 2 år | Pilestredet i Oslo | Heltid</a>
         </section>
+      </article>
 
-
-      <article>
-        <section class="article-header"> 
+      <article class="flex-container">
+        <section class="flex-header"> 
           <h2>Studiets oppbygging</h2>
           <div class="flex-container">
             <input type="button" value="Vis alt" name="buttonShowAll" onclick="showCommon()">
@@ -155,8 +154,10 @@
           <h4 class="if-matematikk-og-fysikk-shown">Emnegruppe: Matematikk og fysikk</h4>
           <h4 class="if-statistiske-metoder-shown">Emnegruppe: Statistiske og datadrevne metoder</h4>
           <h4 class="if-vitenskaplige-beregninger-shown">Emnegruppe: Vitenskapelige beregninger</h4>
-          <div>
-            <h5>1. semester</h5>
+          <div class="flex-container">
+            <div class="flex-header">
+              <h5>1. semester</h5>
+            </div>
             <div class="required-subject">
               <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/DAPE1300/2024/H%C3%98ST">Diskret matematikk</a></h6>
               <p>DAPE1300<span class="hover-right">10 stp.</span></p>
@@ -174,8 +175,10 @@
               <p>MAMO1100<span class="hover-right">5 stp.</span></p>
             </div>
           </div>
-          <div>
-            <h5>2. semester</h5>
+          <div class="flex-container">
+            <div class="flex-header">
+              <h5>2. semester</h5>
+            </div>
             <div class="required-subject">
               <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/DAFE1000/2024/H%C3%98ST">Matematikk 1000</a></h6>
               <p>DAFE1000<span class="hover-right">10 stp.</span></p>
@@ -196,8 +199,10 @@
           <h4 class="if-matematikk-og-fysikk-shown">Emnegruppe: Matematikk og fysikk</h4>
           <h4 class="if-statistiske-metoder-shown">Emnegruppe: Statistiske og datadrevne metoder</h4>
           <h4 class="if-vitenskaplige-beregninger-shown">Emnegruppe: Vitenskapelige beregninger</h4>
-          <div>
-            <h5>3. semester</h5>
+          <div class="flex-container">
+            <div class="flex-header">
+              <h5>3. semester</h5>
+            </div>
             <div class="required-subject">
               <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/DAPE2000/2024/H%C3%98ST">Matematikk 2000 med statistikk</a></h6>
               <p>DAPE2000<span class="hover-right">10 stp.</span></p>
@@ -215,8 +220,10 @@
               <p>DATS2300<span class="hover-right">10 stp.</span></p>
             </div>
           </div>
-          <div>
-            <h5>4. semester</h5>
+          <div class="flex-container">
+            <div class="flex-header">
+              <h5>4. semester</h5>
+            </div>
             <div class="required-subject">
               <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/DAVE3705/2024/H%C3%98ST">Matematikk 4000</a></h6>
               <p>DAVE3705<span class="hover-right">10 stp.</span></p>
@@ -251,15 +258,19 @@
             </div>
           </div>
           <h4 class="if-all-shown">Emnegruppe: Matematikk og fysikk</h4>
-          <div class="if-all-shown">
-            <h5>3. semester</h5>
+          <div class="if-all-shown flex-container">
+            <div class="flex-header">
+              <h5>3. semester</h5>
+            </div>
             <div class="required-subject">  
               <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO2300/2024/H%C3%98ST">Lineær algebra og introduksjon til gruppeteori</a></h6>
               <p>MAMO2300<span class="hover-right">10 stp.</span></p>
             </div>
           </div>
-          <div class="if-all-shown">
-            <h5>4. semester</h5>
+          <div class="if-all-shown flex-container">
+            <div class="flex-header">
+              <h5>4. semester</h5>
+            </div>
             <div class="required-subject">
               <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO2400/2024/H%C3%98ST">Termodynamikk og statistisk fysikk</a></h6>
               <p>MAMO2400<span class="hover-right">10 stp.</span></p>
@@ -270,15 +281,19 @@
             </div>
           </div>
           <h4 class="if-all-shown">Emnegruppe: Statistiske og datadrevne metoder</a></h4>
-          <div class="if-all-shown">
-            <h5>3. semester</h5>
+          <div class="if-all-shown flex-container">
+            <div class="flex-header">
+              <h5>3. semester</h5>
+            </div>
             <div class="required-subject">
               <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATS2300/2024/H%C3%98ST">Algoritmer og datastrukturer</a></h6>   
               <p>DATS2300<span class="hover-right">10 stp.</span></p>
             </div>
           </div>
-          <div class="if-all-shown">
-            <h5>4. semester</h5>
+          <div class="if-all-shown flex-container">
+            <div class="flex-header">
+              <h5>4. semester</h5>
+            </div>
             <div class="required-subject">
               <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO3100/2024/H%C3%98ST">Statistisk analyse</a></h6>
               <p>MAMO3100<span class="hover-right">10 stp.</span></p>
@@ -293,15 +308,19 @@
             </div>
           </div>
           <h4 class="if-all-shown">Emnegruppe: Vitenskapelige beregninger</h4>
-          <div class="if-all-shown">
-            <h5>3. semester</h5>
+          <div class="if-all-shown flex-container">
+            <div class="flex-header">
+              <h5>3. semester</h5>
+            </div>
             <div class="required-subject">
               <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATS2300/2024/H%C3%98ST">Algoritmer og datastrukturer</a></h6>
               <p>DATS2300<span class="hover-right">10 stp.</span></p>
             </div>
           </div>
-          <div class="if-all-shown">
-            <h5>4. semester</h5>
+          <div class="if-all-shown flex-container">
+            <div class="flex-header">
+              <h5>4. semester</h5>
+            </div>
             <div class="required-subject">
               <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/DAVE3606/2024/H%C3%98ST">Resurseffektive programmer</a></h6>
               <p>DAVE3600<span class="hover-right">10 stp.</span></p>
@@ -318,8 +337,10 @@
           <h4 class="if-matematikk-og-fysikk-shown">Emnegruppe: Matematikk og fysikk</h4>
           <h4 class="if-statistiske-metoder-shown">Emnegruppe: Statistiske og datadrevne metoder</h4>
           <h4 class="if-vitenskaplige-beregninger-shown">Emnegruppe: Vitenskapelige beregninger</h4>
-          <div>
-            <h5>5. semester</h5>
+          <div class="flex-container">
+            <div class="flex-header">
+              <h5>5. semester</h5>
+            </div>
             <div class="required-subject">
               <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/DAVE3700/2024/H%C3%98ST">Matematikk 3000</a></h6>
               <p>DAVE3700<span class="hover-right">10 stp.</span></p>
@@ -365,8 +386,10 @@
               <p>MAMO3300<span class="hover-right">10 stp.</span></p>
             </div>
           </div>
-          <div>
-            <h5>6. semester</h5>
+          <div class="flex-container">
+            <div class="flex-header">
+              <h5>6. semester</h5>
+            </div>
             <div class="required-subject">
               <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA3900/2024/H%C3%98ST">Bacheloroppgave</a></h6>
               <p>DATA3900<span class="hover-right">20 stp.</span></p>
@@ -397,8 +420,10 @@
             </div>
           </div>
           <h4 class="if-all-shown">Emnegruppe: Matematikk og fysikk</h4>
-          <div class="if-all-shown">
-            <h5>5. semester</h5>
+          <div class="if-all-shown flex-container">
+            <div class="flex-header">
+              <h5>5. semester</h5>
+            </div>
             <div class="required-subject">
               <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO3300/2024/H%C3%98ST">Reell analyse</a></h6>
               <p>MAMO3300<span class="hover-right">10 stp.</span></p>
@@ -420,8 +445,10 @@
               <p>MAMO3200<span class="hover-right">10 stp.</span></p>
             </div>
           </div>
-          <div class="if-all-shown">
-            <h5>6. semester</h5>
+          <div class="if-all-shown flex-container">
+            <div class="flex-header">
+              <h5>6. semester</h5>
+            </div>
             <div class="choice-subject">
               <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/ADTS2310/2024/H%C3%98ST">Testing av programvare</a></h6>
               <p>ADTS2310<span class="hover-right">10 stp.</span></p>
@@ -440,8 +467,10 @@
             </div>
           </div>
           <h4 class="if-all-shown">Emnegruppe: Statistiske og datadrevne metoder</h4>
-          <div class="if-all-shown">
-            <h5>5. semester</h5>
+          <div class="if-all-shown flex-container">
+            <div class="flex-header">
+              <h5>5. semester</h5>
+            </div>
             <div class="required-subject">
               <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/DAVE3625/2024/H%C3%98ST">Introduksjon til Kunstig Intelligens</a></h6>
               <p>DAVE3625<span class="hover-right">10 stp.</span></p>
@@ -463,8 +492,10 @@
               <p>MAMO3200<span class="hover-right">10 stp.</span></p>
             </div>
           </div>
-          <div class="if-all-shown">
-            <h5>6. semester</h5>
+          <div class="if-all-shown flex-container">
+            <div class="flex-header">
+              <h5>6. semester</h5>
+            </div>
             <div class="choice-subject">
               <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/ADTS2310/2024/H%C3%98ST">Testing av programvare</a></h6>
               <p>ADTS2310<span class="hover-right">10 stp.</span></p>
@@ -479,8 +510,10 @@
             </div>
           </div>
           <h4 class="if-all-shown">Emnegruppe: Vitenskapelige beregninger</h4>
-          <div class="if-all-shown">
-            <h5>5. semester</h5>
+          <div class="if-all-shown flex-container">
+            <div class="flex-header">
+              <h5>5. semester</h5>
+            </div>
             <div class="required-subject">
               <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO3200/2024/H%C3%98ST">Simulering og visualisering</a></h6>
               <p>MAMO3200<span class="hover-right">10 stp.</span></p>
@@ -502,8 +535,10 @@
               <p>MAMO3300<span class="hover-right">10 stp.</span></p>
             </div>
           </div>
-          <div class="if-all-shown">
-            <h5>6. semester</h5>
+          <div class="if-all-shown flex-container">
+            <div class="flex-header">
+              <h5>6. semester</h5>
+            </div>
             <div class="choice-subject">
               <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/ADSE3200/2024/H%C3%98ST">Visualisering</a></h6>
               <p>ADSE3200<span class="hover-right">10 stp.</span></p>
@@ -524,12 +559,10 @@
         </section>
       </article>
     </main>
-    <footer class="footer-grid">
-
+    <footer>
       <div class="abonnere-text">
         <p>Hold deg oppdatert på hva som skjer</p>
       </div>
-
       <div class="abonnere-knapp">
         <a href="https://www.oslomet.no/nyhetsbrev">Abonner på vårt nyhetsbrev</a>
       </div>
@@ -573,7 +606,6 @@
           <li class="logo-footer"><a href="https://www.instagram.com/oslomet/?hl=nb"><img src="images/1161953_instagram_icon.svg" alt="Link til Instagram" class="footer-pic"></a></li>
         </ul>
       </div>
-
     </footer>
     <script src="scripts/navbarScroll.js"></script>
   </body>
