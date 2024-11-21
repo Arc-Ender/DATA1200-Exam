@@ -6,10 +6,11 @@
     <title>Aktivitet - OsloMet</title>
     <link href="../css/stylesheet.css" rel="stylesheet">
     <link rel="icon" href="https://www.oslomet.no/build/images/favicon-32x32.png">
+    <script src="../scripts/navbarScroll.js"></script>
   </head>
   <body>
     <header>
-      <nav id="navbar">
+      <nav id="navbar" class="activity-nav">
         <a href="https://www.oslomet.no/"><img src="../images/logo-oslomet.png" alt="OsloMet-logo" class="navbar-image"></a>
          <!-- Hidden checkbox for toggle menu -->
          <!-- Isnpired by https://dev.to/shubhamtiwari909/responsive-navbar-without-javascript-3p7o -->
@@ -23,7 +24,7 @@
         </ul> 
       </nav>
       <div class="activity-header"> 
-        <img src="/images/Folk-i-aktivitet.jpg" alt="folk i aktivitet" width="100%">
+        <img src="../images/Folk-i-aktivitet.jpg" alt="folk i aktivitet" width="100%">
         <div class="activity-front-photo">¨
           <h1>Aktivitet</h1>
           <!--Fotografen er en av gruppemedlemmene-->
@@ -153,51 +154,50 @@
       <h2>Our frickin awesome blog</h2>
       <section class="blog">
         <div class="blog-wrapper">
-          <div class="blog-box">
-            <a href="https://thesmartlocal.com/vietnam/vietnamese-hip-hop-artists/">
-              <img src="/images/SeoulNtower.jpg" alt="N Seoul Tower"> <!--Fotografen er en av gruppemedlemmene-->
+          <a href="https://thesmartlocal.com/vietnam/vietnamese-hip-hop-artists/">
+            <div class="blog-box">
+              <img src="../images/SeoulNtower.jpg" alt="N Seoul Tower"> <!--Fotografen er en av gruppemedlemmene-->
               <h3>Felix vinner Rap-VM</h3>
               <p>Felix Stelander Karlsson fra skolen vår vinner Rap-VM
                 i Sør-Korea 2024. Han rappet fantastisk på vietnamesisk!
               </p>
-            </a>
-          </div>
-          <div class="blog-box">
-            <a href="https://www.universeum.se/">
-              <img src="/images/orange-bird.jpg" alt="En oransje fugl">
+            </div>
+          </a>
+          <a href="https://www.universeum.se/">
+            <div class="blog-box">
+              <img src="../images/orange-bird.jpg" alt="En oransje fugl">
               <h3>Tur til Gøteborg</h3>
               <p>
               Vår K-pop team dro til Universeum med Erna Solberg for å se på eksotiske dyr.
+              Trykk for å lese mer.
               </p>
+            </div>
           </a>
-          </div>
-          <div class="blog-box">
-            <a href="https://www.ticketmaster.no/">
-              <img src="/images/Jungkook.webp" alt="BTS Jungkook"> <!--Foto: Getty Images fra https://www.teenvogue.com/story/jungkook-clarified-the-unhinged-home-decor-bts-roasted-him-for--> 
+          <a href="https://www.ticketmaster.no/">
+            <div class="blog-box">
+              <img src="../images/Jungkook.webp" alt="BTS Jungkook"> <!--Foto: Getty Images fra https://www.teenvogue.com/story/jungkook-clarified-the-unhinged-home-decor-bts-roasted-him-for--> 
               <h3>K-pop møter Oslo</h3>
               <p>
-              Jungkook fra BTS holdt foredrag om koreansk musikk på OsloMet P35.
+              Jungkook fra BTS holdt foredrag om koreansk musikk på OsloMet P35. Han ble møtt på med mye ros.
               </p>
-            </a>
-          </div>
-          <div class="blog-box">
-            <a href="https://www.whitehouse.gov/">
+            </div>
+          </a>
+          <a href="https://www.whitehouse.gov/">
+            <div class="blog-box">
               <!--Foto: Encyclopædia Britannica, Inc. fra https://www.britannica.com/biography/Barack-Obama-->
-              <img src="/images/obama.webp" alt="Barack Obama"> 
+              <img src="../images/obama.webp" alt="Barack Obama"> 
               <h3>Obama rapbattle bekreftet</h3>
               <p>
               Obama har gjort om kjelleren sin til en episk hiphop-arena.
               Han skal arrangere en rap-turnering for OsloMet studenter i desember.
               </p>
-            </a>
-          </div>
+            </div>
+          </a>
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="activity-footer">
       
     </footer>
-    <script src="../scripts/navbarScroll.js"></script>
-    <script src="../scripts/hamburgerMeny.js"></script>
   </body>
 </html>
