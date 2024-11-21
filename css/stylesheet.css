@@ -2,8 +2,10 @@
   --main-background-color: rgba(255,255,255,1); /*rgba(255, 220, 0, 1);*/
   --alt-background-color: rgba(255,220,0,1);
   --main-text-color: black;
+  --alt-text-color: white;
   --higlight-color-1: Coral; 
   --higlight-color-2: CornflowerBlue;
+  --link-hover-color: Coral;
 }
 
 html {
@@ -23,7 +25,6 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 article {
@@ -31,22 +32,54 @@ article {
   max-width: 1500px;
 }
 
+section {
+  margin-bottom: 2em;
+}
+
+h1 {
+  text-align: start;
+  font-weight: 700;
+  margin-bottom: 0px;
+  font-size: 3rem;
+}
+
+h2 {
+  display: block; 
+  text-align: start;
+  width: 100%; 
+  margin-top: 5px; 
+  align-content: baseline;
+  color: var(--main-text-color);
+}
+
+/* Name styling */
+h3 {
+  font-size: 1.2em;
+  margin: 0;
+  font-weight: bold;
+}
+
+a {
+  color: var(--main-text-color);
+}
+
+/*Hover over links not in header*/
+main a:hover, footer a:hover {
+  color: var(--link-hover-color); /*adds color when hovering over links*/
+  text-decoration: none;
+}
+
 footer {
   padding: 2%;
   margin-left: 0px;
   line-height: 1.9;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-weight: bold;
   background-color: var(--alt-background-color);
-}
 
-footer a {
-  text-decoration: none;
-  color: black;
-}
-
-footer li {
-  list-style-type:none ;
+  /*grid for footer with two columns and four rows */
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 8rem 8rem 13rem 10rem;
 }
 
 footer > ul {
@@ -55,27 +88,26 @@ footer > ul {
   margin: 0;
 }
 
+footer li {
+  list-style-type:none ;
+}
+
 footer address {
   font-style: normal;
 }
 
-footer a:hover {
-  color: var(--higlight-color-1); /*adds color when hovering over links*/
-
+/*Horizontal line*/
+footer hr{
+  width: 90vw;
+  height: 1px;
+  border-width:0;
+  background-color: black;
 }
 
 /*Display logos next to each other*/
 .logo-footer{
   display: inline;
 }
-
-/*grid for footer with two columns and four rows */
-footer {
-  display: grid;
-  grid-template-columns: 2fr 2fr;
-  grid-template-rows: 8rem 8rem 13rem 10rem;
-}
-
 
 /*Sets dynamic size of logo*/
 .oslomet-logo{
@@ -94,8 +126,6 @@ footer {
 /*Styling for the footer items */
 
 .abonnere-text{
-  grid-column: 1/2;
-  grid-row: 1/2;
   text-align: center;
   margin: auto;
   font-size: 1.7em;
@@ -104,12 +134,10 @@ footer {
 }
 
 .abonnere-knapp{
-  grid-column: 2/3;
-  grid-row: 1/2;
   text-align: center;
   margin: auto;
   padding: 1%;
-  background-color: #000000;
+  background-color: black;
 }
 
 .abonnere-knapp a {
@@ -118,33 +146,18 @@ footer {
   padding: 1%;
 }
 
-/*Horizontal line*/
-.horizontal-line{
-  grid-column: 1/3;
-  grid-row: 2/3;
-  margin: auto;
-  border-top: 1px solid black;
-  width: 90%;
-}
-
 .kontakt-info{
-  grid-column: 1/2;
-  grid-row: 3/4;
   margin: auto;
   margin-top: 1rem;
 }
 
 .link-list{
-  grid-column: 2/3;
-  grid-row: 3/5;
   margin: auto;
   margin-top: 0px;
   padding: 1%;
 }
 
-.some-links{
-  grid-column: 1/2;
-  grid-row: 4/5;
+.social-media-links{
   margin: auto;
   margin-top: 0.5rem;
 }
@@ -153,30 +166,13 @@ footer {
   margin-bottom: 20px;
 }
 
-.page-title h1 {
-  text-align: start;
-  font-weight: 700;
-  margin-bottom: 0px;
-  font-size: 3rem;
-}
-
-
-.page-title h2 {
-  display: block; 
-  text-align: start;
-  width: 100%; 
-  margin-top: 5px; 
-  align-content: baseline;
-  color: #222;
-}
-
 .study-information-container {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   font-size: 1rem;
   line-height: 1.5;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid var(--alt-text-color);
   padding-bottom: 40px;
   margin-bottom: 20px;
 }
@@ -201,18 +197,18 @@ footer {
   display: flex;
   justify-content: space-between;
   padding: 12px 16px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid rgba(238,238,238, 1);
 }
 
 .study-information-container tr:hover {
-  background-color: #f9f9f9;
+  background-color: rgba(249,249,249, 1);
 }
 
 /* Container for the profile card */
 .profile-card {
   display: flex;
   align-items: center;
-  border: 1px solid #ddd; 
+  border: 1px solid rgba(221,221,221, 1); 
   padding: 15px;
   max-width: 600px;
   margin: 20px 0px auto;
@@ -231,25 +227,17 @@ footer {
   object-fit: cover; 
 }
 
-/* Name styling */
-.profile-info h3 {
-  font-size: 1.2em;
-  margin: 0;
-  font-weight: bold;
-  color: #000000;
-}
-
 /* Title styling */
 .profile-info .title {
   font-size: 1em;
-  color: #222;
+  color: #rgba(34,34,34,1);
   margin: 5px 0;
 }
 
 /* Contact info styling */
 .profile-info .contact-info {
   font-size: 0.9em;
-  color: #666;
+  color: rgba(102,102,102);
 }
 
 .contact-info span {
@@ -269,10 +257,8 @@ footer {
 }
 
 .container-layer {
-  display: flex;
   flex-direction: column;
   align-items: flex-end;
-  flex-wrap: wrap;
   flex: 1;
   margin-left: auto;
 }
@@ -312,7 +298,6 @@ nav a {
   display: block;
   text-align: center;
   padding: 14px 16px;
-  color: var(--main-text-color);
   font-size: 1.75rem;
   font-weight: 700;
   text-decoration: none;
@@ -321,6 +306,7 @@ nav a {
 
 nav a:hover, input[type="button"]:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 /* Logo image styling */
@@ -345,13 +331,12 @@ input[type=button] {
   display: none; 
   font-size: 1.75rem;
   cursor: pointer;
-  color: var(--main-text-color);
   padding: 0;
   margin: 0;
   font-weight: 700;
 }
 
-#menu-toggle-label:hover {
+header a:hover {
   text-decoration: underline;
 }
 
@@ -360,6 +345,38 @@ input[type=button] {
   nav ul {
     width: 100%; 
     gap: 0; 
+  }
+}
+
+@media (min-width: 801px) {
+  .abonnere-text{
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .abonnere-knapp{
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  footer hr{
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+
+  .kontakt-info{
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  
+  .link-list{
+    grid-column: 2/3;
+    grid-row: 3/5;
+  }
+
+  .social-media-links{
+    grid-column: 1/2;
+    grid-row: 4/5;
   }
 }
 
@@ -387,11 +404,6 @@ input[type=button] {
     align-items: flex-start;
   }
 
-  /* Show the menu when checkbox is checked */
-  #menu-toggle-checkbox:checked + #menu-toggle-label + ul {
-    display: flex; 
-  }
-
   nav ul li {
     width: 100%; 
   }
@@ -409,6 +421,44 @@ input[type=button] {
     height: 2rem;
   }
 
+  .abonnere-text{
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .abonnere-knapp{
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  footer hr{
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+
+  .kontakt-info{
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  
+  .link-list{
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+
+  .social-media-links{
+    grid-column: 1/2;
+    grid-row: 6/7;
+  }
+
+  nav ul li a {
+    padding: 10px 12px; 
+  }
+
+  nav img {
+    width: 3rem;
+    height: 2rem;
+  }
 }
 
 /* Mobile view */
@@ -419,188 +469,8 @@ input[type=button] {
   }
 }
 
-@media(max-width:800px){
-  article {
-    flex-direction: column;
-  }
-
-  .study-year{
-    width: inherit;
-  }
-
-  nav ul li a {
-    padding: 10px 12px; 
- }
-
-
-  nav img {
-    width: 3rem;
-    height: 2rem;
-  }
-}
-
-/* Heading styling*/
-.activity-header h1 {
-  text-align: center;
-}
-.activity-header {
-  position: relative;
-  max-width: 100%; /* Maksimum bredde */
-  margin: 0 auto; /* sentrerer */
-}
-.activity-header img {
-  vertical-align: middle; /*Gjør at bildet passer med fallback*/
-}
-.activity-header .activity-front-photo {
-  position: absolute; /* Posisjonerer tekst */
-  bottom: 0; /* Gjør at fallback overlapper bildet. */
-  background: rgba(0, 0, 0, 0.5); /* Fallback farge */
-  color: rgba(255,255,255,1); /* Hvit tekst */
-  width: 100%; /* Full bredde */
-  padding: 20px; /* litt padding */
-  box-sizing: border-box; /*Gjør at fallback matcher størrelse med bilde*/
-}
-.main-activitypage {
-  /*display: grid;
-  flex-direction: column;*/
-  padding-left: 60px;
-  padding-right: 60px;
-}
-.activity-section, .activity-section-mirror {
-  display: grid; /*Legger til grid*/
-  grid-template-columns: 1fr 1fr; /*Legger til to bokser for hver rad*/
-  gap: 30px; /*Avstand mellom grid-boksene*/
-  padding-top: 30px; 
-  padding-bottom: 30px;
-  width: 100%;
-}
-.main-activitypage a {
-  color:rgba(63, 108, 205,1); /*Fargen på lenken*/
-}
-.main-activitypage a:hover {
-  color: rgba(211, 87, 25, 1); /*Fargen på lenken når man har musen over*/
-}
-.activity-text {
-  display: flex; /*Tilsetter flexbokser for at teksten skal være på lik linje med bildet*/
-  flex-direction: column; /*Justerer posisjon etter vertikalen*/
-  justify-content: center; /*Sentrerer tekst til passende høyde med bildet*/
-}
-.activity-text p {
-  text-align: left; /*Gjør at teksten flyttes til venstresiden*/
-}
-.activity-photo img {
-  width: 100%; 
-  height: auto; /*Høyden justeres dynamisk*/
-  border-radius: 6pt; /*Bildene får runde kanter*/
-}
-.activity-section-mirror {
-  grid-template-columns: 1fr 1fr; 
-}
-.activity-section-mirror .activity-text { /*Boksene bytter plass der vi får bildet til venstre*/
-  order: 2;
-}
-.activity-section-mirror .activity-photo { /*Og tekst på høyresiden*/
-  order: 1;
-}
-.photo-source {
-  font-size: 10px; /*Størrelsen på teksten til hvor bildet er hentet fra*/
-  color:rgba(128,128,128,1); /*Fargen på teksten*/
-}
-.activity-table {
-  overflow-x: auto; /*Legger til en horisontal scrollbar til tabellen*/
-}
-.activity-table table {
-  border-collapse: collapse;
-  border-color: solid black 2px;
-  width: 80%;
-  margin: auto; /*Sentreren tabellen i forhold til skjermen*/
-  table-layout: auto; /*Tabellens størrelse justeres dynamisk etter innholdet*/
-}
-.activity-table caption {
-  caption-side: top; /*Plasserer tabbellens caption på toppen*/
-  padding: 20px;
-}
-.activity-table th, .activity-table td {
-  border: 1.3px solid rgba(0, 0, 0,1);
-  padding: 8px 10px; /*padding vertikalt og horisontalt*/
-}
-.activity-table tbody tr:nth-child(odd) { /*Styling på hver "odd" rad*/
-  background-image: linear-gradient(to right,rgba(90, 168, 247, 1) ,rgba(145, 98, 240,1)); /*Gradientfarge*/
-} 
-.blog-wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /*tre bokser for hver rad*/
-  grid-auto-rows: minmax(10px, auto); /*Minst og maks høyden boksene kan ha*/
-  gap: 30px; /*Avstand mellom boksene*/
-}
-.blog-box {
-  border: 2px solid rgba(133, 88, 222,1);
-  border-radius: 6pt;
-  background-color: rgba(90, 168, 247, 1);
-  transition: transform .2s;
-}
-.blog-box img {
-  width: 100%; /* Make the image responsive */
-  height: auto; /* Maintain aspect ratio */
-  border-top-left-radius: 4pt; /* Rundere venstrehjørne */
-  border-top-right-radius: 4pt; /*Rundere høyrehjørne*/
-  margin-bottom: 5px; /* Avstand under bildet*/
-}
-.blog a{
-  color:rgba(0, 0, 0, 1) /*Fargen på tekst i boksen blir sort istedenfor blå*/
-}
-.blog a:link {
-  text-decoration: none; /*Fjerner understrek*/
-}
-.blog a:hover {
-  color:rgba(255, 255, 255, 1); /*Gjør at teksten blir hvit når man har musen over */
-}
-.blog-box:hover {
-  transform: scale(0.95); /*Gjør at boksen blir litt mindre når musen er over*/
-}
-.blog-box h3, .blog-box p{
-  text-align: center; /*Sentrerer h3 og p i forhold til boksen*/
-}
-/* Mobildesign */
-@media (max-width: 768px) {
-  .main-activitypage {
-    padding: 1px;
-  }
-  .activity-header p {
-    font-size: 8px;
-  }
-  .activity-section, .activity-section-mirror {
-    grid-template-columns: 1fr; /* Endrer til én boks på hver kolonne på små skjermer */
-    text-align: center; /*Sentrerer h3 i forhold til skjerm*/
-  }
-  /*Gjør at alle bilder vises før tekst*/
-  .activity-section .activity-text {
-    order: 2;
-  }
-  .activity-section .activity-photo {
-    order: 1;
-  }
-  .activity-table th, td {
-    font-size: 12px;
-    padding: 5px; /* Mindre padding for smale skjermer */
-  }
-  .activity-table caption {
-    font-size: 14px;
-  }
-  .activity-photo img {
-    max-width: 100%;
-  }
-  .blog-wrapper {
-    grid-template-columns: 1fr; /* 1 kolonne */
-  }
-  .blog-box h3, .blog-box p{
-    text-align: center; 
-  }
-}
-
 .hover-right{
   float: right;
-
 }
 
 .flex-header{
@@ -621,11 +491,13 @@ input[type=button] {
   background-color: var(--higlight-color-2);
 }
 
-.flex-container {
+.flex-container, #menu-toggle-checkbox:checked + #menu-toggle-label + ul{
   display:flex;
   flex-wrap:wrap;
 }
 
+/*Required for JS. Changed to display:block when coresponding button is pressed
+ * default: display:none */
 .if-matematikk-og-fysikk-shown,.if-statistiske-metoder-shown,.if-vitenskaplige-beregninger-shown{
   display:none
 }
