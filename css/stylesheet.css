@@ -155,17 +155,9 @@ nav img {
   text-align: center;
 }
 
-.main-activitypage {
-  /*display: grid;
-  flex-direction: column;*/
-  padding-left: 60px;
-  padding-right: 60px;
-  top: 0;
-}
-
 .activity-header {
   position: relative;
-  max-width: 80%; /* Maximum width */
+  max-width: 100%; /* Maximum width */
   margin: 0 auto; /* Center it */
 }
 .activity-header img {
@@ -176,12 +168,17 @@ nav img {
   position: absolute; /* Position the background text */
   bottom: 0; /* At the bottom. Use top:0 to append it to the top */
   background: rgba(0, 0, 0, 0.5); /* Fallback color */
-  color: #f1f1f1; /* Grey text */
+  color: rgba(255,255,255,1); /* Hvit tekst */
   width: 100%; /* Full width */
   padding: 20px; /* Some padding */
   box-sizing: border-box;
 }
-
+.main-activitypage {
+  /*display: grid;
+  flex-direction: column;*/
+  padding-left: 60px;
+  padding-right: 60px;
+}
 .activity-section, .activity-section-mirror {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -190,8 +187,6 @@ nav img {
   padding-top: 30px; 
   padding-bottom: 30px;
   width: 100%;
-
-  /*padding: 20px;*/
 }
 
 .main-activitypage a {
@@ -232,7 +227,7 @@ nav img {
 
 .photo-source {
   font-size: 8pt;
-  color:gray;
+  color:rgba(128,128,128,1);
 }
 
 .activity-table {
@@ -253,13 +248,13 @@ nav img {
   padding: 10px;
 }
 
-.activity-table th, td {
+.activity-table th, .activity-table td {
   border: 1px solid black;
   padding: 8px 10px;
 }
 
-.activity-table tbody tr:nth-child(odd) {
-  background-color: rgba(133, 88, 222);
+.activity-table tbody tr:nth-child(odd) { /*Styling på hver "odd" rad*/
+  background-image: linear-gradient(to right,rgba(90, 168, 247, 1) ,rgba(145, 98, 240,1)); /*Gradientfarge*/
 } 
 
 .blog-wrapper {
@@ -272,7 +267,7 @@ nav img {
 .blog-box {
   border: 2px solid rgba(133, 88, 222,1);
   border-radius: 6pt;
-  background-color: rgb(188, 158, 254);
+  background-color: rgba(90, 168, 247, 1);
   transition: transform .2s;
 }
 .blog-box img {
@@ -285,14 +280,26 @@ nav img {
   color:rgba(0, 0, 0, 1)
 }
 
+.blog a:link {
+  text-decoration: none;
+}
+
+.blog a:hover {
+  color:rgba(255, 255, 255, 1);
+}
+
 .blog-box:hover {
-  transform: scale(1.05)
+  transform: scale(1.03);
+}
+
+.blog-box h3, .blog-box p{
+  text-align: center;
 }
 
 /* Responsivt design */
 @media (max-width: 768px) {
   .main-activitypage {
-    padding: 2px;
+    padding: 1px;
   }
   .activity-header p {
     font-size: 8px;
@@ -314,7 +321,6 @@ nav img {
   .activity-table th, td {
     font-size: 12px;
     padding: 5px; /* Reduce padding for smaller screens */
-    /*word-wrap: break-word;*/
   }
   
   .activity-table caption {
@@ -324,6 +330,9 @@ nav img {
     max-width: 100%;
   }
   .blog-wrapper {
-    grid-template-columns: 1fr; /* 1 kolonne  /* Mindre gap mellom elementene på mobil */
+    grid-template-columns: 1fr; /* 1 kolonne */
+  }
+  .blog-box h3, .blog-box p{
+    text-align: center;
   }
 }
