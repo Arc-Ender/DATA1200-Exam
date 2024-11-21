@@ -17,3 +17,4 @@ window.onscroll = function() {
   // Update the previous scroll position to the current position
   prevScrollpos = currentScrollPos;
 };
+
