@@ -297,7 +297,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%; 
+  width: 100vw; 
   max-width: 1200px; 
   margin: 0 auto; 
 }
@@ -714,8 +714,8 @@ input[type=button] {
 }
 
 .image-grid img {
-  flex: 1 1 calc(45% - 20px);
-  max-width: 95%; 
+  flex: 1 1 calc(45vw - 20px);
+  max-width: 95vw; 
   max-height: 500px;
   object-fit: contain;
   border: 1px solid #ddd;
