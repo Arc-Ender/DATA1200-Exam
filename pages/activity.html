@@ -6,21 +6,26 @@
     <title>Aktivitet - OsloMet</title>
     <link href="../css/stylesheet.css" rel="stylesheet">
     <link rel="icon" href="https://www.oslomet.no/build/images/favicon-32x32.png">
+    <script src="../scripts/navbarScroll.js"></script>
   </head>
   <body>
     <header>
       <nav id="navbar" class="activity-nav">
-        <a href="https://www.oslomet.no/"><img src="../images/logo-oslomet.png" alt="OsloMet-logo" class="navbar-image"></a>
-         <!-- Hidden checkbox for toggle menu -->
-         <!-- Isnpired by https://dev.to/shubhamtiwari909/responsive-navbar-without-javascript-3p7o -->
-         <input type="checkbox" id="menu-toggle-checkbox" aria-label="Toggle Menu">
-         <label for="menu-toggle-checkbox" id="menu-toggle-label">Meny ☰</label>
-        <ul>
-          <li><a href="../index.html">Index</a></li>
-          <li><a href="../pages/accessibility.html">Tilgjengelighet</a></li>
-          <li><a href="../pages/github.html">Github</a></li>
-          <li><a href="../pages/activity.html">Aktivitet</a></li>
-        </ul> 
+        <div class="navbar-container">
+          <a href="https://www.oslomet.no/">
+            <img src="../images/logo-oslomet.png" alt="OsloMet-logo" class="navbar-image">
+          </a>
+          <!-- Isnpired by https://dev.to/shubhamtiwari909/responsive-navbar-without-javascript-3p7o -->
+          <!-- Hidden checkbox for toggle menu -->
+          <input type="checkbox" id="menu-toggle-checkbox" aria-label="Toggle Menu">
+          <label for="menu-toggle-checkbox" id="menu-toggle-label">Meny ☰</label>
+          <ul>
+            <li><a href="../index.html">Index</a></li>
+            <li><a href="../pages/accessibility.html">Tilgjengelighet</a></li>
+            <li><a href="../pages/github.html">Github</a></li>
+            <li><a href="../pages/activity.html">Aktivitet</a></li>
+          </ul>
+        </div>
       </nav>
       <div class="activity-header"> 
         <img src="../images/Folk-i-aktivitet.jpg" alt="folk i aktivitet" width="100%">
@@ -194,10 +199,47 @@
         </div>
       </section>
     </main>
-    <footer class="activity-footer">
-      
+    <footer>
+      <section class="abonnere-text">
+        <p>Hold deg oppdatert på hva som skjer</p>
+      </section>
+      <a href="https://www.oslomet.no/nyhetsbrev" class="abonnere-knapp">
+        <div>
+          <p>Abonner på vårt nyhetsbrev</p>
+        </div>
+      </a>
+      <hr>
+      <section class="kontakt-info">
+        <img class="oslomet-logo"  src="images/logo-footer.svg" alt="OsloMet Logo">
+        <address> Postboks 4, St. Olavs plass <br>
+          0130 Oslo <br>
+          Tlf: 67 23 50 00 <br>
+          <a href="https://www.oslomet.no/om/kontakt">Kontakt oss</a>
+        </address>
+      </section>      
+      <section class="link-list">
+        <ul>
+          <li><a href="https://www.oslomet.no/en">English</a></li>
+          <li><a href="https://www.oslomet.no/alumni">Alumni</a></li>
+          <li><a href="https://www.oslomet.no/om/ansatteoversikt">Ansatteoversikt</a></li>
+          <li><a href="https://www.oslomet.no/om/arrangement/arrangementsoversikt">Arrangementsoversikt</a></li>
+          <li><a href="https://www.oslomet.no/om/for-ansatte">For Ansatte</a></li>
+          <li><a href="https://www.oslomet.no/om/for-studenter">For studenter</a></li>
+          <li><a href="https://www.oslomet.no/om/ledige-stillinger">Ledige Stillinger</a></li>
+          <li><a href="https://www.oslomet.no/om/personvernerklering-informasjonskapslar">Personvernerklæring og informasjonskapsler</a></li>
+          <li><a href="https://www.oslomet.no/om/pressekontakt">Pressekontakt</a></li>
+          <li><a href="https://www.oslomet.no/om/tilgjengelegheitserklering">Tilgjenglighetserklæring</a></li>
+          <li><a href="https://login.microsoftonline.com">Admin</a></li>
+        </ul>
+      </section>
+      <section class="social-media-links">
+        <ul>
+          <li class="logo-footer"><a href="https://www.facebook.com/oslomet/"><img src="images/facebook-app-round-icon.webp" alt="Link til Facebook" class="footer-pic"></a></li>
+          <li class="logo-footer"><a href="https://x.com/oslomet"><img src="images/x_icon.svg.png" alt="Link til X" class="footer-pic"></a></li>
+          <li class="logo-footer"><a href="https://no.linkedin.com/school/oslomet/"><img src="images/linkedin-icon-black-logo.wine.svg" alt="Link til LinkedIn" class="footer-pic"></a></li>
+          <li class="logo-footer"><a href="https://www.instagram.com/oslomet/?hl=nb"><img src="images/1161953_instagram_icon.svg" alt="Link til Instagram" class="footer-pic"></a></li>
+        </ul>
+      </section>
     </footer>
-    <script src="../scripts/navbarScroll.js"></script>
-    <script src="../scripts/hamburgerMeny.js"></script>
   </body>
 </html>

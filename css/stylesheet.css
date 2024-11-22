@@ -1,9 +1,21 @@
+/*
+ * CSS structure:
+ * - General 
+ * - Classes
+ * - Header
+ * - Footer
+ * - Media querries
+ * - Page specific
+ * */
+
 :root {
-  --main-background-color: rgba(255,255,255,1); /*rgba(255, 220, 0, 1);*/
+  --main-background-color: rgba(255,255,255,1);
   --alt-background-color: rgba(255,220,0,1);
   --main-text-color: black;
+  --alt-text-color: white;
   --higlight-color-1: Coral; 
   --higlight-color-2: CornflowerBlue;
+  --link-hover-color: Coral;
 }
 
 html {
@@ -15,7 +27,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: var(--main-background-color);
   margin: 0;
- }
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
 
 /* Main attribute styling */
 main {
@@ -23,7 +38,8 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  max-width: 2048px;
+  
 }
 
 article {
@@ -31,251 +47,44 @@ article {
   max-width: 1500px;
 }
 
-footer {
-  padding: 2%;
-  margin-left: 0px;
-  line-height: 1.9;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-weight: bold;
-  background-color: var(--alt-background-color);
+section {
+  margin-bottom: 2em;
 }
 
-footer a {
-  text-decoration: none;
-  color: black;
-}
-
-footer li {
-  list-style-type:none ;
-}
-
-footer > ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-footer address {
-  font-style: normal;
-}
-
-footer a:hover {
-  color: var(--higlight-color-1); /*adds color when hovering over links*/
-
-}
-
-/*Display logos next to each other*/
-.logo-footer{
-  display: inline;
-}
-
-/*grid for footer with two columns and four rows */
-footer {
-  display: grid;
-  grid-template-columns: 2fr 2fr;
-  grid-template-rows: 8rem 8rem 13rem 10rem;
-}
-
-
-/*Sets dynamic size of logo*/
-.oslomet-logo{
-  width: 18em;
-  height: auto;
-  padding: 0px;
-}
-
-
-.footer-pic{
-  width: 3em;
-  height: 3em;
-  padding: 1em;
-}
-
-/*Styling for the footer items */
-
-.abonnere-text{
-  grid-column: 1/2;
-  grid-row: 1/2;
-  text-align: center;
-  margin: auto;
-  font-size: 1.7em;
-  padding: 0%;
-  padding-right: 5%;
-}
-
-.abonnere-knapp{
-  grid-column: 2/3;
-  grid-row: 1/2;
-  text-align: center;
-  margin: auto;
-  padding: 1%;
-  background-color: #000000;
-}
-
-.abonnere-knapp a {
-  color: white;
-  text-align: center;
-  padding: 1%;
-}
-
-/*Horizontal line*/
-.horizontal-line{
-  grid-column: 1/3;
-  grid-row: 2/3;
-  margin: auto;
-  border-top: 1px solid black;
-  width: 90%;
-}
-
-.kontakt-info{
-  grid-column: 1/2;
-  grid-row: 3/4;
-  margin: auto;
-  margin-top: 1rem;
-}
-
-.link-list{
-  grid-column: 2/3;
-  grid-row: 3/5;
-  margin: auto;
-  margin-top: 0px;
-  padding: 1%;
-}
-
-.some-links{
-  grid-column: 1/2;
-  grid-row: 4/5;
-  margin: auto;
-  margin-top: 0.5rem;
-}
-
-.pageTitle {
-  margin-bottom: 20px;
-}
-
-.page-title h1 {
+h1 {
   text-align: start;
   font-weight: 700;
   margin-bottom: 0px;
   font-size: 3rem;
 }
 
-
-.page-title h2 {
+h2 {
   display: block; 
   text-align: start;
   width: 100%; 
   margin-top: 5px; 
   align-content: baseline;
-  color: #222;
-}
-
-.study-information-container {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  font-size: 1rem;
-  line-height: 1.5;
-  border-bottom: 1px solid #000000;
-  padding-bottom: 40px;
-  margin-bottom: 20px;
-}
-
-.study-information-container th {
-  text-decoration: underline;
-  padding: 10px;
-  text-align: left;
-}
-
-.study-information-container td {
-  text-align: right;
-  padding: 10px;
-}
-
-.study-information-container table {
-  border-spacing: 10px;
-  border-collapse: separate;
-}
-
-.study-information-container tr {
-  display: flex;
-  justify-content: space-between;
-  padding: 12px 16px;
-  border-bottom: 1px solid #eee;
-}
-
-.study-information-container tr:hover {
-  background-color: #f9f9f9;
-}
-
-/* Container for the profile card */
-.profile-card {
-  display: flex;
-  align-items: center;
-  border: 1px solid #ddd; 
-  padding: 15px;
-  max-width: 600px;
-  margin: 20px 0px auto;
-  margin-left: auto;
-  gap: 15px;
-}
-
-/* Profile info section */
-.profile-info {
-  flex: 1; 
-}
-/* Profile image styling */
-.profile-image {
-  width: 5.625rem;
-  border-radius: 8px; 
-  object-fit: cover; 
+  color: var(--main-text-color);
 }
 
 /* Name styling */
-.profile-info h3 {
+h3 {
   font-size: 1.2em;
   margin: 0;
   font-weight: bold;
-  color: #000000;
 }
 
-/* Title styling */
-.profile-info .title {
-  font-size: 1em;
-  color: #222;
-  margin: 5px 0;
+a {
+  color: var(--main-text-color);
 }
 
-/* Contact info styling */
-.profile-info .contact-info {
-  font-size: 0.9em;
-  color: #666;
+/*Hover over links not in header*/
+main a:hover, footer a:hover {
+  color: var(--link-hover-color); /*adds color when hovering over links*/
+  text-decoration: none;
 }
 
-.contact-info span {
-  margin-right: 8px;
-}
 
-.logo-transparent-background {
-  max-width: 600px; 
-  width: 100%; 
-  margin-left: auto; 
-}
-
-.logo-transparent-background img{
-  width: 100%;
-  border-radius: 8px;
-  object-fit: cover;
-}
-
-.container-layer {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  flex-wrap: wrap;
-  flex: 1;
-  margin-left: auto;
-}
 
 /* Navbar styling */
 nav {
@@ -312,7 +121,6 @@ nav a {
   display: block;
   text-align: center;
   padding: 14px 16px;
-  color: var(--main-text-color);
   font-size: 1.75rem;
   font-weight: 700;
   text-decoration: none;
@@ -321,6 +129,7 @@ nav a {
 
 nav a:hover, input[type="button"]:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 /* Logo image styling */
@@ -345,21 +154,239 @@ input[type=button] {
   display: none; 
   font-size: 1.75rem;
   cursor: pointer;
-  color: var(--main-text-color);
   padding: 0;
   margin: 0;
   font-weight: 700;
 }
 
-#menu-toggle-label:hover {
-  text-decoration: underline;
+
+/*Footer:*/
+footer {
+  width: 100vw;
+  padding: 2%;
+  margin-left: 0px;
+  line-height: 1.9;
+  font-weight: bold;
+  background-color: var(--alt-background-color);
+
+  /*grid for footer with two columns and four rows */
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 8rem 8rem 13rem 10rem;
 }
 
-/* Mobile view */
-@media (max-width: 480px) {
-  nav ul {
-    width: 100%; 
-    gap: 0; 
+footer > ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer li {
+  list-style-type:none ;
+}
+
+footer address {
+  font-style: normal;
+}
+
+/*Horizontal line*/
+footer hr{
+  width: 90vw;
+  height: 1px;
+  border-width:0;
+  background-color: black;
+}
+
+/*Display logos next to each other*/
+.logo-footer{
+  display: inline;
+}
+
+/*Sets dynamic size of logo*/
+.oslomet-logo{
+  width: 18em;
+  height: auto;
+  padding: 0px;
+}
+
+.footer-pic{
+  width: 3em;
+  height: 3em;
+  padding: 1em;
+}
+
+/*Styling for the footer items */
+
+.abonnere-text{
+  text-align: center;
+  margin: auto;
+  font-size: 1.7em;
+  padding: 0%;
+  padding-right: 5%;
+}
+
+.abonnere-knapp{
+  text-align: center;
+  margin: auto;
+  padding: 1%;
+  background-color: black;
+}
+
+.abonnere-knapp p {
+  color: white;
+  text-align: center;
+  padding: 1%;
+}
+
+.kontakt-info{
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.link-list{
+  margin: auto;
+  margin-top: 0px;
+  padding: 1%;
+}
+
+.social-media-links{
+  margin: auto;
+  margin-top: 0.5rem;
+}
+
+.pageTitle {
+  margin-bottom: 20px;
+}
+
+.study-information-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-bottom: 1px solid var(--alt-text-color);
+  padding-bottom: 40px;
+  margin-bottom: 20px;
+}
+
+.study-information-container th {
+  text-decoration: underline;
+  padding: 10px;
+  text-align: left;
+}
+
+.study-information-container td {
+  text-align: right;
+  padding: 10px;
+}
+
+.study-information-container table {
+  border-spacing: 10px;
+  border-collapse: separate;
+}
+
+.study-information-container tr {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 16px;
+  border-bottom: 1px solid rgba(238,238,238, 1);
+}
+
+.study-information-container tr:hover {
+  background-color: rgba(249,249,249, 1);
+}
+
+/* Container for the profile card */
+.profile-card {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(221,221,221, 1); 
+  padding: 15px;
+  max-width: 600px;
+  margin: 20px 0px auto;
+  margin-left: auto;
+  gap: 15px;
+}
+
+/* Profile info section */
+.profile-info {
+  flex: 1; 
+}
+/* Profile image styling */
+.profile-image {
+  width: 5.625rem;
+  border-radius: 8px; 
+  object-fit: cover; 
+}
+
+/* Title styling */
+.profile-info .title {
+  font-size: 1em;
+  color: rgba(34,34,34,1);
+  margin: 5px 0;
+}
+
+/* Contact info styling */
+.profile-info .contact-info {
+  font-size: 0.9em;
+  color: rgba(102,102,102,1);
+}
+
+.contact-info span {
+  margin-right: 8px;
+}
+
+.logo-transparent-background {
+  max-width: 600px; 
+  width: 100%; 
+  margin-left: auto; 
+}
+
+.logo-transparent-background img{
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.container-layer {
+  flex-direction: column;
+  align-items: flex-end;
+  flex: 1;
+  margin-left: auto;
+}
+
+
+/* Media querries: */
+/*Computer view:*/
+@media (min-width: 801px) {
+  .abonnere-text{
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .abonnere-knapp{
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  footer hr{
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+
+  .kontakt-info{
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  
+  .link-list{
+    grid-column: 2/3;
+    grid-row: 3/5;
+  }
+
+  .social-media-links{
+    grid-column: 1/2;
+    grid-row: 4/5;
   }
 }
 
@@ -387,11 +414,6 @@ input[type=button] {
     align-items: flex-start;
   }
 
-  /* Show the menu when checkbox is checked */
-  #menu-toggle-checkbox:checked + #menu-toggle-label + ul {
-    display: flex; 
-  }
-
   nav ul li {
     width: 100%; 
   }
@@ -409,39 +431,183 @@ input[type=button] {
     height: 2rem;
   }
 
-}
-
-/* Mobile view */
-@media (max-width: 480px) {
-  nav ul {
-    width: 100%; 
-    gap: 0; 
-  }
-}
-
-@media(max-width:800px){
-  article {
-    flex-direction: column;
+  .abonnere-text{
+    grid-column: 1/2;
+    grid-row: 1/2;
   }
 
-  .study-year{
-    width: inherit;
+  .abonnere-knapp{
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  footer hr{
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+
+  .kontakt-info{
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  
+  .link-list{
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+
+  .social-media-links{
+    grid-column: 1/2;
+    grid-row: 6/7;
   }
 
   nav ul li a {
     padding: 10px 12px; 
- }
-
+  }
 
   nav img {
     width: 3rem;
     height: 2rem;
   }
+
+  .main-activitypage {
+    padding: 1px;
+  }
+  .activity-header p {
+    font-size: 8px;
+  }
+  .activity-section, .activity-section-mirror {
+    grid-template-columns: 1fr; /* Endrer til én boks på hver kolonne på små skjermer */
+    text-align: center; /*Sentrerer h3 i forhold til skjerm*/
+  }
+  /*Gjør at alle bilder vises før tekst*/
+  .activity-section .activity-text {
+    order: 2;
+  }
+  .activity-section .activity-photo {
+    order: 1;
+  }
+  .activity-table th, td {
+    font-size: 12px;
+    padding: 2px; /* Mindre padding for smale skjermer */
+  }
+  .activity-table caption {
+    font-size: 14px;
+  }
+  .activity-photo img {
+    max-width: 100%;
+  }
+  .blog-wrapper {
+    grid-template-columns: 1fr; /* 1 kolonne */
+  }
+  .blog-box h3, .blog-box p{
+    text-align: center;
+  }
 }
+
+/* Mobile view */
+@media (max-width: 480px) {
+ nav ul {
+    width: 100%; 
+    gap: 0; 
+  }
+}
+
+.hover-right{
+  float: right;
+}
+
+.flex-header{
+  width: 70vw;
+}
+
+.choice-subject, .required-subject{
+  padding:0.01em;
+  margin: 0.1em; /*default 0.1*/
+  width: 300px;
+}
+
+.required-subject{
+  background-color: var(--higlight-color-1);
+}
+
+.choice-subject{
+  background-color: var(--higlight-color-2);
+}
+
+.flex-container, #menu-toggle-checkbox:checked + #menu-toggle-label + ul{
+  display:flex;
+  flex-wrap:wrap;
+}
+
+
+/*Index specific: */
+/*Required for JS. Changed to display:block when coresponding button is pressed
+ * default: display:none */
+.if-matematikk-og-fysikk-shown,.if-statistiske-metoder-shown,.if-vitenskaplige-beregninger-shown{
+  display:none
+}
+
+/*Github specific: */
+.github-information {
+  max-width: 800px; 
+  margin: 20px auto; 
+  padding: 20px;
+  background-color: rgba(249,249,249,1); 
+  border: 1px solid rgba(221,221,221,1); 
+  border-radius: 8px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.github-information h2 {
+  font-size: 1.8em; 
+  margin-top: 20px; 
+  margin-bottom: 10px; 
+  font-weight: 600; 
+  padding-bottom: 5px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.github-information p {
+  font-size: 1em;
+  margin-bottom: 15px; 
+  color: rgba(34, 34, 34, 1); 
+  text-align: justify; 
+}
+
+.image-grid {
+  display: flex; 
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  align-items: center;
+}
+
+.image-grid img {
+  flex: 1 1 calc(45% - 20px);
+  max-width: 95%; 
+  max-height: 500px;
+  object-fit: contain;
+  border: 1px solid rgba(221,221,221,1);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.github-heading {
+  text-align: center;
+  color: var(--main-text-color);
+  font-size: 3em;
+  font-weight: 700;
+}
+
+/*Activity specific:*/
 .activity-nav, .activity-table tbody tr:nth-child(odd), .activity-footer {
   background-image: linear-gradient(to right,rgba(90, 168, 247, 1) ,rgba(145, 98, 240,1));
 }
 
+/* Heading styling*/
 .activity-header h1 {
   text-align: center;
 }
@@ -563,127 +729,4 @@ input[type=button] {
 }
 .blog-box h3, .blog-box p{
   text-align: center; /*Sentrerer h3 og p i forhold til boksen*/
-}
-
-/* Mobildesign */
-@media (max-width: 800px) {
-  .main-activitypage {
-    padding: 1.2px;
-  }
-  .activity-header p {
-    font-size: 8px;
-  }
-  .activity-section, .activity-section-mirror {
-    grid-template-columns: 1fr; /* Endrer til én boks på hver kolonne på små skjermer */
-    text-align: center; /*Sentrerer h3 i forhold til skjerm*/
-  }
-  /*Gjør at alle bilder vises før tekst*/
-  .activity-section .activity-text {
-    order: 2;
-  }
-  .activity-section .activity-photo {
-    order: 1;
-  }
-  .activity-table th, td {
-    font-size: 12px;
-    padding: 2px; /* Mindre padding for smale skjermer */
-  }
-  .activity-table caption {
-    font-size: 14px;
-  }
-  .activity-photo img {
-    max-width: 100%;
-  }
-  .blog-wrapper {
-    grid-template-columns: 1fr; /* 1 kolonne */
-  }
-  .blog-box h3, .blog-box p{
-    text-align: center; 
-  }
-}
-
-.hover-right{
-  float: right;
-
-}
-
-.flex-header{
-  width: 70vw;
-}
-
-.choice-subject, .required-subject{
-  padding:0.01em;
-  margin: 0.1em; /*default 0.1*/
-  width: 300px;
-}
-
-.required-subject{
-  background-color: var(--higlight-color-1);
-}
-
-.choice-subject{
-  background-color: var(--higlight-color-2);
-}
-
-.flex-container {
-  display:flex;
-  flex-wrap:wrap;
-}
-
-.if-matematikk-og-fysikk-shown,.if-statistiske-metoder-shown,.if-vitenskaplige-beregninger-shown{
-  display:none
-}
-
-.github-information {
-  max-width: 800px; 
-  margin: 20px auto; 
-  padding: 20px;
-  background-color: #f9f9f9; 
-  border: 1px solid #ddd; 
-  border-radius: 8px; 
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-}
-
-.github-information h2 {
-  font-size: 1.8rem; 
-  color: var(--main-text-color);
-  margin-top: 20px; 
-  margin-bottom: 10px; 
-  font-weight: 600; 
-  padding-bottom: 5px;
-  text-align: center;
-  text-decoration: underline;
-}
-
-.github-information p {
-  font-size: 1rem;
-  margin-bottom: 15px; 
-  color: #222; 
-  text-align: justify; 
-}
-
-.image-grid {
-  display: flex; 
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: space-between;
-  padding-bottom: 20px;
-  align-items: center;
-}
-
-.image-grid img {
-  flex: 1 1 calc(45% - 20px);
-  max-width: 95%; 
-  max-height: 500px;
-  object-fit: contain;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.github-heading {
-  text-align: center;
-  color: var(--main-text-color);
-  font-size: 3rem;
-  font-weight: 700;
 }
