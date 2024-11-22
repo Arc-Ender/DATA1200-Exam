@@ -548,6 +548,61 @@ footer hr{
   display:none
 }
 
+.program-list {
+  max-width: 600px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.program-list h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.program-item {
+  margin-bottom: 15px;
+}
+
+.program-link {
+  text-decoration: none;
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.program-link:hover {
+  background-color: #f1f1f1;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.program-link h3 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.program-link p {
+  margin: 5px 0 0;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.arrow {
+  font-size: 1.5em;
+  transition: transform 0.2s ease;
+}
+
+.program-link:hover .arrow {
+  transform: translateX(5px);
+}
+
 /*Github specific: */
 .github-information {
   max-width: 800px; 
