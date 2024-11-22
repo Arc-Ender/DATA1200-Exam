@@ -438,9 +438,7 @@ input[type=button] {
     height: 2rem;
   }
 }
-
-/* Heading styling*/
-.activity-nav{
+.activity-nav, .activity-table tbody tr:nth-child(odd), .activity-footer {
   background-image: linear-gradient(to right,rgba(90, 168, 247, 1) ,rgba(145, 98, 240,1));
 }
 
@@ -528,10 +526,6 @@ input[type=button] {
   border: 1.3px solid rgba(0, 0, 0,1);
   padding: 8px 10px; /*padding vertikalt og horisontalt*/
 }
-.activity-table tbody tr:nth-child(odd) { /*Styling på hver "odd" rad*/
-  background-image: linear-gradient(to right,rgba(90, 168, 247, 1) ,rgba(145, 98, 240,1)); /*Gradientfarge*/
-} 
-
 .blog {
   padding-bottom: 20px;
 }
@@ -570,11 +564,9 @@ input[type=button] {
 .blog-box h3, .blog-box p{
   text-align: center; /*Sentrerer h3 og p i forhold til boksen*/
 }
-.activity-footer {
-  background-image: linear-gradient(to right,rgba(90, 168, 247, 1) ,rgba(145, 98, 240,1));
-}
+
 /* Mobildesign */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .main-activitypage {
     padding: 1px;
   }
