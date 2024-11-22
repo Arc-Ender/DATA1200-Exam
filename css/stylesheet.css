@@ -493,7 +493,7 @@ input[type=button] {
 .activity-photo img {
   width: 100%; 
   height: auto; /*Høyden justeres dynamisk*/
-  border-radius: 6pt; /*Bildene får runde kanter*/
+  border-radius: 8px; /*Bildene får runde kanter*/
 }
 .activity-section-mirror {
   grid-template-columns: 1fr 1fr; 
@@ -538,15 +538,15 @@ input[type=button] {
 .blog-box {
   border: 2px solid rgba(133, 88, 222,1);
   border-radius: 6pt;
-  background-color: rgba(90, 168, 247, 1);
-  /*background-image: linear-gradient(to right,rgba(90, 168, 247, 1) ,rgba(145, 98, 240,1));*/
+  /*background-color: rgba(90, 168, 247, 1);*/
+  background-image: linear-gradient(to right,rgba(90, 168, 247, 1) ,rgba(145, 98, 240,1));
   transition: transform .2s;
 }
 .blog-box img {
   width: 100%; /* Make the image responsive */
   height: auto; /* Maintain aspect ratio */
-  border-top-left-radius: 4pt; /* Rundere venstrehjørne */
-  border-top-right-radius: 4pt; /*Rundere høyrehjørne*/
+  border-top-left-radius: 5.32px; /* Rundere venstrehjørne */
+  border-top-right-radius: 5.32px; /*Rundere høyrehjørne*/
   margin-bottom: 5px; /* Avstand under bildet*/
 }
 .blog a{
@@ -568,7 +568,7 @@ input[type=button] {
 /* Mobildesign */
 @media (max-width: 800px) {
   .main-activitypage {
-    padding: 1px;
+    padding: 1.2px;
   }
   .activity-header p {
     font-size: 8px;
