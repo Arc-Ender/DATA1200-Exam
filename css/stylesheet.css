@@ -489,12 +489,13 @@ footer hr{
 }
 
 /*Activity specific:*/
-.activity-nav, .activity-table tbody tr:nth-child(odd), .activity-footer {
+
+.activity-page, .activity-nav, .activity-table tbody tr:nth-child(odd), .activity-footer {
   background-image: linear-gradient(to right,rgba(90, 168, 247, 1) ,rgba(145, 98, 240,1));
 }
 
 /* Heading styling*/
-.activity-header h1 {
+.activity-page h1 {
   text-align: center;
 }
 .activity-header {
