@@ -761,7 +761,7 @@ footer hr{
   order: 1;
 }
 .photo-source {
-  font-size: 10px; /*Størrelsen på teksten til hvor bildet er hentet fra*/
+  font-size: 0.625em; /*Størrelsen på teksten til hvor bildet er hentet fra*/
   color:rgba(128,128,128,1); /*Fargen på teksten*/
 }
 .activity-table {
@@ -904,7 +904,7 @@ footer hr{
     padding: 1px;
   }
   .activity-header p {
-    font-size: 8px;
+    font-size: 0.5em;
   }
   .activity-section, .activity-section-mirror {
     grid-template-columns: 1fr; /* Endrer til én boks på hver kolonne på små skjermer */
@@ -918,11 +918,11 @@ footer hr{
     order: 1;
   }
   .activity-table th, td {
-    font-size: 12px;
+    font-size: 0.75em;
     padding: 2px; /* Mindre padding for smale skjermer */
   }
   .activity-table caption {
-    font-size: 14px;
+    font-size: 0.875em;
   }
   .activity-photo img {
     max-width: 100%;
