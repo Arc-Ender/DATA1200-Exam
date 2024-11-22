@@ -289,7 +289,7 @@ nav {
   z-index: 1000;
   transition: all 0.45s ease-in-out;
   display: flex;
-  justify-content: center; /* Center the wrapper */
+  justify-content: center; 
 }
 
 /* Wrapper for navbar content */
@@ -297,9 +297,9 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%; /* Expand to full width */
-  max-width: 1200px; /* Limit the width on wide screens */
-  margin: 0 auto; /* Center the container */
+  width: 100%; 
+  max-width: 1200px; 
+  margin: 0 auto; 
 }
 
 /* Unordered list inside the navbar */
@@ -360,18 +360,18 @@ nav a:hover, input[type="button"]:hover {
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   #menu-toggle-label {
-    display: block; /* Show the menu label on smaller screens */
+    display: block; 
   }
 
   .navbar-container ul {
-    display: none; /* Hide the menu by default */
+    display: none; 
   }
 
   #menu-toggle-checkbox:checked + #menu-toggle-label + ul {
-    display: flex; /* Show menu when checkbox is checked */
+    display: flex; 
     flex-direction: column;
     gap: 10px;
-    background-color: var(--alt-background-color); /* Optional styling */
+    background-color: var(--alt-background-color); 
     padding: 10px;
   }
 }
