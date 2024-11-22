@@ -27,8 +27,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: var(--main-background-color);
   margin: 0;
-  display: flex;
-  flex-direction: column;
   align-items: center; 
 }
 
@@ -155,6 +153,7 @@ input[type=button] {
   margin: 0 auto; /* Center the container */
 }
 
+
 /* Hamburger checkbox and label styling */
 #menu-toggle-checkbox {
   display: none; /* Hide the checkbox */
@@ -169,11 +168,9 @@ input[type=button] {
   font-weight: 700;
 }
 
-
 /*Footer:*/
 footer {
-  width: 100vw;
-  padding: 2%;
+  padding: 2vw;
   margin-left: 0px;
   line-height: 1.9;
   font-weight: bold;
@@ -183,6 +180,11 @@ footer {
   display: grid;
   grid-template-columns: 2fr 2fr;
   grid-template-rows: 8rem 8rem 13rem 10rem;
+}
+
+footer a {
+  text-decoration: underline;
+  color: black;
 }
 
 footer > ul {
@@ -202,6 +204,7 @@ footer address {
 /*Horizontal line*/
 footer hr{
   width: 90vw;
+  grid-column: 1/3;
   height: 1px;
   border-width:0;
   background-color: black;
@@ -214,9 +217,9 @@ footer hr{
 
 /*Sets dynamic size of logo*/
 .oslomet-logo{
-  width: 18em;
+  width: 18rem;
   height: auto;
-  padding: 0px;
+  padding: 0;
 }
 
 .footer-pic{
@@ -231,21 +234,21 @@ footer hr{
   text-align: center;
   margin: auto;
   font-size: 1.7em;
-  padding: 0%;
-  padding-right: 5%;
+  padding: 0;
+  padding-right: 5vw;
 }
 
 .abonnere-knapp{
   text-align: center;
   margin: auto;
-  padding: 1%;
+  padding: 1vw;
   background-color: black;
 }
 
 .abonnere-knapp p {
   color: white;
   text-align: center;
-  padding: 1%;
+  padding: 1vw;
 }
 
 .kontakt-info{
@@ -255,8 +258,8 @@ footer hr{
 
 .link-list{
   margin: auto;
-  margin-top: 0px;
-  padding: 1%;
+  margin-top: 0;
+  padding: 1vw;
 }
 
 .social-media-links{
@@ -367,39 +370,55 @@ footer hr{
 
 
 /* Media querries: */
-/*Computer view:*/
-@media (min-width: 801px) {
+  
+/*footer scaling*/
+@media (max-width: 600px) {
+  footer {
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: auto auto auto auto auto auto; 
+    gap: 3vw; 
+  }
+
   .abonnere-text{
-    grid-column: 1/2;
     grid-row: 1/2;
   }
 
   .abonnere-knapp{
-    grid-column: 2/3;
-    grid-row: 1/2;
+    grid-row: 2/3;
+    padding: 3vw;
   }
 
-  footer hr{
-    grid-column: 1/3;
-    grid-row: 2/3;
+  .horizontal-line{
+    grid-row: 3/4;
+  
+    padding: 3vw;
   }
 
   .kontakt-info{
-    grid-column: 1/2;
-    grid-row: 3/4;
-  }
-  
-  .link-list{
-    grid-column: 2/3;
-    grid-row: 3/5;
-  }
-
-  .social-media-links{
-    grid-column: 1/2;
     grid-row: 4/5;
   }
-}
 
+  .link-list{
+    grid-row: 5/6;
+  }
+
+  .some-links{
+    grid-row: 6/7;
+    margin: 0;
+  }
+
+
+  .abonnere-text,
+  .abonnere-knapp,
+  .horizontal-line,
+  .kontakt-info,
+  .link-list,
+  .some-links {
+    
+    grid-column: 1 / 2; 
+  }
+}
 
 /* Mobile view */
 @media (max-width: 480px) {
