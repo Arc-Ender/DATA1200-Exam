@@ -32,16 +32,19 @@ article {
 }
 
 footer {
-  padding: 2%;
+  padding: 2vw;
   margin-left: 0px;
   line-height: 1.9;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-weight: bold;
   background-color: var(--alt-background-color);
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 8rem 8rem 13rem 10rem;
 }
 
 footer a {
-  text-decoration: none;
+  text-decoration: underline;
   color: black;
 }
 
@@ -61,7 +64,6 @@ footer address {
 
 footer a:hover {
   color: var(--higlight-color-1); /*adds color when hovering over links*/
-
 }
 
 /*Display logos next to each other*/
@@ -69,19 +71,11 @@ footer a:hover {
   display: inline;
 }
 
-/*grid for footer with two columns and four rows */
-footer {
-  display: grid;
-  grid-template-columns: 2fr 2fr;
-  grid-template-rows: 8rem 8rem 13rem 10rem;
-}
-
-
 /*Sets dynamic size of logo*/
 .oslomet-logo{
-  width: 18em;
+  width: 18rem;
   height: auto;
-  padding: 0px;
+  padding: 0;
 }
 
 
@@ -99,8 +93,8 @@ footer {
   text-align: center;
   margin: auto;
   font-size: 1.7em;
-  padding: 0%;
-  padding-right: 5%;
+  padding: 0;
+  padding-right: 5vw;
 }
 
 .abonnere-knapp{
@@ -108,14 +102,14 @@ footer {
   grid-row: 1/2;
   text-align: center;
   margin: auto;
-  padding: 1%;
+  padding: 1vw;
   background-color: #000000;
 }
 
 .abonnere-knapp a {
   color: white;
   text-align: center;
-  padding: 1%;
+  padding: 1vw;
 }
 
 /*Horizontal line*/
@@ -124,7 +118,7 @@ footer {
   grid-row: 2/3;
   margin: auto;
   border-top: 1px solid black;
-  width: 90%;
+  width: 90vw;
 }
 
 .kontakt-info{
@@ -138,8 +132,8 @@ footer {
   grid-column: 2/3;
   grid-row: 3/5;
   margin: auto;
-  margin-top: 0px;
-  padding: 1%;
+  margin-top: 0;
+  padding: 1vw;
 }
 
 .some-links{
@@ -154,9 +148,8 @@ footer {
     display: grid; 
     grid-template-columns: 1fr; 
     grid-template-rows: auto auto auto auto auto auto; 
-    gap: 3%; 
+    gap: 3vw; 
   }
-
 
   .abonnere-text{
     grid-row: 1/2;
@@ -164,13 +157,13 @@ footer {
 
   .abonnere-knapp{
     grid-row: 2/3;
-    padding: 3%;
+    padding: 3vw;
   }
 
   .horizontal-line{
     grid-row: 3/4;
   
-    padding: 3%;
+    padding: 3vw;
   }
 
   .kontakt-info{
