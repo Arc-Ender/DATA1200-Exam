@@ -322,7 +322,7 @@ footer hr{
 /* Title styling */
 .profile-info .title {
   font-size: 1em;
-  color: #rgba(34,34,34,1);
+  color: rgba(34,34,34,1);
   margin: 5px 0;
 }
 
