@@ -13,17 +13,21 @@
   <body>
     <header>
       <nav id="navbar" aria-label="Main navigation">
-        <a href="https://www.oslomet.no/"><img src="images/logo-oslomet.png" alt="OsloMet-logo" class="navbar-image"></a>
-         <!-- Hidden checkbox for toggle menu -->
-         <!-- Isnpired by https://dev.to/shubhamtiwari909/responsive-navbar-without-javascript-3p7o -->
-         <input type="checkbox" id="menu-toggle-checkbox" aria-label="Toggle Menu">
-         <label for="menu-toggle-checkbox" id="menu-toggle-label">Meny ☰</label>
-        <ul aria-label="navigation list">
-          <li><a href="index.html">Index</a></li>
-          <li><a href="pages/accessibility.html">Tilgjengelighet</a></li>
-          <li><a href="pages/github.html">Github</a></li>
-          <li><a href="pages/activity.html">Aktivitet</a></li>
-        </ul> 
+        <div class="navbar-container">
+          <a href="https://www.oslomet.no/">
+            <img src="images/logo-oslomet.png" alt="OsloMet-logo" class="navbar-image">
+          </a>
+          <!-- Isnpired by https://dev.to/shubhamtiwari909/responsive-navbar-without-javascript-3p7o -->
+          <!-- Hidden checkbox for toggle menu -->
+          <input type="checkbox" id="menu-toggle-checkbox" aria-label="Toggle Menu">
+          <label for="menu-toggle-checkbox" id="menu-toggle-label">Meny ☰</label>
+          <ul aria-label="navigation list">
+            <li><a href="index.html">Index</a></li>
+            <li><a href="pages/accessibility.html">Tilgjengelighet</a></li>
+            <li><a href="pages/github.html">Github</a></li>
+            <li><a href="pages/activity.html">Aktivitet</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main>
@@ -589,10 +593,10 @@
       </section>
       <section class="social-media-links">
         <ul>
-          <li class="logo-footer"><a href="https://www.facebook.com/oslomet/"><img src="images/facebook-app-round-icon.webp" alt="Link til Facebook" class="footer-pic"></a></li>
-          <li class="logo-footer"><a href="https://x.com/oslomet"><img src="images/x_icon.svg.png" alt="Link til X" class="footer-pic"></a></li>
-          <li class="logo-footer"><a href="https://no.linkedin.com/school/oslomet/"><img src="images/linkedin-icon-black-logo.wine.svg" alt="Link til LinkedIn" class="footer-pic"></a></li>
-          <li class="logo-footer"><a href="https://www.instagram.com/oslomet/?hl=nb"><img src="images/1161953_instagram_icon.svg" alt="Link til Instagram" class="footer-pic"></a></li>
+          <li class="logo-footer"><a href="https://www.facebook.com/oslomet/"><img src="images/icon-facebook.svg" alt="Link til Facebook" class="footer-pic"></a></li>
+          <li class="logo-footer"><a href="https://x.com/oslomet"><img src="images/icon-twitter.svg" alt="Link til X" class="footer-pic"></a></li>
+          <li class="logo-footer"><a href="https://no.linkedin.com/school/oslomet/"><img src="images/icon-linkedin.svg" alt="Link til LinkedIn" class="footer-pic"></a></li>
+          <li class="logo-footer"><a href="https://www.instagram.com/oslomet/?hl=nb"><img src="images/icon-instagram.svg" alt="Link til Instagram" class="footer-pic"></a></li>
         </ul>
       </section>
     </footer>

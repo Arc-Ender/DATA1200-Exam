@@ -355,6 +355,7 @@ footer hr{
   margin-left: auto;
 }
 
+
 /* Media querries: */
 /*Computer view:*/
 @media (min-width: 801px) {
@@ -502,7 +503,6 @@ footer hr{
   .blog-box h3, .blog-box p{
     text-align: center;
   }
-
 }
 
 /* Mobile view */
