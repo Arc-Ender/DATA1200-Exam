@@ -279,18 +279,27 @@ footer {
 
 /* Navbar styling */
 nav {
-  position: fixed; 
-  top: 0; 
-  left: 0; 
-  right: 0; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   padding: 10px 20px;
   box-sizing: border-box;
+  background-color: var(--alt-background-color);
+  z-index: 1000;
+  transition: all 0.45s ease-in-out;
+  display: flex;
+  justify-content: center; /* Center the wrapper */
+}
+
+/* Wrapper for navbar content */
+.navbar-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 1000; 
-  transition: all 0.45s ease-in-out; 
-  background-color: var(--alt-background-color);
+  width: 100%; /* Expand to full width */
+  max-width: 1200px; /* Limit the width on wide screens */
+  margin: 0 auto; /* Center the container */
 }
 
 /* Unordered list inside the navbar */
@@ -298,13 +307,13 @@ nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  display: flex; 
-  gap: 15px; 
+  display: flex;
+  gap: 15px;
 }
 
 /* List items in the navbar */
 nav li {
-  display: inline; 
+  display: inline;
 }
 
 /* Links inside the navbar */
@@ -329,20 +338,13 @@ nav a:hover, input[type="button"]:hover {
   height: 4.45rem;
 }
 
-input[type=button] {
-  background-color: var(--alt-background-color);
-  padding: 0.6rem;
-  margin: 0.4rem;
-  font-weight: bold;
-}
-
 /* Hamburger checkbox and label styling */
 #menu-toggle-checkbox {
   display: none; /* Hide the checkbox */
 }
 
 #menu-toggle-label {
-  display: none; 
+  display: none;
   font-size: 1.75rem;
   cursor: pointer;
   color: var(--main-text-color);
@@ -353,6 +355,32 @@ input[type=button] {
 
 #menu-toggle-label:hover {
   text-decoration: underline;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  #menu-toggle-label {
+    display: block; /* Show the menu label on smaller screens */
+  }
+
+  .navbar-container ul {
+    display: none; /* Hide the menu by default */
+  }
+
+  #menu-toggle-checkbox:checked + #menu-toggle-label + ul {
+    display: flex; /* Show menu when checkbox is checked */
+    flex-direction: column;
+    gap: 10px;
+    background-color: var(--alt-background-color); /* Optional styling */
+    padding: 10px;
+  }
+}
+
+input[type=button] {
+  background-color: var(--alt-background-color);
+  padding: 0.6rem;
+  margin: 0.4rem;
+  font-weight: bold;
 }
 
 /* Mobile view */
@@ -607,6 +635,12 @@ input[type=button] {
   }
   .blog-box h3, .blog-box p{
     text-align: center; 
+  }
+}
+
+@media (max-width: 900px) {
+  .logo-transparent-background {
+    display: none;
   }
 }
 
