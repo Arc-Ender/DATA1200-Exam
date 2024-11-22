@@ -602,13 +602,12 @@ footer hr{
   font-weight: 700;
 }
 
-
 /*Activity specific:*/
-/* Heading styling*/
-.activity-nav{
+.activity-nav, .activity-table tbody tr:nth-child(odd), .activity-footer {
   background-image: linear-gradient(to right,rgba(90, 168, 247, 1) ,rgba(145, 98, 240,1));
 }
 
+/* Heading styling*/
 .activity-header h1 {
   text-align: center;
 }
@@ -660,7 +659,7 @@ footer hr{
 .activity-photo img {
   width: 100%; 
   height: auto; /*Høyden justeres dynamisk*/
-  border-radius: 6pt; /*Bildene får runde kanter*/
+  border-radius: 8px; /*Bildene får runde kanter*/
 }
 .activity-section-mirror {
   grid-template-columns: 1fr 1fr; 
@@ -693,10 +692,6 @@ footer hr{
   border: 1.3px solid rgba(0, 0, 0,1);
   padding: 8px 10px; /*padding vertikalt og horisontalt*/
 }
-.activity-table tbody tr:nth-child(odd) { /*Styling på hver "odd" rad*/
-  background-image: linear-gradient(to right,rgba(90, 168, 247, 1) ,rgba(145, 98, 240,1)); /*Gradientfarge*/
-} 
-
 .blog {
   padding-bottom: 20px;
 }
@@ -709,15 +704,15 @@ footer hr{
 .blog-box {
   border: 2px solid rgba(133, 88, 222,1);
   border-radius: 6pt;
-  background-color: rgba(90, 168, 247, 1);
-  /*background-image: linear-gradient(to right,rgba(90, 168, 247, 1) ,rgba(145, 98, 240,1));*/
+  /*background-color: rgba(90, 168, 247, 1);*/
+  background-image: linear-gradient(to right,rgba(90, 168, 247, 1) ,rgba(145, 98, 240,1));
   transition: transform .2s;
 }
 .blog-box img {
   width: 100%; /* Make the image responsive */
   height: auto; /* Maintain aspect ratio */
-  border-top-left-radius: 4pt; /* Rundere venstrehjørne */
-  border-top-right-radius: 4pt; /*Rundere høyrehjørne*/
+  border-top-left-radius: 5.32px; /* Rundere venstrehjørne */
+  border-top-right-radius: 5.32px; /*Rundere høyrehjørne*/
   margin-bottom: 5px; /* Avstand under bildet*/
 }
 .blog a{
@@ -734,7 +729,4 @@ footer hr{
 }
 .blog-box h3, .blog-box p{
   text-align: center; /*Sentrerer h3 og p i forhold til boksen*/
-}
-.activity-footer {
-  background-image: linear-gradient(to right,rgba(90, 168, 247, 1) ,rgba(145, 98, 240,1));
 }
