@@ -1,35 +1,245 @@
 <!DOCTYPE html>
-<html lang="no">
-  <head>
+<html lang="no" class="activity-page">
+  <head class="main-activitypage">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
+    <title>Aktivitet - OsloMet</title>
     <link href="../css/stylesheet.css" rel="stylesheet">
     <link rel="icon" href="https://www.oslomet.no/build/images/favicon-32x32.png">
+    <script src="../scripts/navbarScroll.js"></script>
   </head>
   <body>
     <header>
-      <nav id="navbar">
-        <img src="../images/logo-oslomet.png" alt="Logo">
-         <!-- Hidden checkbox for toggle menu -->
-         <!-- Isnpired by https://dev.to/shubhamtiwari909/responsive-navbar-without-javascript-3p7o -->
-         <input type="checkbox" id="menu-toggle-checkbox" aria-label="Toggle Menu">
-         <label for="menu-toggle-checkbox" id="menu-toggle-label">Meny ☰</label>
-        <ul>
-          <li><a href="../index.html">Index</a></li>
-          <li><a href="../pages/accessibility.html">Tilgjengelighet</a></li>
-          <li><a href="../pages/github.html">Github</a></li>
-          <li><a href="../pages/activity.html">Aktivitet</a></li>
-        </ul> 
+      <nav id="navbar" class="activity-nav">
+        <div class="navbar-container">
+          <a href="https://www.oslomet.no/">
+            <img src="../images/logo-oslomet.png" alt="OsloMet-logo" class="navbar-image">
+          </a>
+          <!-- Isnpired by https://dev.to/shubhamtiwari909/responsive-navbar-without-javascript-3p7o -->
+          <!-- Hidden checkbox for toggle menu -->
+          <input type="checkbox" id="menu-toggle-checkbox" aria-label="Toggle Menu">
+          <label for="menu-toggle-checkbox" id="menu-toggle-label">Meny ☰</label>
+          <ul>
+            <li><a href="../index.html">Index</a></li>
+            <li><a href="../pages/accessibility.html">Tilgjengelighet</a></li>
+            <li><a href="../pages/github.html">Github</a></li>
+            <li><a href="../pages/activity.html">Aktivitet</a></li>
+          </ul>
+        </div>
       </nav>
+      <div class="activity-header"> 
+        <img src="../images/Folk-i-aktivitet.jpg" alt="folk i aktivitet" width="100%">
+        <div class="activity-front-photo">
+          <h1>Aktivitet</h1>
+          <!--Fotografen er en av gruppemedlemmene-->
+          <p>Foto: Privat</p> 
+        </div>
+      </div>
     </header>
-    <main>
-      
+    <main class="main-activitypage">
+      <hr>
+      <h2>Aktiviteter på OsloMet</h2>
+      <p>
+        OsloMet tilbyr masse musikalske aktiviteter selv om det ikke er en musikkbasert universitet.
+        Når æ våkne på mårran en sommerdag og ser ut av vinduet mitt. Og sola skin og himmeln e blå
+        og æ tar sommerkjolen på. Tre ganger fem og fire pluss tre. No kan æ bare blåse i det
+        For sola skin og himmeln e blå. Og æ tar sommerkjolen på. Wow!
+      </p>
+      <h2>Aktiviteter vi tilbyr</h2>
+      <section class="activity-section">
+        <div class="activity-text">
+          <h3>K-pop dansing</h3>
+          <p>Nå som koreansk kultur har blitt mer populær i det siste,
+             så har OsloMet valgt å tilby k-pop dansing som en aktivitet. Annenhver måned arrangerer vi en kpop-dansekonkurranse
+             der man kan vise fram sine danseferdigheter og danse til sine favorittsanger og grupper sammen med venner.
+            Her er et eksempel <a href="https://youtu.be/b6ycw7p9-bE?si=KZdXc_p_6hAb_R4w">på en kpop-dans.</a></p>
+          <p>Er du jjinja interresert? Aigoo, shibal! <a href="https://www.jopping.org/home">Trykk her for å melde deg på.</a></p>  
+        </div>
+        <div class="activity-photo">
+          <img src="../images/kpopdansingCopyrightfree.jpg" alt="EXO opptrer under 2013 K-POP World Festival">
+          <p class="photo-source">Foto: KOREA.NET - Official page of the Republic of Korea</p> <!--under lisens fra Creative Commons Attribution-Share Alike 2.0 Generic license-->
+        </div>
+      </section>
+      <section class="activity-section-mirror">
+        <div class="activity-text">
+          <h3>Underground HipHop</h3>
+          <p>Yo, what's good? Er du mer interresert i vestlig musikk?
+            Vi tilbyr underground hiphop der vi arrangerer rappekonkurranser en gang i uka.
+            Man kan også drive med breakdancing, DJ-ing og graffiti. Det som er unikt hos oss med rappinga, er
+            at vi tilbyr <a href="https://youtu.be/nfJKNeZThmU?si=tdj49a8TVsiwMmsG">rapbattles med villdyr!</a> 
+            Villdyrene ble ikke fanget og hjernevasket til dette! Keep it trill and see you at the battle stage homie!</p>
+          <p><a href="https://youtu.be/Q1rQc7keRng?si=2h5VZlGH2pY_UDh4">Meld deg på her homie</a></p>
+        </div>
+        <div class="activity-photo">
+          <img src="../images/rapper-in-korea.jpg" alt="Ukjent rapper i Sør-Korea">  
+          <p class="photo-source">Foto: Privat</p>  <!--Fotografen er en av gruppemedlemmene--> 
+        </div>                                                        
+      </section>
+      <section class="activity-section">
+        <div class="activity-text">
+          <h3>Rock</h3>
+          <p>Is this the real life? Is this just fantasy?
+            Caught in a landslide, no escape from reality
+            Open your eyes, look up to the skies and see
+            I'm just a poor boy, I need no sympathy
+            Because I'm easy come, easy go
+            Little high, little low
+            Any way the wind blows doesn't really matter to me, to me. Samle ditt eget band med venner,
+            opptre foran folk og rock din vei til berømmelse! Dette er en god mulighet for deg som
+            drømmer om å bli en rockestjerne i tilegg til å sikre en utdannelse ved siden
+            av uten å bli påkjørt av en kinesisk lastebil.</p>
+            <p><a href="https://www.youtube.com/watch?v=fJ9rUzIMcZQ">Click here to join</a></p>
+        </div>
+        <div class="activity-photo">
+          <img src="../images/rockCopyrightfree.jpg" alt="Utstilling av gitarer utendørs">
+          <p class="photo-source">Foto: Andrew Hitchcock</p> <!--under lisens fra  Creative Commons Attribution 2.0 Generic license.-->
+        </div>
+      </section>
+      <section class="activity-section-mirror">
+        <div class="activity-text">
+          <h3>Karaoke</h3>
+          <p>Er du en normal person eller føler at de øvre aktivitetene er for ekstaordinært? Da er det bare å komme til vår karaokebar! OsloMet karaoke har en del sanger i vårt sangbibliotek, alt fra DJ Khaled til Jahn Teigen.
+            Vi har også private rom for de som vil synge alene eller kun foran venner som i Japan. Her er trenger du ikke å kunne synge bra, det viktigste er at man har det gøy!
+          Om du klarer å få 100 poeng på alle de vietnamesiske sangene, får du garantert plass i Eurovision.</p>
+          <p><a href="https://youtu.be/MJbE3uWN9vE?si=erz5P1UV5twkucXQ">Klikk her for å få mer informasjon.</a></p>
+        </div>
+        <div class="activity-photo">
+          <img src="../images/KaraokeParty.jpg" alt="En vennegruppe som synger karaoke" width="80%">
+          <p class="photo-source">Foto: Getty Images</p>
+        </div>
+      </section>
+      <h2>Programoversikt</h2>
+      <!--Legger til tabell-->
+      <section class="activity-table">
+        <table>
+          <caption>Plan for desember 2024</caption>
+          <thead>
+            <tr>
+              <th scope="col">Aktivitet</th>
+              <th scope="col">Hva skjer?</th>
+              <th scope="col">Dato</th>
+              <th scope="col">Tid</th>
+              <th scope="col">Sted</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Kpop-dansing</th>
+              <td>Random Dance Play</td>
+              <td>19. desember</td>
+              <td>18:00-19:00</td>
+              <td>Operahuset</td>
+            </tr>
+            <tr>
+              <th scope="row">Underground HipHop</th>
+              <td>Rapkonkurranse</td>
+              <td>16. desember</td>
+              <td>20:05-01:00</td>
+              <td>Kjelleren til Obama</td>
+            </tr>
+            <tr>
+              <th scope="row">Rock</th>
+              <td>Episk rockshow</td>
+              <td>20. desember</td>
+              <td>19:30-22:00</td>
+              <td>Kjell Tore's yacht</td>
+            </tr>
+            <tr>
+              <th scope="row">Karaoke</th>
+              <td>Vietnamesiske julehits</td>
+              <td>22. desember</td>
+              <td>21:00-00:00</td>
+              <td>London Heathrow</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <h2>Our frickin awesome blog</h2>
+      <section class="blog">
+        <div class="blog-wrapper">
+          <a href="https://thesmartlocal.com/vietnam/vietnamese-hip-hop-artists/">
+            <div class="blog-box">
+              <img src="../images/SeoulNtower.jpg" alt="N Seoul Tower"> <!--Fotografen er en av gruppemedlemmene-->
+              <h3>Felix vinner Rap-VM</h3>
+              <p>Felix Stelander Karlsson fra skolen vår vinner Rap-VM
+                i Sør-Korea 2024. Han rappet fantastisk på vietnamesisk!
+              </p>
+            </div>
+          </a>
+          <a href="https://www.universeum.se/">
+            <div class="blog-box">
+              <img src="../images/orange-bird.jpg" alt="En oransje fugl">
+              <h3>Tur til Gøteborg</h3>
+              <p>
+              Vår K-pop team dro til Universeum med Erna Solberg for å se på eksotiske dyr.
+              Trykk for å lese mer.
+              </p>
+            </div>
+          </a>
+          <a href="https://www.ticketmaster.no/">
+            <div class="blog-box">
+              <img src="../images/JungkookCopyrightfree.jpg" alt="BTS Jungkook"> <!--Foto: Dispatch / Wikimedia Commons, lisensiert under Creative Commons Attribution 3.0 Unported license.-->
+              <h3>K-pop møter Oslo</h3>
+              <p>
+              Jungkook fra BTS holdt foredrag om koreansk musikk på OsloMet P35. Han ble møtt på med mye ros.
+              </p>
+            </div>
+          </a>
+          <a href="https://www.whitehouse.gov/">
+            <div class="blog-box">
+              <!--Foto: Center for American Progress Action Fund / Wikimedia Commons, lisensiert under Creative Commons Attribution-Share Alike 2.0 Generic license.-->
+              <img src="../images/ObamaCopyrightfree.jpg" alt="Barack Obama"> 
+              <h3>Obama rapbattle bekreftet</h3>
+              <p>
+              Obama har gjort om kjelleren sin til en episk hiphop-arena.
+              Han skal arrangere en rap-turnering for OsloMet studenter i desember.
+              </p>
+            </div>
+          </a>
+        </div>
+      </section>
     </main>
-    <footer>
-      
+    <footer class="activity-footer">
+      <section class="abonnere-text">
+        <p>Hold deg oppdatert på hva som skjer</p>
+      </section>
+      <a href="https://www.oslomet.no/nyhetsbrev" class="abonnere-knapp">
+        <div>
+          <p>Abonner på vårt nyhetsbrev</p>
+        </div>
+      </a>
+      <hr>
+      <section class="kontakt-info">
+        <img class="oslomet-logo"  src="images/logo-footer.svg" alt="OsloMet Logo">
+        <address> Postboks 4, St. Olavs plass <br>
+          0130 Oslo <br>
+          Tlf: 67 23 50 00 <br>
+          <a href="https://www.oslomet.no/om/kontakt">Kontakt oss</a>
+        </address>
+      </section>      
+      <section class="link-list">
+        <ul>
+          <li><a href="https://www.oslomet.no/en">English</a></li>
+          <li><a href="https://www.oslomet.no/alumni">Alumni</a></li>
+          <li><a href="https://www.oslomet.no/om/ansatteoversikt">Ansatteoversikt</a></li>
+          <li><a href="https://www.oslomet.no/om/arrangement/arrangementsoversikt">Arrangementsoversikt</a></li>
+          <li><a href="https://www.oslomet.no/om/for-ansatte">For Ansatte</a></li>
+          <li><a href="https://www.oslomet.no/om/for-studenter">For studenter</a></li>
+          <li><a href="https://www.oslomet.no/om/ledige-stillinger">Ledige Stillinger</a></li>
+          <li><a href="https://www.oslomet.no/om/personvernerklering-informasjonskapslar">Personvernerklæring og informasjonskapsler</a></li>
+          <li><a href="https://www.oslomet.no/om/pressekontakt">Pressekontakt</a></li>
+          <li><a href="https://www.oslomet.no/om/tilgjengelegheitserklering">Tilgjenglighetserklæring</a></li>
+          <li><a href="https://login.microsoftonline.com">Admin</a></li>
+        </ul>
+      </section>
+      <section class="social-media-links">
+        <ul>
+          <li class="logo-footer"><a href="https://www.facebook.com/oslomet/"><img src="images/facebook-app-round-icon.webp" alt="Link til Facebook" class="footer-pic"></a></li>
+          <li class="logo-footer"><a href="https://x.com/oslomet"><img src="images/x_icon.svg.png" alt="Link til X" class="footer-pic"></a></li>
+          <li class="logo-footer"><a href="https://no.linkedin.com/school/oslomet/"><img src="images/linkedin-icon-black-logo.wine.svg" alt="Link til LinkedIn" class="footer-pic"></a></li>
+          <li class="logo-footer"><a href="https://www.instagram.com/oslomet/?hl=nb"><img src="images/1161953_instagram_icon.svg" alt="Link til Instagram" class="footer-pic"></a></li>
+        </ul>
+      </section>
     </footer>
-    <script src="../scripts/navbarScroll.js"></script>
-    <script src="../scripts/hamburgerMeny.js"></script>
   </body>
 </html>
