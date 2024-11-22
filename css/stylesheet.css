@@ -145,6 +145,16 @@ input[type=button] {
   font-weight: bold;
 }
 
+/* Wrapper for navbar content */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* Expand to full width */
+  max-width: 1200px; /* Limit the width on wide screens */
+  margin: 0 auto; /* Center the container */
+
+
 /* Hamburger checkbox and label styling */
 #menu-toggle-checkbox {
   display: none; /* Hide the checkbox */
