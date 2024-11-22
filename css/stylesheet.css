@@ -1,5 +1,15 @@
+/*
+ * CSS structure:
+ * - General 
+ * - Header
+ * - Footer
+ * - Classes
+ * - Media querries
+ * - Page specific
+ * */
+
 :root {
-  --main-background-color: rgba(255,255,255,1); /*rgba(255, 220, 0, 1);*/
+  --main-background-color: rgba(255,255,255,1);
   --alt-background-color: rgba(255,220,0,1);
   --main-text-color: black;
   --alt-text-color: white;
@@ -68,6 +78,115 @@ main a:hover, footer a:hover {
   color: var(--link-hover-color); /*adds color when hovering over links*/
   text-decoration: none;
 }
+
+
+
+/* Navbar styling */
+nav {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  padding: 10px 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000; 
+  transition: all 0.45s ease-in-out; 
+  background-color: var(--alt-background-color);
+}
+
+/* Unordered list inside the navbar */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex; 
+  gap: 15px; 
+}
+
+/* List items in the navbar */
+nav li {
+  display: inline; 
+}
+
+/* Links inside the navbar */
+nav a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 1.75rem;
+  font-weight: 700;
+  text-decoration: none;
+  font-family: inherit;
+}
+
+nav a:hover, input[type="button"]:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Logo image styling */
+.navbar-image {
+  width: 6.25rem;
+  height: 4.45rem;
+}
+
+input[type=button] {
+  background-color: var(--alt-background-color);
+  padding: 0.6rem;
+  margin: 0.4rem;
+  font-weight: bold;
+}
+
+/* Hamburger checkbox and label styling */
+#menu-toggle-checkbox {
+  display: none; /* Hide the checkbox */
+}
+
+#menu-toggle-label {
+  display: none; 
+  font-size: 1.75rem;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  font-weight: 700;
+}
+
+
+@media (min-width: 801px) {
+  .abonnere-text{
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .abonnere-knapp{
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  footer hr{
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+
+  .kontakt-info{
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  
+  .link-list{
+    grid-column: 2/3;
+    grid-row: 3/5;
+  }
+
+  .social-media-links{
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+}
+
 
 footer {
   padding: 2%;
@@ -140,7 +259,7 @@ footer hr{
   background-color: black;
 }
 
-.abonnere-knapp a {
+.abonnere-knapp p {
   color: white;
   text-align: center;
   padding: 1%;
@@ -263,123 +382,6 @@ footer hr{
   margin-left: auto;
 }
 
-/* Navbar styling */
-nav {
-  position: fixed; 
-  top: 0; 
-  left: 0; 
-  right: 0; 
-  padding: 10px 20px;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 1000; 
-  transition: all 0.45s ease-in-out; 
-  background-color: var(--alt-background-color);
-}
-
-/* Unordered list inside the navbar */
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex; 
-  gap: 15px; 
-}
-
-/* List items in the navbar */
-nav li {
-  display: inline; 
-}
-
-/* Links inside the navbar */
-nav a {
-  display: block;
-  text-align: center;
-  padding: 14px 16px;
-  font-size: 1.75rem;
-  font-weight: 700;
-  text-decoration: none;
-  font-family: inherit;
-}
-
-nav a:hover, input[type="button"]:hover {
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-/* Logo image styling */
-.navbar-image {
-  width: 6.25rem;
-  height: 4.45rem;
-}
-
-input[type=button] {
-  background-color: var(--alt-background-color);
-  padding: 0.6rem;
-  margin: 0.4rem;
-  font-weight: bold;
-}
-
-/* Hamburger checkbox and label styling */
-#menu-toggle-checkbox {
-  display: none; /* Hide the checkbox */
-}
-
-#menu-toggle-label {
-  display: none; 
-  font-size: 1.75rem;
-  cursor: pointer;
-  padding: 0;
-  margin: 0;
-  font-weight: 700;
-}
-
-header a:hover {
-  text-decoration: underline;
-}
-
-/* Mobile view */
-@media (max-width: 480px) {
-  nav ul {
-    width: 100%; 
-    gap: 0; 
-  }
-}
-
-@media (min-width: 801px) {
-  .abonnere-text{
-    grid-column: 1/2;
-    grid-row: 1/2;
-  }
-
-  .abonnere-knapp{
-    grid-column: 2/3;
-    grid-row: 1/2;
-  }
-
-  footer hr{
-    grid-column: 1/3;
-    grid-row: 2/3;
-  }
-
-  .kontakt-info{
-    grid-column: 1/2;
-    grid-row: 3/4;
-  }
-  
-  .link-list{
-    grid-column: 2/3;
-    grid-row: 3/5;
-  }
-
-  .social-media-links{
-    grid-column: 1/2;
-    grid-row: 4/5;
-  }
-}
-
 /* Tablet and mobile view */
 @media (max-width: 800px) {
   nav {
@@ -463,7 +465,7 @@ header a:hover {
 
 /* Mobile view */
 @media (max-width: 480px) {
-  nav ul {
+ nav ul {
     width: 100%; 
     gap: 0; 
   }
@@ -506,8 +508,8 @@ header a:hover {
   max-width: 800px; 
   margin: 20px auto; 
   padding: 20px;
-  background-color: #f9f9f9; 
-  border: 1px solid #ddd; 
+  background-color: rgba(249,249,249,1); 
+  border: 1px solid rgba(221,221,221,1); 
   border-radius: 8px; 
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
@@ -544,7 +546,7 @@ header a:hover {
   max-width: 95%; 
   max-height: 500px;
   object-fit: contain;
-  border: 1px solid #ddd;
+  border: 1px solid rgba(221,221,221,1);
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
