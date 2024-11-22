@@ -390,120 +390,6 @@ footer hr{
   }
 }
 
-/* Tablet and mobile view */
-@media (max-width: 800px) {
-  nav {
-    flex-direction: column; 
-    align-items: flex-start;
-  }
-
-  #menu-toggle-label {
-      display: block; 
-      position: absolute;
-      right: 20px; 
-      top: 10px;
-  }
-
-  nav ul {
-    display: none; 
-    flex-direction: column; 
-    width: 100%; 
-    padding: 0;
-    margin: 10px 0 0 0; 
-    list-style-type: none;
-    align-items: flex-start;
-  }
-
-  nav ul li {
-    width: 100%; 
-  }
-
-  nav ul li a {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    text-align: left; 
-    border-bottom: 1px solid var(--main-text-color); 
-  }
-
-  nav img {
-    width: 3rem;
-    height: 2rem;
-  }
-
-  .abonnere-text{
-    grid-column: 1/2;
-    grid-row: 1/2;
-  }
-
-  .abonnere-knapp{
-    grid-column: 1/2;
-    grid-row: 2/3;
-  }
-
-  footer hr{
-    grid-column: 1/2;
-    grid-row: 3/4;
-  }
-
-  .kontakt-info{
-    grid-column: 1/2;
-    grid-row: 4/5;
-  }
-  
-  .link-list{
-    grid-column: 1/2;
-    grid-row: 5/6;
-  }
-
-  .social-media-links{
-    grid-column: 1/2;
-    grid-row: 6/7;
-  }
-
-  nav ul li a {
-    padding: 10px 12px; 
-  }
-
-  nav img {
-    width: 3rem;
-    height: 2rem;
-  }
-
-  .main-activitypage {
-    padding: 1px;
-  }
-  .activity-header p {
-    font-size: 8px;
-  }
-  .activity-section, .activity-section-mirror {
-    grid-template-columns: 1fr; /* Endrer til én boks på hver kolonne på små skjermer */
-    text-align: center; /*Sentrerer h3 i forhold til skjerm*/
-  }
-  /*Gjør at alle bilder vises før tekst*/
-  .activity-section .activity-text {
-    order: 2;
-  }
-  .activity-section .activity-photo {
-    order: 1;
-  }
-  .activity-table th, td {
-    font-size: 12px;
-    padding: 2px; /* Mindre padding for smale skjermer */
-  }
-  .activity-table caption {
-    font-size: 14px;
-  }
-  .activity-photo img {
-    max-width: 100%;
-  }
-  .blog-wrapper {
-    grid-template-columns: 1fr; /* 1 kolonne */
-  }
-  .blog-box h3, .blog-box p{
-    text-align: center;
-  }
-}
 
 /* Mobile view */
 @media (max-width: 480px) {
@@ -729,4 +615,118 @@ footer hr{
 }
 .blog-box h3, .blog-box p{
   text-align: center; /*Sentrerer h3 og p i forhold til boksen*/
+}
+/* Tablet and mobile view */
+@media (max-width: 800px) {
+  nav {
+    flex-direction: column; 
+    align-items: flex-start;
+  }
+
+  #menu-toggle-label {
+      display: block; 
+      position: absolute;
+      right: 20px; 
+      top: 10px;
+  }
+
+  nav ul {
+    display: none; 
+    flex-direction: column; 
+    width: 100%; 
+    padding: 0;
+    margin: 10px 0 0 0; 
+    list-style-type: none;
+    align-items: flex-start;
+  }
+
+  nav ul li {
+    width: 100%; 
+  }
+
+  nav ul li a {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: left; 
+    border-bottom: 1px solid var(--main-text-color); 
+  }
+
+  nav img {
+    width: 3rem;
+    height: 2rem;
+  }
+
+  .abonnere-text{
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .abonnere-knapp{
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  footer hr{
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+
+  .kontakt-info{
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  
+  .link-list{
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+
+  .social-media-links{
+    grid-column: 1/2;
+    grid-row: 6/7;
+  }
+
+  nav ul li a {
+    padding: 10px 12px; 
+  }
+
+  nav img {
+    width: 3rem;
+    height: 2rem;
+  }
+
+  .main-activitypage {
+    padding: 1px;
+  }
+  .activity-header p {
+    font-size: 8px;
+  }
+  .activity-section, .activity-section-mirror {
+    grid-template-columns: 1fr; /* Endrer til én boks på hver kolonne på små skjermer */
+    text-align: center; /*Sentrerer h3 i forhold til skjerm*/
+  }
+  /*Gjør at alle bilder vises før tekst*/
+  .activity-section .activity-text {
+    order: 2;
+  }
+  .activity-section .activity-photo {
+    order: 1;
+  }
+  .activity-table th, td {
+    font-size: 12px;
+    padding: 2px; /* Mindre padding for smale skjermer */
+  }
+  .activity-table caption {
+    font-size: 14px;
+  }
+  .activity-photo img {
+    max-width: 100%;
+  }
+  .blog-wrapper {
+    grid-template-columns: 1fr; /* 1 kolonne */
+  }
+  .blog-box h3, .blog-box p{
+    text-align: center;
+  }
 }
