@@ -36,7 +36,7 @@
 
 :root.activity-page {
   --alt-background-color: rgba(90, 168, 247, 1);
-  --alt-background-gradient:linear-gradient(to right,rgba(90, 168, 247, 1) ,rgba(145, 98, 240,1));
+  --background-gradient:linear-gradient(to right,rgba(90, 168, 247, 1) ,rgba(145, 98, 240,1));
 
   background: var(--alt-background-color);
 }
@@ -335,12 +335,21 @@ footer hr{
 }
 
 .abonnere-knapp{
-  color: var(--alt-text-color);
   background-color: var(--main-border-color);
   text-align: center;
   margin: auto;
   padding: 2vw;
   text-align: center;
+}
+
+.abonnere-knapp:not(:hover) p{
+  color: var(--alt-text-color);
+  text-decoration: underline;
+}
+
+.abonnere-knapp:hover p {
+  color: var(--link-hover-color);
+  text-decoration: none;
 }
 
 .kontakt-info{
@@ -954,7 +963,7 @@ footer hr{
 
 
 .activity-page nav, .activity-table tbody tr:nth-child(odd), .activity-page footer {
-  background-image: linear-gradient(to right,rgba(90, 168, 247, 1) ,rgba(145, 98, 240,1));
+  background-image: var(--background-gradient);
 }
 
 /* Heading styling*/
