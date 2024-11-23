@@ -638,7 +638,7 @@ footer hr{
 }
 
 /*Github specific: */
-.github-information {
+.information-text {
   max-width: 800px; 
   margin: 20px auto; 
   padding: 20px;
@@ -648,7 +648,7 @@ footer hr{
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
-.github-information h2 {
+.information-text h2 {
   font-size: 1.8em; 
   margin-top: 20px; 
   margin-bottom: 10px; 
@@ -658,7 +658,7 @@ footer hr{
   text-decoration: underline;
 }
 
-.github-information p {
+.information-text p {
   font-size: 1em;
   margin-bottom: 15px; 
   color: rgba(34, 34, 34, 1); 
