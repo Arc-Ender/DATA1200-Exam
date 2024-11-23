@@ -3,16 +3,20 @@
  * - Colors
  * - General elements
  * - General classes
- * - Navbar
- * - Footer
+ * - Navbar styling
+ * - Footer styling
  * - Media querries
- * - Page specific
+ * - Page specific styling
+ *   -> Index styling
+ *   -> Github styling
+ *   -> Accessability styling
+ *   -> Activity-page styling
  * */
 
 
 
 
-/* Colors :*/
+/* Colors: */
 
 
 
@@ -39,7 +43,9 @@
 
 
 
-/* General styling: */
+/* General elements: */
+
+
 
 
 /* Styling for the body */
@@ -548,12 +554,18 @@ footer hr{
   }
 }
 
+@media (min-width: 801px) {
+  .activity-section, .activity-section-mirror {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 
 
 
 
 
-/* Index Styling: */
+/* Page specific styling */
+/* Index styling: */
 
 
 
@@ -895,7 +907,7 @@ footer hr{
 
 
 
-/* Github specific styling: */
+/* Github styling: */
 
 
 
@@ -921,7 +933,7 @@ footer hr{
 
 
 
-/* Accessibility-page specific styling: */
+/* Accessability styling: */
 
 
 
@@ -963,7 +975,7 @@ footer hr{
   padding: 20px;
   box-sizing: border-box;
 }
-.activitypage main {
+.activity-page main {
   display: grid;
   flex-direction: column;
   padding-left: 60px;
@@ -971,7 +983,6 @@ footer hr{
 }
 .activity-section, .activity-section-mirror {
   display: grid;
-  grid-template-columns: 1fr 1fr;
   gap: 30px;
   padding-top: 30px; 
   padding-bottom: 30px;
@@ -1009,7 +1020,7 @@ footer hr{
 }
 .activity-table table {
   border-collapse: collapse;
-  border-color: solid black 2px;
+  border-color: var(--default-border-color) solid 2px;
   width: 80%;
   margin: auto;
   table-layout: auto;
