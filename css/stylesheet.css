@@ -67,6 +67,7 @@ body {
 
 /* Main attribute styling */
 main {
+  margin: auto;
   margin-top: 6.2rem;
   display: flex;
   flex-direction: column;
