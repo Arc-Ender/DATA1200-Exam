@@ -499,7 +499,7 @@ footer hr{
 
 .program-link {
   text-decoration: none;
-  color: #000;
+  color: var(--main-text-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -571,7 +571,7 @@ footer hr{
 .story-text p {
   margin: 0;
   font-size: 1em;
-  color: #333;
+  color: var(--main-text-color);
 }
 
 .story-image {
@@ -733,19 +733,19 @@ footer hr{
 
 .link-with-arrow:hover {
   text-decoration: underline;
-  color: #333;
+  color: var(--main-text-color);
   text-decoration: none;
 }
 
 .underline-link {
   text-decoration: none;
-  color: #333;
+  color: var(--main-text-color);
   border-bottom: 2px solid #ffd700;
   transition: border-color 0.3s ease;
 }
 
 .underline-link:hover {
-  border-color: #333;
+  border-color: var(--main-text-color);
 }
 /*Activity specific:*/
 
