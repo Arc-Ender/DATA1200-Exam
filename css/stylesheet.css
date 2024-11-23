@@ -636,7 +636,7 @@ footer hr{
   left: 0;
 }
 
-/*Github specific: */
+/*Standard for text information boxes*/
 .information-text {
   max-width: 800px; 
   margin: 20px auto; 
@@ -664,6 +664,7 @@ footer hr{
   text-align: justify; 
 }
 
+/*Github specific*/
 .image-grid {
   display: flex; 
   flex-wrap: wrap;
