@@ -764,6 +764,7 @@ footer hr{
 }
 .activity-header img {
   vertical-align: middle; /*Gjør at bildet passer med fallback*/
+  width: 100%;
 }
 .activity-header .activity-front-photo {
   position: absolute; /* Posisjonerer tekst */
