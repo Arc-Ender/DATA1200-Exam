@@ -24,8 +24,9 @@
   /*Text:*/
   --main-text-color: black;
   --alt-text-color: white;
-  --main-link-color: rgba(0,0,240,1);
+  --main-link-color: rgba(0,0,238,1); /* Default: 0, 0, 238, 1 */
   --link-hover-color: rgba(255, 170, 0, 1);
+  --link-visited: rgba(85, 26, 139, 1); /* Default: 85, 26, 139, 1 */
 
   /*Bacground colors*/
   --main-background-color: rgba(255,255,255,1);
@@ -41,8 +42,10 @@
 }
 
 :root.activity-page {
-  --alt-background-color: rgba(90, 168, 247, 1);
+  --alt-background-color: rgba(145, 98, 240,1);
   --background-gradient:linear-gradient(to right,rgba(90, 168, 247, 1) ,rgba(145, 98, 240,1));
+
+  --alt-border-color: rgba(133, 88, 222,1);
 
   background: var(--alt-background-color);
 }
@@ -124,6 +127,10 @@ a {
   color: var(--main-link-color);
 }
 
+main a:visited {
+  color: var(--link-visited);
+}
+
 /*When hovering over general links not in header*/
 main a:hover, footer a:hover {
   color: var(--link-hover-color); /*adds color when hovering over links*/
@@ -171,6 +178,8 @@ main a:hover, footer a:hover {
   display:flex;
   flex-wrap:wrap;
 }
+
+
 
 
 
@@ -917,7 +926,7 @@ footer hr{
 }
 
 .underline-link:hover {
-  border-color: var(--main-border-color);
+  border-color: var(--main-text-color);
 }
 
 
@@ -972,24 +981,28 @@ footer hr{
   background-image: var(--background-gradient);
 }
 
-/* Heading styling*/
-.activity-page h1 {
-  text-align: center;
-}
 .activity-header {
   position: relative;
   max-width: 100%;
   margin: 0 auto;
 }
+.activity-page h1, .activity-page header p {
+  color: var(--alt-text-color);
+}
+/* Heading styling*/
+.activity-page h1 {
+  text-align: center;
+}
+
 .activity-header img {
   vertical-align: middle;
   width: 100%;
 }
+
 .activity-header .activity-front-photo {
   position: absolute;
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
-  color: var(--alt-text-color);
   width: 100%;
   padding: 20px;
   box-sizing: border-box;
@@ -1058,10 +1071,11 @@ footer hr{
   gap: 30px;
 }
 .blog-box {
-  border: 2px solid rgba(133, 88, 222,1);
-  border-radius: 6pt;
-  background-image: linear-gradient(to right,rgba(90, 168, 247, 1) ,rgba(145, 98, 240,1));
+  border: 2px solid var(--alt-border-color);
+  border-radius: 6px;
+  background-image: var(--background-gradient);
   transition: transform .2s;
+  text-align: center;
 }
 
 .blog-box img {
@@ -1070,6 +1084,7 @@ footer hr{
   border-top-left-radius: 5.32px;
   border-top-right-radius: 5.32px;
   margin-bottom: 5px;
+
 }
 .blog a:link {
   text-decoration: none;
@@ -1079,7 +1094,4 @@ footer hr{
 }
 .blog-box:hover {
   transform: scale(0.95);
-}
-.blog-box {
-  text-align: center;
 }
