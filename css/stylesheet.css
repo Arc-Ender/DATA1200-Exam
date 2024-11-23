@@ -759,21 +759,21 @@ footer hr{
 }
 .activity-header {
   position: relative;
-  max-width: 100%; /* Maksimum bredde */
-  margin: 0 auto; /* sentrerer */
+  max-width: 100%;
+  margin: 0 auto;
 }
 .activity-header img {
-  vertical-align: middle; /*Gjør at bildet passer med fallback*/
+  vertical-align: middle;
   width: 100%;
 }
 .activity-header .activity-front-photo {
-  position: absolute; /* Posisjonerer tekst */
-  bottom: 0; /* Gjør at fallback overlapper bildet. */
-  background: rgba(0, 0, 0, 0.5); /* Fallback farge */
-  color: rgba(255,255,255,1); /* Hvit tekst */
-  width: 100%; /* Full bredde */
-  padding: 20px; /* litt padding */
-  box-sizing: border-box; /*Gjør at fallback matcher størrelse med bilde*/
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: rgba(255,255,255,1);
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
 }
 .main-activitypage {
   display: grid;
@@ -782,31 +782,31 @@ footer hr{
   padding-right: 60px;
 }
 .activity-section, .activity-section-mirror {
-  display: grid; /*Legger til grid*/
-  grid-template-columns: 1fr 1fr; /*Legger til to bokser for hver rad*/
-  gap: 30px; /*Avstand mellom grid-boksene*/
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
   padding-top: 30px; 
   padding-bottom: 30px;
   width: 100%;
 }
 .main-activitypage a {
-  color:rgba(63, 108, 205,1); /*Fargen på lenken*/
+  color:rgba(63, 108, 205,1);
 }
 .main-activitypage a:hover {
-  color: rgba(211, 87, 25, 1); /*Fargen på lenken når man har musen over*/
+  color: rgba(211, 87, 25, 1);
 }
 .activity-text {
-  display: flex; /*Tilsetter flexbokser for at teksten skal være på lik linje med bildet*/
-  flex-direction: column; /*Justerer posisjon etter vertikalen*/
-  justify-content: center; /*Sentrerer tekst til passende høyde med bildet*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
 }
 .activity-text p {
-  text-align: left; /*Gjør at teksten flyttes til venstresiden*/
+  text-align: left;
 }
 .activity-photo img {
   width: 100%; 
-  height: auto; /*Høyden justeres dynamisk*/
-  border-radius: 8px; /*Bildene får runde kanter*/
+  height: auto;
+  border-radius: 8px;
 }
 .activity-section-mirror {
   grid-template-columns: 1fr 1fr; 
@@ -818,26 +818,26 @@ footer hr{
   order: 1;
 }
 .photo-source {
-  font-size: 0.625em; /*Størrelsen på teksten til hvor bildet er hentet fra*/
-  color:rgba(128,128,128,1); /*Fargen på teksten*/
+  font-size: 0.625em;
+  color:rgba(128,128,128,1);
 }
 .activity-table {
-  overflow-x: auto; /*Legger til en horisontal scrollbar til tabellen*/
+  overflow-x: auto;
 }
 .activity-table table {
   border-collapse: collapse;
   border-color: solid black 2px;
   width: 80%;
-  margin: auto; /*Sentreren tabellen i forhold til skjermen*/
-  table-layout: auto; /*Tabellens størrelse justeres dynamisk etter innholdet*/
+  margin: auto;
+  table-layout: auto;
 }
 .activity-table caption {
-  caption-side: top; /*Plasserer tabbellens caption på toppen*/
+  caption-side: top;
   padding: 20px;
 }
 .activity-table th, .activity-table td {
   border: 1.3px solid rgba(0, 0, 0,1);
-  padding: 8px 10px; /*padding vertikalt og horisontalt*/
+  padding: 8px 10px;
 }
 .blog {
   padding-bottom: 20px;
@@ -846,36 +846,35 @@ footer hr{
   display: grid;
   grid-template-columns: repeat(3, 1fr); /*tre bokser for hver rad*/
   grid-auto-rows: minmax(10px, auto); /*Minst og maks høyden boksene kan ha*/
-  gap: 30px; /*Avstand mellom boksene*/
+  gap: 30px;
 }
 .blog-box {
   border: 2px solid rgba(133, 88, 222,1);
   border-radius: 6pt;
-  /*background-color: rgba(90, 168, 247, 1);*/
   background-image: linear-gradient(to right,rgba(90, 168, 247, 1) ,rgba(145, 98, 240,1));
   transition: transform .2s;
 }
 .blog-box img {
-  width: 100%; /* Make the image responsive */
-  height: auto; /* Maintain aspect ratio */
-  border-top-left-radius: 5.32px; /* Rundere venstrehjørne */
-  border-top-right-radius: 5.32px; /*Rundere høyrehjørne*/
-  margin-bottom: 5px; /* Avstand under bildet*/
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 5.32px;
+  border-top-right-radius: 5.32px;
+  margin-bottom: 5px;
 }
 .blog a{
-  color:rgba(0, 0, 0, 1) /*Fargen på tekst i boksen blir sort istedenfor blå*/
+  color:rgba(0, 0, 0, 1)
 }
 .blog a:link {
-  text-decoration: none; /*Fjerner understrek*/
+  text-decoration: none;
 }
 .blog a:hover {
-  color:rgba(255, 255, 255, 1); /*Gjør at teksten blir hvit når man har musen over */
+  color:rgba(255, 255, 255, 1);
 }
 .blog-box:hover {
-  transform: scale(0.95); /*Gjør at boksen blir litt mindre når musen er over*/
+  transform: scale(0.95);
 }
 .blog-box h3, .blog-box p{
-  text-align: center; /*Sentrerer h3 og p i forhold til boksen*/
+  text-align: center;
 }
 /* Tablet and mobile view */
 @media (max-width: 800px) {
