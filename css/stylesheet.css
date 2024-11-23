@@ -1,12 +1,20 @@
 /*
  * CSS structure:
- * - General 
- * - Classes
- * - Header
+ * - Colors
+ * - General elements
+ * - General classes
+ * - Navbar
  * - Footer
  * - Media querries
  * - Page specific
  * */
+
+
+
+
+/* Colors :*/
+
+
 
 :root {
   --main-background-color: rgba(255,255,255,1);
@@ -29,13 +37,17 @@
   background: var(--alt-background-color);
 }
 
+
+
+/* General styling: */
+
+
 /* Styling for the body */
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: var(--main-background-color);
   margin: 0;
   align-items: center;
-  color: var(--main-text-color)
 }
 
 /* Main attribute styling */
@@ -56,7 +68,9 @@ article {
 section {
   margin-bottom: 2em;
 }
-
+p, h1, h2, h3, h4, h5 {
+  color: var(--main-text-color);
+}
 p, h6, h5{
   font-size: 1em;
 }
@@ -79,7 +93,6 @@ h2 {
   align-content: baseline;
 }
 
-/* Name styling */
 h3 {
   font-size: 1.2em;
   margin: 0;
@@ -99,13 +112,62 @@ a {
   color: var(--main-link-color);
 }
 
-/*Hover over links not in header*/
+/*When hovering over general links not in header*/
 main a:hover, footer a:hover {
   color: var(--link-hover-color); /*adds color when hovering over links*/
   text-decoration: none;
 }
 
-/* Navbar styling */
+
+
+
+
+/* General classes:  */
+
+
+
+
+
+/*Standard for text information boxes*/
+.information-text {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(249,249,249,1);
+  border: 1px solid rgba(221,221,221,1);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.information-text h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  padding-bottom: 5px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.information-text p {
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+
+/* All classes with flex + flex-wrap */
+.flex-container, #menu-toggle-checkbox:checked + #menu-toggle-label + ul, .image-grid, .study-information-container, .profile-card, .story-content {
+  display:flex;
+  flex-wrap:wrap;
+}
+
+
+
+/* Navbar styling: */
+
+
+
+
+
 nav {
   position: fixed; 
   top: 0; 
@@ -190,7 +252,15 @@ input[type=button] {
   font-weight: 700;
 }
 
-/*Footer:*/
+
+
+
+
+/* Footer styling: */
+
+
+
+
 footer {
   padding: 2vw;
   margin-left: 0px;
@@ -250,8 +320,6 @@ footer hr{
   padding: 1em;
 }
 
-/*Styling for the footer items */
-
 .abonnere-text{
   text-align: center;
   margin: auto;
@@ -284,6 +352,213 @@ footer hr{
   margin: auto;
   margin-top: 0.5rem;
 }
+
+
+
+
+
+/* Media querries: */
+
+
+
+
+
+/* Mobile view */
+@media (max-width: 480px) {
+  nav ul {
+    width: 100%;
+    gap: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .container-layer {
+    align-items: flex-start;
+    align-self: first baseline;
+  }
+  .logo-transparent-background {
+    margin-right: 0px;
+  }
+  .profile-card {
+    margin-right: 0px;
+  }
+}
+
+/*footer scaling*/
+@media (max-width: 600px) {
+  footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    gap: 3vw;
+  }
+
+  .abonnere-text{
+    grid-row: 1/2;
+  }
+
+  .abonnere-knapp{
+    grid-row: 2/3;
+    padding: 3vw;
+  }
+
+  footer hr {
+    grid-row: 3/4;
+
+    padding: 3vw;
+  }
+
+  .kontakt-info{
+    grid-row: 4/5;
+  }
+
+  .link-list{
+    grid-row: 5/6;
+  }
+
+  .some-links{
+    grid-row: 6/7;
+    margin: 0;
+  }
+
+
+  .abonnere-text,
+  .abonnere-knapp,
+  footer hr,
+  .kontakt-info,
+  .link-list,
+  .some-links {
+
+    grid-column: 1 / 2;
+  }
+}
+
+/* Tablet and mobile view */
+@media (max-width: 800px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #menu-toggle-label {
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin: 10px 0 0 0;
+    list-style-type: none;
+    align-items: flex-start;
+  }
+
+  nav ul li {
+    width: 100%;
+  }
+
+  nav ul li a {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid var(--main-text-color);
+  }
+
+  nav img {
+    width: 3rem;
+    height: 2rem;
+  }
+
+  .abonnere-text{
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .abonnere-knapp{
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  footer hr{
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+
+  .kontakt-info{
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+
+  .link-list{
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+
+  .social-media-links{
+    grid-column: 1/2;
+    grid-row: 6/7;
+  }
+
+  nav ul li a {
+    padding: 10px 12px;
+  }
+
+  nav img {
+    width: 3rem;
+    height: 2rem;
+  }
+
+  .activity-page main {
+    padding: 1px;
+  }
+  .activity-header p {
+    font-size: 0.5em;
+  }
+  .activity-section, .activity-section-mirror {
+    grid-template-columns: 1fr; /* Endrer til én boks på hver kolonne på små skjermer */
+    text-align: center; /*Sentrerer h3 i forhold til skjerm*/
+  }
+  /*Gjør at alle bilder vises før tekst*/
+  .activity-section .activity-text {
+    order: 2;
+  }
+  .activity-section .activity-photo {
+    order: 1;
+  }
+  .activity-table th, td {
+    font-size: 0.75em;
+    padding: 2px; /* Mindre padding for smale skjermer */
+  }
+  .activity-table caption {
+    font-size: 0.875em;
+  }
+  .activity-photo img {
+    max-width: 100%;
+  }
+  .blog-wrapper {
+    grid-template-columns: 1fr; /* 1 kolonne */
+  }
+  .blog-box h3, .blog-box p{
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+/* Index Styling: */
+
+
+
+
+
 
 .pageTitle {
   margin-bottom: 20px;
@@ -335,18 +610,6 @@ footer hr{
   margin-left: auto;
   gap: 15px;
 }
-@media (max-width: 400px) {
-  .container-layer {
-    align-items: flex-start;
-    align-self: first baseline;
-  }
-  .logo-transparent-background {
-    margin-right: 0px;
-  }
-  .profile-card {
-    margin-right: 0px;
-  }
-}
 
 /* Profile info section */
 .profile-info {
@@ -392,66 +655,6 @@ footer hr{
   margin-left: auto;
 }
 
-
-/* Media querries: */
-  
-/*footer scaling*/
-@media (max-width: 600px) {
-  footer {
-    display: grid; 
-    grid-template-columns: 1fr; 
-    grid-template-rows: auto auto auto auto auto auto; 
-    gap: 3vw; 
-  }
-
-  .abonnere-text{
-    grid-row: 1/2;
-  }
-
-  .abonnere-knapp{
-    grid-row: 2/3;
-    padding: 3vw;
-  }
-
-  .horizontal-line{
-    grid-row: 3/4;
-  
-    padding: 3vw;
-  }
-
-  .kontakt-info{
-    grid-row: 4/5;
-  }
-
-  .link-list{
-    grid-row: 5/6;
-  }
-
-  .some-links{
-    grid-row: 6/7;
-    margin: 0;
-  }
-
-
-  .abonnere-text,
-  .abonnere-knapp,
-  .horizontal-line,
-  .kontakt-info,
-  .link-list,
-  .some-links {
-    
-    grid-column: 1 / 2; 
-  }
-}
-
-/* Mobile view */
-@media (max-width: 480px) {
- nav ul {
-    width: 100%; 
-    gap: 0; 
-  }
-}
-
 .hover-right{
   float: right;
 }
@@ -474,13 +677,7 @@ footer hr{
   background-color: var(--higlight-color-2);
 }
 
-.flex-container, #menu-toggle-checkbox:checked + #menu-toggle-label + ul, .image-grid, .study-information-container, .profile-card, .story-content {
-  display:flex;
-  flex-wrap:wrap;
-}
 
-
-/*Index specific: */
 /*Required for JS. Changed to display:block when coresponding button is pressed
  * default: display:none */
 .if-matematikk-og-fysikk-shown,.if-statistiske-metoder-shown,.if-vitenskaplige-beregninger-shown{
@@ -641,54 +838,6 @@ footer hr{
   left: 0;
 }
 
-/*Standard for text information boxes*/
-.information-text {
-  max-width: 800px; 
-  margin: 20px auto; 
-  padding: 20px;
-  background-color: rgba(249,249,249,1); 
-  border: 1px solid rgba(221,221,221,1); 
-  border-radius: 8px; 
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-}
-
-.information-text h2 {
-  margin-top: 20px; 
-  margin-bottom: 10px; 
-  font-weight: 600; 
-  padding-bottom: 5px;
-  text-align: center;
-  text-decoration: underline;
-}
-
-.information-text p {
-  margin-bottom: 15px; 
-  text-align: justify;
-}
-
-/*Github specific*/
-.image-grid {
-  gap: 20px;
-  justify-content: space-between;
-  padding-bottom: 20px;
-  align-items: center;
-}
-
-.image-grid img {
-  flex: 1 1 calc(45% - 20px);
-  max-width: 95%; 
-  max-height: 500px;
-  object-fit: contain;
-  border: 1px solid rgba(221,221,221,1);
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.access-img{
-  width: 100%;
-  height: auto;
-}
-
 /*Links under the "studiets oppbygging" section*/
 .education-container {
   max-width: 800px;
@@ -739,7 +888,54 @@ footer hr{
 .underline-link:hover {
   border-color: var(--main-border-color);
 }
-/*Activity specific:*/
+
+
+
+
+
+
+
+/* Github specific styling: */
+
+
+
+
+
+.image-grid {
+  gap: 20px;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  align-items: center;
+}
+
+.image-grid img {
+  flex: 1 1 calc(45% - 20px);
+  max-width: 95%; 
+  max-height: 500px;
+  object-fit: contain;
+  border: 1px solid rgba(221,221,221,1);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+/* Accessibility-page specific styling: */
+
+
+
+.access-img{
+  width: 100%;
+}
+
+
+
+
+/* Activity-page styling: */
+
+
+
 
 .activity-page nav, .activity-table tbody tr:nth-child(odd), .activity-page footer {
   background-image: linear-gradient(to right,rgba(90, 168, 247, 1) ,rgba(145, 98, 240,1));
@@ -767,7 +963,7 @@ footer hr{
   padding: 20px;
   box-sizing: border-box;
 }
-.main-activitypage {
+.activitypage main {
   display: grid;
   flex-direction: column;
   padding-left: 60px;
@@ -781,12 +977,7 @@ footer hr{
   padding-bottom: 30px;
   width: 100%;
 }
-.main-activitypage a {
-  color:var(--main-link-color);
-}
-.main-activitypage a:hover {
-  color: rgba(211, 87, 25, 1);
-}
+
 .activity-text {
   display: flex;
   flex-direction: column;
@@ -846,6 +1037,7 @@ footer hr{
   background-image: linear-gradient(to right,rgba(90, 168, 247, 1) ,rgba(145, 98, 240,1));
   transition: transform .2s;
 }
+
 .blog-box img {
   width: 100%;
   height: auto;
@@ -853,132 +1045,15 @@ footer hr{
   border-top-right-radius: 5.32px;
   margin-bottom: 5px;
 }
-.blog a{
-  color: var(--main-text-color);
-}
 .blog a:link {
   text-decoration: none;
 }
-.blog a:hover {
+.blog a:hover p, .blog a:hover h3 {
   color:var(--alt-text-color);
 }
 .blog-box:hover {
   transform: scale(0.95);
 }
-.blog-box h3, .blog-box p{
+.blog-box {
   text-align: center;
-}
-/* Tablet and mobile view */
-@media (max-width: 800px) {
-  nav {
-    flex-direction: column; 
-    align-items: flex-start;
-  }
-
-  #menu-toggle-label {
-      display: block; 
-      position: absolute;
-      right: 20px; 
-      top: 10px;
-  }
-
-  nav ul {
-    display: none; 
-    flex-direction: column; 
-    width: 100%; 
-    padding: 0;
-    margin: 10px 0 0 0; 
-    list-style-type: none;
-    align-items: flex-start;
-  }
-
-  nav ul li {
-    width: 100%; 
-  }
-
-  nav ul li a {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    text-align: left; 
-    border-bottom: 1px solid var(--main-text-color); 
-  }
-
-  nav img {
-    width: 3rem;
-    height: 2rem;
-  }
-
-  .abonnere-text{
-    grid-column: 1/2;
-    grid-row: 1/2;
-  }
-
-  .abonnere-knapp{
-    grid-column: 1/2;
-    grid-row: 2/3;
-  }
-
-  footer hr{
-    grid-column: 1/2;
-    grid-row: 3/4;
-  }
-
-  .kontakt-info{
-    grid-column: 1/2;
-    grid-row: 4/5;
-  }
-  
-  .link-list{
-    grid-column: 1/2;
-    grid-row: 5/6;
-  }
-
-  .social-media-links{
-    grid-column: 1/2;
-    grid-row: 6/7;
-  }
-
-  nav ul li a {
-    padding: 10px 12px; 
-  }
-
-  nav img {
-    width: 3rem;
-    height: 2rem;
-  }
-
-  .main-activitypage {
-    padding: 1px;
-  }
-  .activity-header p {
-    font-size: 0.5em;
-  }
-  .activity-section, .activity-section-mirror {
-    grid-template-columns: 1fr; /* Endrer til én boks på hver kolonne på små skjermer */
-    text-align: center; /*Sentrerer h3 i forhold til skjerm*/
-  }
-  /*Gjør at alle bilder vises før tekst*/
-  .activity-section .activity-text {
-    order: 2;
-  }
-  .activity-section .activity-photo {
-    order: 1;
-  }
-  .activity-table th, td {
-    font-size: 0.75em;
-    padding: 2px; /* Mindre padding for smale skjermer */
-  }
-  .activity-table caption {
-    font-size: 0.875em;
-  }
-  .activity-photo img {
-    max-width: 100%;
-  }
-  .blog-wrapper {
-    grid-template-columns: 1fr; /* 1 kolonne */
-  }
-  .blog-box h3, .blog-box p{
-    text-align: center;
-  }
 }
