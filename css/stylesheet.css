@@ -739,7 +739,7 @@ footer hr{
 .underline-link {
   text-decoration: none;
   color: var(--main-text-color);
-  border-bottom: 2px solid #ffd700;
+  border-bottom: 2px solid rgba(255, 215, 0,1);
   transition: border-color 0.3s ease;
 }
 
