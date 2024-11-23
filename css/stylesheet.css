@@ -558,6 +558,10 @@ footer hr{
   .activity-section, .activity-section-mirror {
     grid-template-columns: 1fr 1fr;
   }
+  .blog-wrapper {
+    grid-template-columns: repeat(3, 1fr); /*tre bokser for hver rad*/
+
+  }
 }
 
 
@@ -1002,9 +1006,6 @@ footer hr{
   height: auto;
   border-radius: 8px;
 }
-.activity-section-mirror {
-  grid-template-columns: 1fr 1fr; 
-}
 .activity-section-mirror .activity-text { /*Boksene bytter plass der vi får bildet til venstre*/
   order: 2;
 }
@@ -1038,7 +1039,6 @@ footer hr{
 }
 .blog-wrapper {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /*tre bokser for hver rad*/
   grid-auto-rows: minmax(10px, auto); /*Minst og maks høyden boksene kan ha*/
   gap: 30px;
 }
