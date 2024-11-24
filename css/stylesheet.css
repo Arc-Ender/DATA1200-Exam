@@ -721,6 +721,7 @@ footer {
 .choice-subject, .required-subject{
   width: 300px;
   text-decoration: none;
+  max-width: 70vw;
 }
 
 .required-subject, .color-description-obligatory-subject{
