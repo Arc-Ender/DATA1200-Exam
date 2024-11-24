@@ -445,7 +445,7 @@ footer {
     padding: 3vw;
   }
 
-  footer hr {
+  .footer-content hr {
     grid-row: 3/4;
     padding: 0.1;
   }
