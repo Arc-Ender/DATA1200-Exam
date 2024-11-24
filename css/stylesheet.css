@@ -60,6 +60,7 @@
 
 body {
   background-color: var(--main-background-color);
+  font-family: var(--default-font-family);
   margin: 0;
   align-items: center;
 }
@@ -83,7 +84,6 @@ section {
 }
 
 p, h1, h2, h3, h4, h5, h6 {
-  font-family: var(--default-font-family);
   color: var(--main-text-color);
 }
 
@@ -126,7 +126,6 @@ h4 {
 
 a {
   color: var(--main-link-color);
-  font-family: var(--default-font-family);
 }
 
 main a:visited {
@@ -139,9 +138,6 @@ main a:hover, footer a:hover {
   text-decoration: none;
 }
 
-tr, li {
-  font-family: var(--default-font-family);
-}
 
 
 
