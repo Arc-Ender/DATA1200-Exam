@@ -171,7 +171,7 @@ main a:hover, footer a:hover {
 
 .information-text p {
   margin-bottom: 15px;
-  text-align: justify;
+  text-align: left;
 }
 
 
@@ -710,6 +710,7 @@ footer hr{
 .choice-subject, .required-subject{
   width: 300px;
   text-decoration: none;
+  max-width: 70vw;
 }
 
 .required-subject, .color-description-obligatory-subject{
