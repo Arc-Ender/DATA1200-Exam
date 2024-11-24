@@ -871,6 +871,7 @@ footer hr{
   text-decoration: underline;
 }
 
+/*Creates the animated transition for the link*/
 .animated-box-link::before {
   content: "";
   position: absolute;
@@ -904,7 +905,6 @@ footer hr{
 }
 
 .link-with-arrow {
-
   display: inline-flex;
   align-items: center;
   text-decoration: none;
