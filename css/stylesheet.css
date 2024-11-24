@@ -637,10 +637,6 @@ footer hr{
   border-bottom: 1px solid var(--alt-border-color);
 }
 
-.study-information-container tr:hover {
-  background-color: var(--hover-background-color);
-}
-
 /* Container for the profile card */
 .profile-card {
   align-items: center;
