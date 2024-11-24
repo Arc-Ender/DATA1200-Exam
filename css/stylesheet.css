@@ -630,11 +630,13 @@ footer {
   text-decoration: underline;
   padding: 10px;
   text-align: left;
+  font-size: 1em;
 }
 
 .study-information-container td {
   text-align: right;
   padding: 10px;
+  font-size: 1em;
 }
 
 .study-information-container table {
