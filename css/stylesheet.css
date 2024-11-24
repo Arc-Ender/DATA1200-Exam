@@ -29,11 +29,11 @@
   --link-visited: rgba(85, 26, 139, 1); /* Default: 85, 26, 139, 1 */
 
   /*Bacground colors*/
-  --main-background-color: rgba(255,255,255,1);
+  --main-background-color: white;
   --alt-background-color: rgba(255,220,0,1);
   --hover-background-color: rgba(241, 241, 241, 1);
-  --higlight-color-1: Coral;
-  --higlight-color-2: CornflowerBlue;
+  --higlight-color-1: orange;
+  --higlight-color-2: white;
   background: var(--alt-background-color);
 
   /*Other: */
@@ -84,7 +84,7 @@ article {
 section {
   margin-bottom: 2em;
 }
-p, h1, h2, h3, h4, h5 {
+p, h1, h2, h3, h4, h5, h6 {
   color: var(--main-text-color);
 }
 p, h6, h5{
@@ -700,25 +700,32 @@ footer hr{
   width: 70vw;
 }
 
-.choice-subject, .required-subject{
-  padding:0.01em;
+.choice-subject, .required-subject, .color-description-obligatory-subject, .color-description-choice-subject {
+  padding:1em;
   margin: 0.1em; /*default 0.1*/
+  border: 2px solid var(--main-border-color)
+}
+
+.choice-subject, .required-subject{
   width: 300px;
 }
 
-.required-subject{
+.required-subject, .color-description-obligatory-subject{
   background-color: var(--higlight-color-1);
 }
 
-.choice-subject{
+.choice-subject, .color-description-choice-subject{
   background-color: var(--higlight-color-2);
 }
 
+.color-description-obligatory-subject, .color-description-choice-subject {
+  margin-top: 2em;
+}
 
 /*Required for JS. Changed to display:block when coresponding button is pressed
  * default: display:none */
 .if-matematikk-og-fysikk-shown,.if-statistiske-metoder-shown,.if-vitenskaplige-beregninger-shown{
-  display:none
+  display:none;
 }
 
 /*For the "maybe interested" section at the end of index*/

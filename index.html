@@ -184,6 +184,10 @@
             <input type="button" value="Statistiske og datadrevne metoder" name="buttonStatistiskeDatadrevneModeller" onclick="showStatistiskeMetoder()">
             <input type="button" value="Vitenskapelige beregninger" name="buttonVitenskapligeBeregninger" onclick="showVitenskapligeBeregninger()">
           </div>
+          <div class="flex-container"> <!-- Fargeforklaringer -->
+            <p class="color-description-obligatory-subject">Obligatoriske fag</p>
+            <p class="color-description-choice-subject">Valgfag</p>
+          </div>
         </section>
         <section class="study-year">
           <!--
@@ -202,39 +206,39 @@
             <div class="flex-header">
               <h5>1. semester</h5>
             </div>
-            <div class="required-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/DAPE1300/2024/H%C3%98ST">Diskret matematikk</a></h6>
-              <p>DAPE1300<span class="hover-right">10 stp.</span></p>
-            </div>
-            <div class="required-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/DAPE1400/2024/H%C3%98ST">Programmering</a></h6>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DAPE1300/2024/H%C3%98ST" class="required-subject">
+                <h6>Diskret matematikk</h6>
+                <p>DAPE1300<span class="hover-right">10 stp.</span></p>
+            </a>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DAPE1400/2024/H%C3%98ST" class="required-subject">
+              <h6>Programmering</h6>
               <p>DAPE1400<span class="hover-right">10 stp.</span></p>
-            </div>
-            <div class="required-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA1100/2024/H%C3%98ST">Teknologi og samfunn for programerere</a></h6>             
+            </a>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA1100/2024/H%C3%98ST" class="required-subject">
+              <h6>Teknologi og samfunn for programerere</h6>
               <p>DATA1100<span class="hover-right">5 stp.</span></p>
-            </div>
-            <div class="required-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO1100/2024/H%C3%98ST">Innføring i modeller og beregninger</a></h6>
+            </a>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO1100/2024/H%C3%98ST" class="required-subject">
+              <h6>Innføring i modeller og beregninger</h6>
               <p>MAMO1100<span class="hover-right">5 stp.</span></p>
-            </div>
+            </a>
           </div>
           <div class="flex-container">
             <div class="flex-header">
               <h5>2. semester</h5>
             </div>
-            <div class="required-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/DAFE1000/2024/H%C3%98ST">Matematikk 1000</a></h6>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DAFE1000/2024/H%C3%98ST" class="required-subject">
+              <h6>Matematikk 1000</h6>
               <p>DAFE1000<span class="hover-right">10 stp.</span></p>
-            </div>
-            <div class="required-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/DAPE2101/2024/H%C3%98ST">Fysikk og kjemi</a></h6>
+            </a>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DAPE2101/2024/H%C3%98ST" class="required-subject">
+              <h6>Fysikk og kjemi</h6>
               <p>DAPE2101<span class="hover-right">10 stp.</span></p>
-            </div>
-            <div class="required-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA1500/2024/H%C3%98ST">Databaser</a></h6>
+            </a>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA1500/2024/H%C3%98ST" class="required-subject">
+              <h6>Databaser</h6>
               <p>DAPE1500<span class="hover-right">10 stp.</span></p>
-            </div>
+            </a>
           </div>
         </section>
         <section class="study-year">
@@ -247,132 +251,132 @@
             <div class="flex-header">
               <h5>3. semester</h5>
             </div>
-            <div class="required-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/DAPE2000/2024/H%C3%98ST">Matematikk 2000 med statistikk</a></h6>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DAPE2000/2024/H%C3%98ST" class="required-subject">
+              <h6>Matematikk 2000 med statistikk</h6>
               <p>DAPE2000<span class="hover-right">10 stp.</span></p>
-            </div>
-            <div class="required-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO2100/2024/H%C3%98ST">Moderne fysikk</a></h6>
+            </a>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO2100/2024/H%C3%98ST" class="required-subject">
+              <h6>Moderne fysikk</h6>
               <p>MAMO2100<span class="hover-right">10 stp.</span></p>
-            </div>
-            <div class="if-matematikk-og-fysikk-shown required-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO2300/2024/H%C3%98ST">Lineær algebra og introduksjon til gruppeteori</a></h6>
+            </a>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO2300/2024/H%C3%98ST" class="if-matematikk-og-fysikk-shown required-subject">
+              <h6>Lineær algebra og introduksjon til gruppeteori</h6>
               <p>MAMO2300<span class="hover-right">10 stp.</span></p>
-            </div>
-            <div class="if-statistiske-metoder-shown if-vitenskaplige-beregninger-shown required-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATS2300/2024/H%C3%98ST">Algoritmer og datastrukturer</a></h6>   
+            </a>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATS2300/2024/H%C3%98ST" class="if-statistiske-metoder-shown if-vitenskaplige-beregninger-shown required-subject">
+              <h6>Algoritmer og datastrukturer</h6>
               <p>DATS2300<span class="hover-right">10 stp.</span></p>
-            </div>
+            </a>
           </div>
           <div class="flex-container">
             <div class="flex-header">
               <h5>4. semester</h5>
             </div>
-            <div class="required-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/DAVE3705/2024/H%C3%98ST">Matematikk 4000</a></h6>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DAVE3705/2024/H%C3%98ST" class="required-subject">
+              <h6>Matematikk 4000</h6>
               <p>DAVE3705<span class="hover-right">10 stp.</span></p>
-            </div>
-            <div class="if-matematikk-og-fysikk-shown required-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO2400/2024/H%C3%98ST">Termodynamikk og statistisk fysikk</a></h6>
+            </a>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO2400/2024/H%C3%98ST" class="if-matematikk-og-fysikk-shown required-subject">
+              <h6>Termodynamikk og statistisk fysikk</h6>
               <p>MAMO2400<span class="hover-right">10 stp.</span></p>
-            </div>
-            <div class="if-matematikk-og-fysikk-shown required-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO2500/2024/H%C3%98ST">Symmetrier og algebraiske strukturer</a></h6>
+            </a>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO2500/2024/H%C3%98ST" class="if-matematikk-og-fysikk-shown required-subject">
+              <h6>Symmetrier og algebraiske strukturer</h6>
               <p>MAMO2500<span class="hover-right">10 stp.</span></p>
-            </div>
-            <div class="if-statistiske-metoder-shown required-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO3100/2024/H%C3%98ST">Statistisk analyse</a></h6>
+            </a>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO3100/2024/H%C3%98ST" class="if-statistiske-metoder-shown required-subject">
+              <h6>Statistisk analyse</h6>
               <p>MAMO3100<span class="hover-right">10 stp.</span></p>
-            </div>
-            <div class="if-statistiske-metoder-shown choice-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/ADSE3200/2024/H%C3%98ST">Visualisering</a></h6>
+            </a>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/ADSE3200/2024/H%C3%98ST" class="if-statistiske-metoder-shown choice-subject">
+              <h6>Visualisering</h6>
               <p>ADSE3200<span class="hover-right">10 stp.</span></p>
-            </div>
-            <div class="if-vitenskaplige-beregninger-shown required-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/DAVE3606/2024/H%C3%98ST">Resurseffektive programmer</a></h6>
+            </a>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DAVE3606/2024/H%C3%98ST" class="if-vitenskaplige-beregninger-shown required-subject">
+              <h6>Resurseffektive programmer</h6>
               <p>DAVE3606<span class="hover-right">10 stp.</span></p>
-            </div>
-            <div class="if-statistiske-metoder-shown choice-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO2200/2024/H%C3%98ST">Avansert modellering og beregninger</a></h6>
+            </a>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO2200/2024/H%C3%98ST" class="if-statistiske-metoder-shown choice-subject">
+              <h6>Avansert modellering og beregninger</h6>
               <p>MAMO2200<span class="hover-right">10 stp.</span></p>
-            </div>
-            <div class="if-vitenskaplige-beregninger-shown required-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO2200/2024/H%C3%98ST">Avansert modellering og beregninger</a></h6>
+            </a>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO2200/2024/H%C3%98ST" class="if-vitenskaplige-beregninger-shown required-subject">
+              <h6>Avansert modellering og beregninger</h6>
               <p>MAMO2200<span class="hover-right">10 stp.</span></p>
-            </div>
+            </a>
           </div>
           <h4 class="if-all-shown">Emnegruppe: Matematikk og fysikk</h4>
-          <div class="if-all-shown flex-container">
+          <div class="flex-container if-all-shown">
             <div class="flex-header">
               <h5>3. semester</h5>
             </div>
-            <div class="required-subject">  
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO2300/2024/H%C3%98ST">Lineær algebra og introduksjon til gruppeteori</a></h6>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO2300/2024/H%C3%98ST" class="required-subject if-all-shown">
+              <h6>Lineær algebra og introduksjon til gruppeteori</h6>
               <p>MAMO2300<span class="hover-right">10 stp.</span></p>
-            </div>
+            </a>
           </div>
-          <div class="if-all-shown flex-container">
-            <div class="flex-header">
+          <div class="flex-container">
+            <div class="flex-header if-all-shown">
               <h5>4. semester</h5>
             </div>
-            <div class="required-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO2400/2024/H%C3%98ST">Termodynamikk og statistisk fysikk</a></h6>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO2400/2024/H%C3%98ST" class="required-subject if-all-shown">
+              <h6>Termodynamikk og statistisk fysikk</h6>
               <p>MAMO2400<span class="hover-right">10 stp.</span></p>
-            </div>
-            <div class="required-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO2500/2024/H%C3%98ST">Symmetrier og algebraiske strukturer</a></h6>
+            </a>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO2500/2024/H%C3%98ST" class="required-subject if-all-shown">
+              <h6>Symmetrier og algebraiske strukturer</h6>
               <p>MAMO2500<span class="hover-right">10 stp.</span></p>
-            </div>
+            </a>
           </div>
           <h4 class="if-all-shown">Emnegruppe: Statistiske og datadrevne metoder</a></h4>
-          <div class="if-all-shown flex-container">
-            <div class="flex-header">
+          <div class="flex-container">
+            <div class="flex-header if-all-shown">
               <h5>3. semester</h5>
             </div>
-            <div class="required-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATS2300/2024/H%C3%98ST">Algoritmer og datastrukturer</a></h6>   
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATS2300/2024/H%C3%98ST" class="required-subject if-all-shown">
+              <h6>Algoritmer og datastrukturer</h6>
               <p>DATS2300<span class="hover-right">10 stp.</span></p>
-            </div>
+            </a>
           </div>
-          <div class="if-all-shown flex-container">
-            <div class="flex-header">
+          <div class="flex-container">
+            <div class="flex-header if-all-shown">
               <h5>4. semester</h5>
             </div>
-            <div class="required-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO3100/2024/H%C3%98ST">Statistisk analyse</a></h6>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO3100/2024/H%C3%98ST" class="required-subject if-all-shown">
+              <h6>Statistisk analyse</h6>
               <p>MAMO3100<span class="hover-right">10 stp.</span></p>
-            </div>
-            <div class="choice-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/ADSE3200/2024/H%C3%98ST">Visualisering</a></h6>
+            </a>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/ADSE3200/2024/H%C3%98ST" class="choice-subject if-all-shown">
+              <h6>Visualisering</h6>
               <p>ADSE3200<span class="hover-right">10 stp.</span></p>
-            </div>
-            <div class="choice-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO2200/2024/H%C3%98ST">Avansert modellering og beregninger</a></h6>
+            </a>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO2200/2024/H%C3%98ST" class="choice-subject if-all-shown">
+              <h6>Avansert modellering og beregninger</h6>
               <p>MAMO2200<span class="hover-right">10 stp.</span></p>
-            </div>
+            </a>
           </div>
           <h4 class="if-all-shown">Emnegruppe: Vitenskapelige beregninger</h4>
-          <div class="if-all-shown flex-container">
-            <div class="flex-header">
+          <div class="flex-container">
+            <div class="flex-header if-all-shown">
               <h5>3. semester</h5>
             </div>
-            <div class="required-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATS2300/2024/H%C3%98ST">Algoritmer og datastrukturer</a></h6>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATS2300/2024/H%C3%98ST" class="required-subject if-all-shown">
+              <h6>Algoritmer og datastrukturer</h6>
               <p>DATS2300<span class="hover-right">10 stp.</span></p>
-            </div>
+            </a>
           </div>
-          <div class="if-all-shown flex-container">
-            <div class="flex-header">
+          <div class="flex-container">
+            <div class="flex-header if-all-shown">
               <h5>4. semester</h5>
             </div>
-            <div class="required-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/DAVE3606/2024/H%C3%98ST">Resurseffektive programmer</a></h6>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DAVE3606/2024/H%C3%98ST" class="required-subject if-all-shown">
+              <h6>Resurseffektive programmer</h6>
               <p>DAVE3600<span class="hover-right">10 stp.</span></p>
-            </div>
-            <div class="required-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO2200/2024/H%C3%98ST">Avansert modellering og beregninger</a></h6>
+            </a>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO2200/2024/H%C3%98ST" class="required-subject if-all-shown">
+              <h6>Avansert modellering og beregninger</h6>
               <p>MAMO2200<span class="hover-right">10 stp.</span></p>
-            </div>
+            </a>
           </div>
         </section>
         <section class="study-year">
@@ -385,220 +389,220 @@
             <div class="flex-header">
               <h5>5. semester</h5>
             </div>
-            <div class="required-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/DAVE3700/2024/H%C3%98ST">Matematikk 3000</a></h6>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DAVE3700/2024/H%C3%98ST" class="required-subject">
+              <h6>Matematikk 3000</h6>
               <p>DAVE3700<span class="hover-right">10 stp.</span></p>
-            </div>
-            <div class="if-matematikk-og-fysikk-shown required-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO3300/2024/H%C3%98ST">Reell analyse</a></h6>
+            </a>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO3300/2024/H%C3%98ST" class="if-matematikk-og-fysikk-shown required-subject">
+              <h6>Reell analyse</h6>
               <p>MAMO3300<span class="hover-right">10 stp.</span></p>
-            </div>
-            <div class="if-statistiske-metoder-shown required-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA3730/2024/H%C3%98ST">Introduksjon til Kunstig Intelligens</a></h6>
+            </a>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA3730/2024/H%C3%98ST" class="if-statistiske-metoder-shown required-subject">
+              <h6>Introduksjon til Kunstig Intelligens</h6>
               <p>DATA3730<span class="hover-right">10 stp.</span></p>
-            </div>
-            <div class="if-vitenskaplige-beregninger-shown required-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO3200/2024/H%C3%98ST">Simulering og visualisering</a></h6>
+            </a>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO3200/2024/H%C3%98ST" class="if-vitenskaplige-beregninger-shown required-subject">
+              <h6>Simulering og visualisering</h6>
               <p>MAMO3200<span class="hover-right">10 stp.</span></p>
-            </div>
-            <div class="if-matematikk-og-fysikk-shown if-statistiske-metoder-shown if-vitenskaplige-beregninger-shown choice-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA3730/2024/H%C3%98ST">Introduksjon til IT-forskning</a></h6>
+            </a>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA3730/2024/H%C3%98ST" class="if-matematikk-og-fysikk-shown if-statistiske-metoder-shown if-vitenskaplige-beregninger-shown choice-subject">
+              <h6>Introduksjon til IT-forskning</h6>
               <p>DATA3730<span class="hover-right">10 stp.</span></p>
-            </div>
-            <div class="if-statistiske-metoder-shown if-vitenskaplige-beregninger-shown choice-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA3750/2024/H%C3%98ST">Anvendt kunstig intelligens og data science prosjekt</a></h6>
+            </dav>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA3750/2024/H%C3%98ST" class="if-statistiske-metoder-shown if-vitenskaplige-beregninger-shown choice-subject">
+              <h6>Anvendt kunstig intelligens og data science prosjekt</h6>
               <p>DATA3750<span class="hover-right">10 stp.</span></p>
-            </div>
-            <div class="if-matematikk-og-fysikk-shown choice-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA3800/2024/H%C3%98ST">Introduction to Data Science with Scripting</a></h6>
+            </a>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA3800/2024/H%C3%98ST" class="if-matematikk-og-fysikk-shown choice-subject">
+              <h6>Introduction to Data Science with Scripting</h6>
               <p>DATA3800<span class="hover-right">10 stp.</span></p>
-            </div>
-            <div class="if-matematikk-og-fysikk-shown if-statistiske-metoder-shown if-vitenskaplige-beregninger-shown choice-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/ITPE3100/2024/H%C3%98ST">Datasikkerhet</a></h6>
+            </a>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/ITPE3100/2024/H%C3%98ST" class="if-matematikk-og-fysikk-shown if-statistiske-metoder-shown if-vitenskaplige-beregninger-shown choice-subject">
+              <h6>Datasikkerhet</h6>
               <p>ITPE3100<span class="hover-right">10 stp.</span></p>
-            </div>
-            <div class="if-matematikk-og-fysikk-shown if-statistiske-metoder-shown choice-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO3200/2024/H%C3%98ST">Simulering og visualisering</a></h6>
+            </a>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO3200/2024/H%C3%98ST" class="if-matematikk-og-fysikk-shown if-statistiske-metoder-shown choice-subject">
+              <h6>Simulering og visualisering</h6>
               <p>MAMO3200<span class="hover-right">10 stp.</span></p>
-            </div>
-            <div class="if-vitenskaplige-beregninger-shown choice-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO2300/2024/H%C3%98ST">Lineær algebra og introduksjon til gruppeteori</a></h6>
+            </a>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO2300/2024/H%C3%98ST" class="if-vitenskaplige-beregninger-shown choice-subject">
+              <h6>Lineær algebra og introduksjon til gruppeteori</h6>
               <p>MAMO2300<span class="hover-right">10 stp.</span></p>
-            </div>
-            <div class="if-vitenskaplige-beregninger-shown choice-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO3300/2024/H%C3%98ST">Reell analyse</a></h6>
+            </a>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO3300/2024/H%C3%98ST" class="if-vitenskaplige-beregninger-shown choice-subject">
+              <h6>Reell analyse</h6>
               <p>MAMO3300<span class="hover-right">10 stp.</span></p>
-            </div>
+            </a>
           </div>
           <div class="flex-container">
             <div class="flex-header">
               <h5>6. semester</h5>
             </div>
-            <div class="required-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA3900/2024/H%C3%98ST">Bacheloroppgave</a></h6>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA3900/2024/H%C3%98ST" class="required-subject">
+              <h6>Bacheloroppgave</h6>
               <p>DATA3900<span class="hover-right">20 stp.</span></p>
-            </div>
-            <div class="if-vitenskaplige-beregninger-shown choice-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/ADSE3200/2024/H%C3%98ST">Visualisering</a></h6>
+            </a>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/ADSE3200/2024/H%C3%98ST" class="if-vitenskaplige-beregninger-shown choice-subject">
+              <h6>Visualisering</h6>
               <p>ADSE3200<span class="hover-right">10 stp.</span></p>
-            </div>
-            <div class="if-matematikk-og-fysikk-shown if-statistiske-metoder-shown if-vitenskaplige-beregninger-shown choice-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/ADTS2310/2024/H%C3%98ST">Testing av programvare</a></h6>
+            </a>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/ADTS2310/2024/H%C3%98ST" class="if-matematikk-og-fysikk-shown if-statistiske-metoder-shown if-vitenskaplige-beregninger-shown choice-subject">
+              <h6>Testing av programvare</h6>
               <p>ADTS2310<span class="hover-right">10 stp.</span></p>
-            </div>
-            <div class="if-matematikk-og-fysikk-shown if-statistiske-metoder-shown if-vitenskaplige-beregninger-shown choice-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA2410/2024/H%C3%98ST">Datanettverk og skytjenester</a></h6>
+            </a>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA2410/2024/H%C3%98ST" class="if-matematikk-og-fysikk-shown if-statistiske-metoder-shown if-vitenskaplige-beregninger-shown choice-subject">
+              <h6>Datanettverk og skytjenester</h6>
               <p>DATA2410<span class="hover-right">10 stp.</span></p>
-            </div>
-            <div class="if-matematikk-og-fysikk-shown if-statistiske-metoder-shown choice-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/DAVE3606/2024/H%C3%98ST">Ressurseffektive programmer</a></h6>
+            </a>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DAVE3606/2024/H%C3%98ST" class="if-matematikk-og-fysikk-shown if-statistiske-metoder-shown choice-subject">
+              <h6>Ressurseffektive programmer</h6>
               <p>DAVE3606<span class="hover-right">10 stp.</span></p>
-            </div>
-            <div class="if-matematikk-og-fysikk-shown choice-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO2200/2024/H%C3%98ST">Avansert modellering og beregninger</a></h6>
+            </a>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO2200/2024/H%C3%98ST" class="if-matematikk-og-fysikk-shown choice-subject">
+              <h6>Avansert modellering og beregninger</h6>
               <p>MAMO2200<span class="hover-right">10 stp.</span></p>
-            </div>
-            <div class="if-vitenskaplige-beregninger-shown choice-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO2500/2024/H%C3%98ST">Symmetrier og algebraiske strukturer</a></h6>
+            </a>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO2500/2024/H%C3%98ST" class="if-vitenskaplige-beregninger-shown choice-subject">
+              <h6>Symmetrier og algebraiske strukturer</h6>
               <p>MAMO2500<span class="hover-right">10 stp.</span></p>
-            </div>
+            </a>
           </div>
           <h4 class="if-all-shown">Emnegruppe: Matematikk og fysikk</h4>
-          <div class="if-all-shown flex-container">
-            <div class="flex-header">
+          <div class="flex-container">
+            <div class="flex-header if-all-shown">
               <h5>5. semester</h5>
             </div>
-            <div class="required-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO3300/2024/H%C3%98ST">Reell analyse</a></h6>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO3300/2024/H%C3%98ST" class="required-subject if-all-shown">
+              <h6>Reell analyse</h6>
               <p>MAMO3300<span class="hover-right">10 stp.</span></p>
-            </div>
-            <div class="choice-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA3730/2024/H%C3%98ST">Introduksjon til IT-forskning</a></h6>
+            </a>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA3730/2024/H%C3%98ST" class="choice-subject if-all-shown">
+              <h6>Introduksjon til IT-forskning</h6>
               <p>DATA3730<span class="hover-right">10 stp.</span></p>
-            </div>
-            <div class="choice-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA3800/2024/H%C3%98ST">Introduction to Data Science with Scripting</a></h6>
+            </a>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA3800/2024/H%C3%98ST" class="choice-subject if-all-shown">
+              <h6>Introduction to Data Science with Scripting</h6>
               <p>DATA3800<span class="hover-right">10 stp.</span></p>
-            </div>
-            <div class="choice-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/ITPE3100/2024/H%C3%98ST">Datasikkerhet</a></h6>
+            </a>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/ITPE3100/2024/H%C3%98ST" class="choice-subject if-all-shown">
+              <h6>Datasikkerhet</h6>
               <p>ITPE3100<span class="hover-right">10 stp.</span></p>
-            </div>
-            <div class="choice-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO3200/2024/H%C3%98ST">Simulering og visualisering</a></h6>
+            </a>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO3200/2024/H%C3%98ST" class="choice-subject if-all-shown">
+              <h6>Simulering og visualisering</h6>
               <p>MAMO3200<span class="hover-right">10 stp.</span></p>
-            </div>
+            </a>
           </div>
-          <div class="if-all-shown flex-container">
-            <div class="flex-header">
+          <div class="flex-container">
+            <div class="flex-header if-all-shown">
               <h5>6. semester</h5>
             </div>
-            <div class="choice-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/ADTS2310/2024/H%C3%98ST">Testing av programvare</a></h6>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/ADTS2310/2024/H%C3%98ST" class="choice-subject if-all-shown">
+              <h6>Testing av programvare</h6>
               <p>ADTS2310<span class="hover-right">10 stp.</span></p>
-            </div>
-            <div class="choice-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA2410/2024/H%C3%98ST">Datanettverk og skytjenester</a></h6>
+            </a>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA2410/2024/H%C3%98ST" class="choice-subject if-all-shown">
+              <h6>Datanettverk og skytjenester</h6>
               <p>DATA2410<span class="hover-right">10 stp.</span></p>
-            </div>
-            <div class="choice-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/DAVE3606/2024/H%C3%98ST">Ressurseffektive programmer</a></h6>
+            </a>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DAVE3606/2024/H%C3%98ST" class="choice-subject if-all-shown">
+              <h6>Ressurseffektive programmer</h6>
               <p>DAVE3606<span class="hover-right">10 stp.</span></p>
-            </div>
-            <div class="choice-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO2200/2024/H%C3%98ST">Avansert modellering og beregninger</a></h6>
+            </a>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO2200/2024/H%C3%98ST" class="choice-subject if-all-shown">
+              <h6>Avansert modellering og beregninger</h6>
               <p>MAMO2200<span class="hover-right">10 stp.</span></p>
-            </div>
+            </a>
           </div>
           <h4 class="if-all-shown">Emnegruppe: Statistiske og datadrevne metoder</h4>
-          <div class="if-all-shown flex-container">
-            <div class="flex-header">
+          <div class="flex-container">
+            <div class="flex-header if-all-shown">
               <h5>5. semester</h5>
             </div>
-            <div class="required-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/DAVE3625/2024/H%C3%98ST">Introduksjon til Kunstig Intelligens</a></h6>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DAVE3625/2024/H%C3%98ST" class="required-subject if-all-shown">
+              <h6>Introduksjon til Kunstig Intelligens</h6>
               <p>DAVE3625<span class="hover-right">10 stp.</span></p>
-            </div>
-            <div class="choice-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA3730/2024/H%C3%98ST">Introduksjon til IT-forskning</a></h6>
+            </a>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA3730/2024/H%C3%98ST" class="choice-subject if-all-shown">
+              <h6>Introduksjon til IT-forskning</h6>
               <p>DATA3730<span class="hover-right">10 stp.</span></p>
-            </div>
-            <div class="choice-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA3750/2024/H%C3%98ST">Anvendt kunstig intelligens og data science prosjekt</a></h6>
+            </a>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA3750/2024/H%C3%98ST" class="choice-subject if-all-shown">
+              <h6>Anvendt kunstig intelligens og data science prosjekt</h6>
               <p>DATA3750<span class="hover-right">10 stp.</span></p>
-            </div>
-            <div class="choice-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/ITPE3100/2024/H%C3%98ST">Datasikkerhet</a></h6>
+            </a>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/ITPE3100/2024/H%C3%98ST" class="choice-subject if-all-shown">
+              <h6>Datasikkerhet</h6>
               <p>ITPE3100<span class="hover-right">10 stp.</span></p>
-            </div>
-            <div class="choice-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO3200/2024/H%C3%98ST">Simulering og visualisering</a></h6>
+            </a>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO3200/2024/H%C3%98ST" class="choice-subject if-all-shown">
+              <h6>Simulering og visualisering</h6>
               <p>MAMO3200<span class="hover-right">10 stp.</span></p>
-            </div>
+            </a>
           </div>
-          <div class="if-all-shown flex-container">
-            <div class="flex-header">
+          <div class="flex-container">
+            <div class="flex-header if-all-shown">
               <h5>6. semester</h5>
             </div>
-            <div class="choice-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/ADTS2310/2024/H%C3%98ST">Testing av programvare</a></h6>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/ADTS2310/2024/H%C3%98ST" class="choice-subject if-all-shown">
+              <h6>Testing av programvare</h6>
               <p>ADTS2310<span class="hover-right">10 stp.</span></p>
-            </div>
-            <div class="choice-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA2410/2024/H%C3%98ST">Datanettverk og skytjenester</a></h6>
+            </a>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA2410/2024/H%C3%98ST" class="choice-subject if-all-shown">
+              <h6>Datanettverk og skytjenester</h6>
               <p>DATA2410<span class="hover-right">10 stp.</span></p>
-            </div>
-            <div class="choice-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/DAVE3606/2024/H%C3%98ST">Ressurseffektive programmer</a></h6>
+            </a>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DAVE3606/2024/H%C3%98ST" class="choice-subject if-all-shown">
+              <h6>Ressurseffektive programmer</h6>
               <p>DAVE3606<span class="hover-right">10 stp.</span></p>
-            </div>
+            </a>
           </div>
           <h4 class="if-all-shown">Emnegruppe: Vitenskapelige beregninger</h4>
-          <div class="if-all-shown flex-container">
-            <div class="flex-header">
+          <div class="flex-container">
+            <div class="flex-header if-all-shown">
               <h5>5. semester</h5>
             </div>
-            <div class="required-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO3200/2024/H%C3%98ST">Simulering og visualisering</a></h6>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO3200/2024/H%C3%98ST" class="required-subject if-all-shown">
+              <h6>Simulering og visualisering</h6>
               <p>MAMO3200<span class="hover-right">10 stp.</span></p>
-            </div>
-            <div class="choice-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA3730/2024/H%C3%98ST">Introduksjon til IT-forskning</a></h6>
+            </a>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA3730/2024/H%C3%98ST" class="choice-subject if-all-shown">
+              <h6>Introduksjon til IT-forskning</h6>
               <p>DATA3730<span class="hover-right">10 stp.</span></p>
-            </div>
-            <div class="choice-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/ITPE3100/2024/H%C3%98ST">Datasikkerhet</a></h6>
+            </a>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/ITPE3100/2024/H%C3%98ST" class="choice-subject if-all-shown">
+              <h6>Datasikkerhet</h6>
               <p>ITPE3100<span class="hover-right">10 stp.</span></p>
-            </div>
-            <div class="choice-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO2300/2024/H%C3%98ST">Lineær algebra og introduksjon til gruppeteori</a></h6>
+            </a>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO2300/2024/H%C3%98ST" class="choice-subject if-all-shown">
+              <h6>Lineær algebra og introduksjon til gruppeteori</h6>
               <p>MAMO2300<span class="hover-right">10 stp.</span></p>
-            </div>
-            <div class="choice-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO3300/2024/H%C3%98ST">Reell analyse</a></h6>
+            </a>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO3300/2024/H%C3%98ST" class="choice-subject if-all-shown">
+              <h6>Reell analyse</h6>
               <p>MAMO3300<span class="hover-right">10 stp.</span></p>
-            </div>
+            </a>
           </div>
-          <div class="if-all-shown flex-container">
-            <div class="flex-header">
+          <div class="flex-container">
+            <div class="flex-header if-all-shown">
               <h5>6. semester</h5>
             </div>
-            <div class="choice-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/ADSE3200/2024/H%C3%98ST">Visualisering</a></h6>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/ADSE3200/2024/H%C3%98ST" class="choice-subject if-all-shown">
+              <h6>Visualisering</h6>
               <p>ADSE3200<span class="hover-right">10 stp.</span></p>
-            </div>
-            <div class="choice-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/ADTS2310/2024/H%C3%98ST">Testing av programvare</a></h6>
+            </a>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/ADTS2310/2024/H%C3%98ST" class="choice-subject if-all-shown">
+              <h6>Testing av programvare</h6>
               <p>ADTS2310<span class="hover-right">10 stp.</span></p>
-            </div>
-            <div class="choice-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA2410/2024/H%C3%98ST">Datanettverk og skytjenester</a></h6>
+            </a>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA2410/2024/H%C3%98ST" class="choice-subject if-all-shown">
+              <h6>Datanettverk og skytjenester</h6>
               <p>DATA2410<span class="hover-right">10 stp.</span></p>
-            </div>
-            <div class="choice-subject">
-              <h6><a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO2500/2024/H%C3%98ST">Symmetrier og algebraiske strukturer</a></h6>
+            </a>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO2500/2024/H%C3%98ST" class="choice-subject if-all-shown">
+              <h6>Symmetrier og algebraiske strukturer</h6>
               <p>MAMO2500<span class="hover-right">10 stp.</span></p>
-            </div>
+            </a>
           </div>
           <section class="education-container">
             <div class="education-section">
