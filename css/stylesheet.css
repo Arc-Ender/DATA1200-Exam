@@ -27,6 +27,7 @@
   --main-link-color: rgba(0,0,238,1); /* Default: 0, 0, 238, 1 */
   --link-hover-color: rgba(255, 170, 0, 1);
   --link-visited: rgba(85, 26, 139, 1); /* Default: 85, 26, 139, 1 */
+  --default-font-family: Arial, Helvetica, sans-serif;
 
   /*Bacground colors*/
   --main-background-color: white;
@@ -82,7 +83,7 @@ section {
 }
 
 p, h1, h2, h3, h4, h5, h6 {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--default-font-family);
   color: var(--main-text-color);
 }
 
@@ -125,6 +126,7 @@ h4 {
 
 a {
   color: var(--main-link-color);
+  font-family: var(--default-font-family);
 }
 
 main a:visited {
@@ -135,6 +137,10 @@ main a:visited {
 main a:hover, footer a:hover {
   color: var(--link-hover-color); /*adds color when hovering over links*/
   text-decoration: none;
+}
+
+tr, li {
+  font-family: var(--default-font-family);
 }
 
 
