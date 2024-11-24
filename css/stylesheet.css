@@ -47,7 +47,7 @@
 
   --alt-border-color: rgba(133, 88, 222,1);
 
-  background: var(--alt-background-color);
+  background: var(--alt-background-color); /* Set color when scrolling past page. Overwritten in body with color for main part of site */
 }
 
 
@@ -57,15 +57,12 @@
 
 
 
-/* Styling for the body */
 body {
-  font-family: Arial, Helvetica, sans-serif;
   background-color: var(--main-background-color);
   margin: 0;
   align-items: center;
 }
 
-/* Main attribute styling */
 main {
   margin: auto;
   margin-top: 6.2rem;
@@ -73,7 +70,6 @@ main {
   flex-direction: column;
   align-items: center;
   max-width: 2048px;
-  
 }
 
 article {
@@ -84,9 +80,12 @@ article {
 section {
   margin-bottom: 2em;
 }
+
 p, h1, h2, h3, h4, h5, h6 {
+  font-family: Arial, Helvetica, sans-serif;
   color: var(--main-text-color);
 }
+
 p, h6, h5{
   font-size: 1em;
 }
