@@ -900,42 +900,13 @@ footer hr{
 }
 
 .link-with-arrow {
-  font-size: 1.1em;
+
   display: inline-flex;
   align-items: center;
   text-decoration: none;
   color: var(--main-text-color);
   position: relative;
 }
-
-.link-with-arrow span {
-  font-size: 1.2em;
-  margin-right: 10px;
-  transform: translateX(0);
-  transition: transform 0.3s ease;
-  text-decoration: none;
-}
-
-.link-with-arrow:hover {
-  text-decoration: underline;
-  color: var(--main-text-color);
-  text-decoration: none;
-}
-
-.underline-link {
-  text-decoration: none;
-  color: var(--main-text-color);
-  border-bottom: 2px solid rgba(255, 215, 0,1);
-  transition: border-color 0.3s ease;
-}
-
-.underline-link:hover {
-  border-color: var(--main-text-color);
-}
-
-
-
-
 
 
 
