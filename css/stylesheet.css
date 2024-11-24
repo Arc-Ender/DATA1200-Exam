@@ -32,8 +32,8 @@
   --main-background-color: white;
   --alt-background-color: rgba(255,220,0,1);
   --hover-background-color: rgba(241, 241, 241, 1);
-  --higlight-color-1: orange;
-  --higlight-color-2: white;
+  --higlight-color-1: rgba(255,220,0,1);
+  --higlight-color-2: orange;
   background: var(--alt-background-color);
 
   /*Other: */
@@ -266,7 +266,7 @@ input[type=button] {
 }
 
 #menu-toggle-label {
-  display: none; 
+  display: none;
   font-size: 1.75em;
   cursor: pointer;
   padding: 0;
@@ -708,6 +708,7 @@ footer hr{
 
 .choice-subject, .required-subject{
   width: 300px;
+  text-decoration: none;
 }
 
 .required-subject, .color-description-obligatory-subject{
@@ -716,6 +717,10 @@ footer hr{
 
 .choice-subject, .color-description-choice-subject{
   background-color: var(--higlight-color-2);
+}
+
+.choice-subject:hover, .required-subject:hover {
+  background-color: var(--hover-background-color);
 }
 
 .color-description-obligatory-subject, .color-description-choice-subject {
@@ -761,7 +766,6 @@ footer hr{
 
 .program-link:hover {
   background-color: var(--hover-background-color);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 .program-link h3 {
