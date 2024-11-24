@@ -966,6 +966,7 @@ footer hr{
   position: relative;
   max-width: 100%;
   margin: 0 auto;
+  margin-top: 120px;
 }
 .activity-page h1, .activity-page header p {
   color: var(--alt-text-color);
